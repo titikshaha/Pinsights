@@ -104,8 +104,14 @@ def main():
         raise ValueError("Unknown source type")
     # Save canonical dataset
     output_path =os.path.join(META_DIR, "pins.csv")
+    if os.path.exists(output_path):
+        existing_df = pd.read_csv(output_path)
+        # Concatenate and drop duplicates
+        df = pd.concat([existing_df, df], ignore_index=True)
+        df.drop_duplicates(subset=["pin_id"], inplace=True)
+
     df.to_csv(output_path, index=False)
-    print(f"Saved canonical dataset to {output_path}")
+    print(f"Saved canonical dataset to {output_path} Total records: {len(df)}")
 
 if __name__ == "__main__":
     main()
