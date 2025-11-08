@@ -9,7 +9,7 @@ import math
 # CONFIG
 EMBED_PATH = Path("data/embeddings/embeddings.npy")      # combined embeddings array
 PINS_CSV = Path("data/metadata/pins.csv")               # must contain pin_id,image_path
-CLUSTERS_CSV = Path("data/clusters/20251108_2056_clusters.csv")  # your cluster assignments
+CLUSTERS_CSV = Path("data/clusters/20251108_2128_clusters.csv")  # your cluster assignments
 OUT_DIR = Path("data/inspections")
 NUM_PER_CLUSTER = 9   # how many representative images to display per cluster
 IMAGE_SIZE = (224, 224)  # resize for grid
