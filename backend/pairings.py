@@ -1,1 +1,0 @@
-# Outfit pairing detection & rules
