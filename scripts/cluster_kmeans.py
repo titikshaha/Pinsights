@@ -8,7 +8,7 @@ from datetime import datetime
 embeddings = np.load("data/embeddings/embeddings.npy")
 
 # Choose k
-k = 3  # experiment later with 3–10
+k = 4  # experiment later with 3–10
 print(f"Running KMeans with k={k}...")
 
 model = KMeans(n_clusters=k, random_state=42, n_init='auto')

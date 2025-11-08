@@ -87,7 +87,7 @@ def load_from_unsplash(query="fashion", per_page=20, pages=1):
 def main():
     parser = argparse.ArgumentParser(description="Pinsights Data Ingestion")
     parser.add_argument("--source", choices=["folder", "unsplash"], required=True, help="Data source type")
-    parser.add_argument("--csv", default="/data/metadata/pins.csv", help="Path to CSV for manual source")
+    parser.add_argument("--csv", default="data/metadata/pins.csv", help="Path to CSV for manual source")
     parser.add_argument("--query", help="Search query for Unsplash (e.g. 'street fashion')")
     args = parser.parse_args()
 
