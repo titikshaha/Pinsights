@@ -8,6 +8,9 @@ import torch
 import clip
 from PIL import Image
 import numpy as np
+import joblib
+
+os.makedirs("backend", exist_ok=True)
 
 
 def extract_features(image_paths, model, preprocess, device):
@@ -54,6 +57,11 @@ def process_data(input_csv, output_csv, n_clusters=8):
     df.to_csv(output_csv, index=False)
     print(f" Saved clustered data to {output_csv}")
 
+
+    joblib.dump(pca, "backend/pca_model.pkl")
+    joblib.dump(kmeans, "backend/kmeans_model.pkl")
+
+    print("✅ Models saved successfully!")
 
 def main():
     parser = argparse.ArgumentParser(description="Pinsights Data Processing")
