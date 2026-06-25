@@ -113,14 +113,18 @@ CULTURAL CONTEXT FROM RETRIEVED SOURCES:
 TASK: Write 3-4 cultural context statements that ground the analysis in fashion history. Each statement must:
 1. Make a specific claim about what the images reveal
 2. Follow it with "because [cultural/historical reason]"
-3. Cite the source era and context
-4. Be specific to THIS person's collection — not generic aesthetic description
+3. Include a detailed_analysis paragraph exploring the origins, evolution, and cultural meaning of this aesthetic
+4. Provide an array of execution_suggestions (specific styling tips, material choices, or silhouettes to nail this aesthetic authentically)
+5. Cite the source era and context
+6. Be specific to THIS person's collection — not generic aesthetic description
 
 Format as JSON array:
 [
   {{
     "claim": "<specific claim about what the images reveal>",
     "because": "<the cultural/historical reason this is what it is>",
+    "detailed_analysis": "<2-3 sentences diving deep into the history and nuance of this aesthetic signal>",
+    "execution_suggestions": ["<specific styling tip 1>", "<specific styling tip 2>"],
     "source_era": "<e.g. '1990s New York'>",
     "cultural_code": "<what this signal means in its cultural context>"
   }}
@@ -140,7 +144,7 @@ async def run_narrator(
     from langchain_groq import ChatGroq
 
     llm = ChatGroq(
-        model="llama-3.1-70b-versatile",
+        model="llama3-70b-8192",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.4,  # slightly higher for narrative synthesis
         max_tokens=1500,
@@ -172,6 +176,8 @@ async def run_narrator(
                 cultural_context.append({
                     "claim": f"Your images signal {world.name}",
                     "because": chunk.get("text", "")[:200],
+                    "detailed_analysis": chunk.get("text", ""),
+                    "execution_suggestions": ["Focus on authentic silhouettes", "Reference original designers from this era"],
                     "source_era": chunk.get("era", ""),
                     "cultural_code": ", ".join(chunk.get("tags", [])),
                 })

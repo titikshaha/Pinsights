@@ -66,6 +66,8 @@ export interface ClusterSummary {
 export interface CulturalContextItem {
   claim: string
   because: string
+  detailed_analysis: string
+  execution_suggestions: string[]
   source_era: string
   cultural_code: string
 }
@@ -193,6 +195,31 @@ export async function fetchDrift(idA: string, idB: string): Promise<DriftResult 
 export function imageUrl(path: string): string {
   // Convert local absolute paths to API image endpoints
   if (path.startsWith('http')) return path
-  const filename = path.split(/[\\/]/).pop() || path
+  
+  // Normalize path separators to forward slash for easier parsing
+  const normalizedPath = path.replace(/\\/g, '/')
+  
+  if (normalizedPath.includes('uploads/')) {
+    // Extract session_id and filename
+    const parts = normalizedPath.split('uploads/')
+    if (parts.length > 1) {
+      const subpath = parts[1] // session_id/filename.jpg
+      return `${BASE}/images/session/${subpath}`
+    }
+  } else if (normalizedPath.includes('pinterest_img/')) {
+    // Extract board and filename
+    const parts = normalizedPath.split('pinterest_img/')
+    if (parts.length > 1) {
+      const subpath = parts[1] // board/filename.jpg
+      return `${BASE}/images/file/${subpath}`
+    }
+  } else if (normalizedPath.includes('unsplash_cache/')) {
+    // Fallback to data endpoint for unsplash images
+    const filename = normalizedPath.split('/').pop() || normalizedPath
+    return `${BASE}/images/data/${filename}`
+  }
+
+  // Generic fallback
+  const filename = normalizedPath.split('/').pop() || normalizedPath
   return `${BASE}/images/data/${filename}`
 }

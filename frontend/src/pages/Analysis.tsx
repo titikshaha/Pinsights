@@ -50,7 +50,7 @@ function ProgressView({ state }: { state: AnalysisState }) {
 function CulturalContext({ items }: { items: CulturalContextItem[] }) {
   return (
     <div className="cultural-context">
-      <div className="section-label">Cultural context</div>
+      <div className="section-label">Cultural Context & Execution Insights</div>
       <div className="cultural-items">
         {items.map((item, i) => (
           <motion.div
@@ -62,6 +62,24 @@ function CulturalContext({ items }: { items: CulturalContextItem[] }) {
           >
             <p className="cultural-item__claim">{item.claim}</p>
             <div className="because">{item.because}</div>
+            
+            {item.detailed_analysis && (
+              <div className="cultural-item__analysis">
+                {item.detailed_analysis}
+              </div>
+            )}
+            
+            {item.execution_suggestions && item.execution_suggestions.length > 0 && (
+              <div className="cultural-item__suggestions">
+                <strong>Execution Suggestions:</strong>
+                <ul>
+                  {item.execution_suggestions.map((suggestion, j) => (
+                    <li key={j}>{suggestion}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             <div className="cultural-item__meta">
               <span>{item.source_era}</span>
               {item.cultural_code && <span>· {item.cultural_code}</span>}
@@ -73,7 +91,12 @@ function CulturalContext({ items }: { items: CulturalContextItem[] }) {
         .cultural-context { margin-top: var(--space-6); }
         .cultural-items { display: flex; flex-direction: column; gap: var(--space-4); margin-top: var(--space-3); }
         .cultural-item { padding: var(--space-4); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
-        .cultural-item__claim { font-size: 0.9375rem; font-weight: 500; color: var(--color-text-primary); margin-bottom: var(--space-2); }
+        .because { font-style: italic; color: var(--color-text-secondary); margin-bottom: var(--space-4); font-size: 0.9375rem; }
+        .cultural-item__analysis { margin-bottom: var(--space-4); font-size: 0.9375rem; line-height: 1.6; color: var(--color-text-secondary); border-left: 2px solid var(--color-border); padding-left: var(--space-3); }
+        .cultural-item__suggestions { margin-bottom: var(--space-3); font-size: 0.9375rem; }
+        .cultural-item__suggestions strong { display: block; margin-bottom: var(--space-2); color: var(--color-text-primary); font-weight: 500; }
+        .cultural-item__suggestions ul { padding-left: var(--space-4); margin: 0; color: var(--color-text-secondary); }
+        .cultural-item__suggestions li { margin-bottom: var(--space-1); }
         .cultural-item__meta { display: flex; gap: var(--space-2); margin-top: var(--space-2); font-size: 0.75rem; color: var(--color-text-muted); }
       `}</style>
     </div>

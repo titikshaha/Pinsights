@@ -117,7 +117,7 @@ async def run_identity(
     from langchain_groq import ChatGroq
 
     llm = ChatGroq(
-        model="llama-3.1-70b-versatile",
+        model="llama3-70b-8192",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.3,
         max_tokens=1024,

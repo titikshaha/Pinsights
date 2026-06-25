@@ -103,7 +103,7 @@ async def run_gap(
     from langchain_groq import ChatGroq
 
     llm = ChatGroq(
-        model="llama-3.1-70b-versatile",
+        model="llama3-70b-8192",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.2,  # slightly lower for precision
         max_tokens=1200,
