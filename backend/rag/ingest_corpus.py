@@ -107,7 +107,7 @@ def main():
         COLLECTION_FASHION_HISTORY,
         force=args.force,
     )
-    print(f"✅ fashion_history: {n_history} chunks\n")
+    print(f"DONE fashion_history: {n_history} chunks\n")
 
     # Ingest aesthetic execution
     n_execution = ingest_collection(
@@ -115,7 +115,7 @@ def main():
         COLLECTION_AESTHETIC_EXECUTION,
         force=args.force,
     )
-    print(f"✅ aesthetic_execution: {n_execution} chunks\n")
+    print(f"DONE aesthetic_execution: {n_execution} chunks\n")
 
     print("=== Ingestion complete ===")
     print(f"Total chunks: {n_history + n_execution}")
