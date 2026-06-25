@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { ClusterSummary, Gap } from '../../lib/api'
+import { type ClusterSummary, type Gap } from '../../lib/api'
 import { imageUrl } from '../../lib/api'
 import { ChevronDown, ChevronUp, ArrowRight } from 'lucide-react'
 import { useState } from 'react'

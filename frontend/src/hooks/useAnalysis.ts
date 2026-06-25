@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from 'react'
-import { StreamEvent, AnalysisResult, startAnalysis, subscribeToStream, PresetBoard } from '../../lib/api'
+import { type StreamEvent, type AnalysisResult, startAnalysis, subscribeToStream } from '../lib/api'
 
 export interface AnalysisState {
   status: 'idle' | 'running' | 'done' | 'error'

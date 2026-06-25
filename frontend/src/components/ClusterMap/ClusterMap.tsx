@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import { motion } from 'framer-motion'
-import { ClusterSummary } from '../../lib/api'
+import { type ClusterSummary } from '../../lib/api'
 import { imageUrl } from '../../lib/api'
 
 interface ClusterNode {
@@ -142,7 +142,7 @@ export default function ClusterMap({ clusters, onSelectCluster, selectedClusterI
 
     nodeG.append('circle')
       .attr('r', imgSize / 2 + 2)
-      .attr('fill', (d, i) => {
+      .attr('fill', (d) => {
         const idx = clusters.findIndex(c => c.cluster_id === d.cluster_id)
         return CLUSTER_COLORS[idx % CLUSTER_COLORS.length]
       })

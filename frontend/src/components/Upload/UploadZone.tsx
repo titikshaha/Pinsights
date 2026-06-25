@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Upload, X, Image, Sparkles } from 'lucide-react'
-import { PresetBoard } from '../../lib/api'
+import { Upload, X, Sparkles } from 'lucide-react'
+import { type PresetBoard } from '../../lib/api'
 
 interface UploadZoneProps {
   presets: PresetBoard[]

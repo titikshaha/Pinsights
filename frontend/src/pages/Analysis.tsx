@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { AnalysisState } from '../hooks/useAnalysis'
+import { motion } from 'framer-motion'
+import { type AnalysisState } from '../hooks/useAnalysis'
 import ClusterMap from '../components/ClusterMap/ClusterMap'
 import InsightCard from '../components/InsightCard/InsightCard'
-import { CulturalContextItem } from '../lib/api'
+import { type CulturalContextItem } from '../lib/api'
 
 interface AnalysisPageProps {
   state: AnalysisState
@@ -108,9 +108,6 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
   if (!result) return null
 
   const dna = result.aesthetic_dna
-  const selectedClusterData = selectedCluster !== null
-    ? result.clusters.find(c => c.cluster_id === selectedCluster)
-    : null
 
   return (
     <div className="analysis-page" style={{ paddingTop: 80 }}>

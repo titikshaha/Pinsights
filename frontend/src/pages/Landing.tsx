@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
-import { PresetBoard, fetchPresets } from '../lib/api'
+import { type PresetBoard, fetchPresets } from '../lib/api'
 import UploadZone from '../components/Upload/UploadZone'
 
 interface LandingProps {
