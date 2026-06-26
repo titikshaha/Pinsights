@@ -117,10 +117,10 @@ async def run_identity(
     from langchain_groq import ChatGroq
 
     llm = ChatGroq(
-        model="llama3-70b-8192",
+        model="llama-3.3-70b-versatile",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.3,
-        max_tokens=1024,
+        max_tokens=2048,
     )
 
     worlds: List[AestheticWorld] = []
@@ -145,6 +145,7 @@ async def run_identity(
         try:
             response = llm.invoke(prompt)
             content = response.content.strip()
+            print(f"[Identity] RAW OUTPUT (Cluster):\n{content}")
             raw_responses.append(content)
 
             # Parse JSON from response

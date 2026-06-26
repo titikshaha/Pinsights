@@ -8,7 +8,7 @@ interface UploadZoneProps {
   presets: PresetBoard[]
   onAnalyse: (
     source: 'upload' | 'preset' | 'unsplash',
-    options: { files?: File[]; board?: string; query?: string }
+    options: { files?: File[]; board?: string; query?: string; goal?: string }
   ) => void
   disabled?: boolean
 }
@@ -18,6 +18,7 @@ export default function UploadZone({ presets, onAnalyse, disabled }: UploadZoneP
   const [previews, setPreviews] = useState<string[]>([])
   const [mode, setMode] = useState<'upload' | 'preset'>('preset')
   const [selectedPreset, setSelectedPreset] = useState<string | null>(presets[0]?.name ?? null)
+  const [goal, setGoal] = useState<'styling' | 'shopping' | 'trends'>('styling')
 
   const onDrop = useCallback((accepted: File[]) => {
     setFiles(prev => [...prev, ...accepted].slice(0, 50))
@@ -44,9 +45,9 @@ export default function UploadZone({ presets, onAnalyse, disabled }: UploadZoneP
 
   const handleAnalyse = () => {
     if (mode === 'preset' && selectedPreset) {
-      onAnalyse('preset', { board: selectedPreset })
+      onAnalyse('preset', { board: selectedPreset, goal })
     } else if (mode === 'upload' && files.length >= 5) {
-      onAnalyse('upload', { files })
+      onAnalyse('upload', { files, goal })
     }
   }
 
@@ -142,6 +143,25 @@ export default function UploadZone({ presets, onAnalyse, disabled }: UploadZoneP
         )}
       </AnimatePresence>
 
+      {/* Goal selection */}
+      <div className="upload-zone__goals">
+        <div className="upload-zone__goals-label">What do you want to infer?</div>
+        <div className="upload-zone__goals-row">
+          {(['styling', 'shopping', 'trends'] as const).map(g => (
+            <button
+              key={g}
+              className={`goal-btn ${goal === g ? 'goal-btn--active' : ''}`}
+              onClick={() => setGoal(g)}
+              disabled={disabled}
+            >
+              {g === 'styling' && 'Styling Rules'}
+              {g === 'shopping' && 'Shopping Guide'}
+              {g === 'trends' && 'Trend Forecast'}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* CTA */}
       <motion.button
         className={`btn btn--primary btn--large analyse-btn ${!canAnalyse ? 'analyse-btn--disabled' : ''}`}
@@ -177,6 +197,14 @@ export default function UploadZone({ presets, onAnalyse, disabled }: UploadZoneP
         .dropzone--disabled { opacity: 0.5; cursor: not-allowed; }
         .dropzone__title { font-size: 1rem; font-weight: 500; color: var(--color-text-secondary); }
         .dropzone__hint { font-size: 0.8125rem; color: var(--color-text-muted); }
+
+        .upload-zone__goals { margin-top: var(--space-6); text-align: center; }
+        .upload-zone__goals-label { font-size: 0.8125rem; font-weight: 500; color: var(--color-text-muted); margin-bottom: var(--space-3); text-transform: uppercase; letter-spacing: 0.05em; }
+        .upload-zone__goals-row { display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap; }
+        .goal-btn { padding: var(--space-2) var(--space-4); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text-secondary); border-radius: 100px; font-size: 0.875rem; cursor: pointer; transition: all 0.2s; }
+        .goal-btn:hover:not(:disabled) { border-color: var(--color-text-muted); }
+        .goal-btn--active { background: var(--color-text-primary); color: var(--color-bg); border-color: var(--color-text-primary); }
+
         .upload-previews { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: var(--space-2); margin-top: var(--space-3); }
         .upload-preview { position: relative; aspect-ratio: 1; border-radius: var(--radius-sm); overflow: hidden; }
         .upload-preview img { width: 100%; height: 100%; object-fit: cover; }

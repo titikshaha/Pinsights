@@ -19,7 +19,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
 
   const handleAnalyse = async (
     source: 'upload' | 'preset' | 'unsplash',
-    options: any
+    options: { files?: File[]; board?: string; query?: string; goal?: string }
   ) => {
     onAnalyse(source, options)
     onAnalysisStarted()
@@ -58,7 +58,8 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
         >
           Pinsights analyses your saved fashion images and tells you your aesthetic DNA,
           what you're reaching toward, and exactly what's standing between you and that vision.
-          Grounded in fashion history. Specific, not generic.
+         
+          "Why would users want to use Pinsights?" Because there is a massive disconnect right now between curation and execution. Millions of people save thousands of beautiful images on Pinterest, but when they look at their own closet, they still feel like they have "nothing to wear." Pinterest is an echo chamber of aesthetics—it shows you what looks good, but it never tells you how to execute it, what to buy, or why it works. Pinsights bridges that gap.
         </motion.p>
 
         <motion.div

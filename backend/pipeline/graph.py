@@ -29,6 +29,7 @@ from backend.agents.narrator_agent import run_narrator, NarratorResult
 class PipelineState(TypedDict):
     image_paths: List[str]
     session_id: str
+    goal: str
     intake_result: Optional[IntakeResult]
     identity_result: Optional[IdentityResult]
     gap_result: Optional[GapResult]
@@ -124,6 +125,7 @@ async def narrator_node(state: PipelineState) -> dict:
             state["identity_result"],
             state["gap_result"],
             session_id=state.get("session_id", ""),
+            goal=state.get("goal", "styling"),
             progress_callback=callback,
         )
         return {"narrator_result": result, "progress_events": events}
@@ -154,6 +156,7 @@ def build_graph():
 async def run_pipeline_streaming(
     image_paths: List[str],
     session_id: str,
+    goal: str,
     event_queue: asyncio.Queue,
 ) -> Optional[NarratorResult]:
     """
@@ -167,6 +170,7 @@ async def run_pipeline_streaming(
     initial_state: PipelineState = {
         "image_paths": image_paths,
         "session_id": session_id,
+        "goal": goal,
         "intake_result": None,
         "identity_result": None,
         "gap_result": None,

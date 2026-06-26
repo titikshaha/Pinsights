@@ -103,10 +103,10 @@ async def run_gap(
     from langchain_groq import ChatGroq
 
     llm = ChatGroq(
-        model="llama3-70b-8192",
+        model="llama-3.3-70b-versatile",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.2,  # slightly lower for precision
-        max_tokens=1200,
+        max_tokens=2048,
     )
 
     gaps_by_cluster: Dict[int, List[Gap]] = {}
@@ -154,6 +154,7 @@ async def run_gap(
         try:
             response = llm.invoke(prompt)
             content = response.content.strip()
+            print(f"[Gap] RAW OUTPUT (Cluster {cluster.cluster_id}):\n{content}")
             raw_responses.append(content)
 
             if "```json" in content:

@@ -2,481 +2,937 @@
   {
     "id": "fh_001",
     "aesthetic": "90s Minimalism",
-    "era": "1990–1999",
+    "era": "1990\u20131999",
     "chunk_type": "origin",
-    "tags": ["minimalism", "neutral", "clean", "structured", "modern"],
-    "text": "90s minimalism emerged as a direct reaction to the excess of 1980s power dressing. Designers like Calvin Klein, Helmut Lang, Jil Sander, and Donna Karan stripped fashion back to its structural essentials — clean lines, neutral palettes, and precision tailoring. The aesthetic was rooted in the idea that luxury should be felt, not announced. Calvin Klein's 1993 collection, shot by Herb Ritts, established the visual grammar: spare backgrounds, bodies in cream and stone, nothing decorative. Jil Sander went further, removing all hardware, all visible closures — clothes that revealed nothing about their construction. The cultural context was post-AIDS New York, a city in grief and financial recovery, where ostentation felt obscene."
+    "tags": [
+      "minimalism",
+      "neutral",
+      "clean",
+      "structured",
+      "modern"
+    ],
+    "text": "90s minimalism emerged as a direct reaction to the excess of 1980s power dressing. Designers like Calvin Klein, Helmut Lang, Jil Sander, and Donna Karan stripped fashion back to its structural essentials \u2014 clean lines, neutral palettes, and precision tailoring. The aesthetic was rooted in the idea that luxury should be felt, not announced. Calvin Klein's 1993 collection, shot by Herb Ritts, established the visual grammar: spare backgrounds, bodies in cream and stone, nothing decorative. Jil Sander went further, removing all hardware, all visible closures \u2014 clothes that revealed nothing about their construction. The cultural context was post-AIDS New York, a city in grief and financial recovery, where ostentation felt obscene."
   },
   {
     "id": "fh_002",
     "aesthetic": "90s Minimalism",
-    "era": "1990–1999",
+    "era": "1990\u20131999",
     "chunk_type": "visual_codes",
-    "tags": ["minimalism", "monochrome", "proportion", "tailoring", "clean"],
-    "text": "The visual codes of 90s minimalism were proportion-based, not color-based. The signature silhouette: elongated torso, wide-leg trousers with a high, clean rise, jackets that shoulder at exactly the edge of the arm. Colours stayed in a tight range — ecru, stone, ivory, slate, charcoal, deep navy. Nothing warm, nothing decorative. Fabric was structural: matte wool crepe, gabardine, silk charmeuse. The aesthetic rejected pattern almost entirely — when texture appeared, it was tonal: a ribbed knit in the same value as the trousers. The restraint was the signal. Understanding minimalism as proportion discipline rather than color discipline is the critical distinction."
+    "tags": [
+      "minimalism",
+      "monochrome",
+      "proportion",
+      "tailoring",
+      "clean"
+    ],
+    "text": "The visual codes of 90s minimalism were proportion-based, not color-based. The signature silhouette: elongated torso, wide-leg trousers with a high, clean rise, jackets that shoulder at exactly the edge of the arm. Colours stayed in a tight range \u2014 ecru, stone, ivory, slate, charcoal, deep navy. Nothing warm, nothing decorative. Fabric was structural: matte wool crepe, gabardine, silk charmeuse. The aesthetic rejected pattern almost entirely \u2014 when texture appeared, it was tonal: a ribbed knit in the same value as the trousers. The restraint was the signal. Understanding minimalism as proportion discipline rather than color discipline is the critical distinction."
   },
   {
     "id": "fh_003",
     "aesthetic": "90s Minimalism",
-    "era": "1990–1999",
+    "era": "1990\u20131999",
     "chunk_type": "cultural_context",
-    "tags": ["minimalism", "anti-logo", "quiet luxury", "post-excess"],
-    "text": "Minimalism in the 90s carried a specific ideological charge: it was anti-logo, anti-excess, and deeply influenced by Japanese aesthetics that had entered Western fashion through Issey Miyake, Comme des Garçons, and Yohji Yamamoto in the previous decade. The minimalists absorbed the Japanese principle of ma — negative space as meaningful — and applied it to Western tailoring. The result was clothes that demanded attention through absence. There was also a class signal: people who needed to announce their status wore logos; people secure enough to forgo them were understood to be beyond that. This remains the DNA of what is now called quiet luxury."
+    "tags": [
+      "minimalism",
+      "anti-logo",
+      "quiet luxury",
+      "post-excess"
+    ],
+    "text": "Minimalism in the 90s carried a specific ideological charge: it was anti-logo, anti-excess, and deeply influenced by Japanese aesthetics that had entered Western fashion through Issey Miyake, Comme des Gar\u00e7ons, and Yohji Yamamoto in the previous decade. The minimalists absorbed the Japanese principle of ma \u2014 negative space as meaningful \u2014 and applied it to Western tailoring. The result was clothes that demanded attention through absence. There was also a class signal: people who needed to announce their status wore logos; people secure enough to forgo them were understood to be beyond that. This remains the DNA of what is now called quiet luxury."
   },
   {
     "id": "fh_004",
     "aesthetic": "Quiet Luxury",
-    "era": "2010–present",
+    "era": "2010\u2013present",
     "chunk_type": "origin",
-    "tags": ["quiet luxury", "old money", "understated", "heritage", "neutral"],
-    "text": "Quiet luxury is not a new aesthetic — it is the contemporary codification of what has always been called 'old money dressing.' Its recent cultural visibility (2022–2024, accelerated by Succession's costume direction and The Row's rise) gave it language, but the codes are older: avoid obvious logos, invest in fabric quality, choose proportion over trend, let construction speak. The defining brands are The Row (founded by Mary-Kate and Ashley Olsen in 2006), Loro Piana, Brunello Cucinelli, Max Mara, and heritage houses like Hermès when worn without the logo pieces. The underlying logic: wealth has no need to signal itself."
+    "tags": [
+      "quiet luxury",
+      "old money",
+      "understated",
+      "heritage",
+      "neutral"
+    ],
+    "text": "Quiet luxury is not a new aesthetic \u2014 it is the contemporary codification of what has always been called 'old money dressing.' Its recent cultural visibility (2022\u20132024, accelerated by Succession's costume direction and The Row's rise) gave it language, but the codes are older: avoid obvious logos, invest in fabric quality, choose proportion over trend, let construction speak. The defining brands are The Row (founded by Mary-Kate and Ashley Olsen in 2006), Loro Piana, Brunello Cucinelli, Max Mara, and heritage houses like Herm\u00e8s when worn without the logo pieces. The underlying logic: wealth has no need to signal itself."
   },
   {
     "id": "fh_005",
     "aesthetic": "Quiet Luxury",
-    "era": "2010–present",
+    "era": "2010\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["quiet luxury", "cashmere", "earth tones", "tailoring", "proportion"],
-    "text": "Quiet luxury's visual vocabulary: cashmere in oatmeal, camel, and ivory. Trousers with a clean high-rise and a wide, tapering leg. Blazers in double-face wool or technical fabric — structured at the shoulder, soft through the body. Loafers in undecorated leather, preferably Gucci horse-bit or Hermès Kelly (the non-logo markers). Minimal jewelry: one thing at a time, yellow gold only. Bags are logo-free or use logos so established they have transcended — LV monogram now reads as trying; an Hermès Birkin with no branding visible reads as arrived. The aesthetic requires learning to see fabric weight and drape as status signals."
+    "tags": [
+      "quiet luxury",
+      "cashmere",
+      "earth tones",
+      "tailoring",
+      "proportion"
+    ],
+    "text": "Quiet luxury's visual vocabulary: cashmere in oatmeal, camel, and ivory. Trousers with a clean high-rise and a wide, tapering leg. Blazers in double-face wool or technical fabric \u2014 structured at the shoulder, soft through the body. Loafers in undecorated leather, preferably Gucci horse-bit or Herm\u00e8s Kelly (the non-logo markers). Minimal jewelry: one thing at a time, yellow gold only. Bags are logo-free or use logos so established they have transcended \u2014 LV monogram now reads as trying; an Herm\u00e8s Birkin with no branding visible reads as arrived. The aesthetic requires learning to see fabric weight and drape as status signals."
   },
   {
     "id": "fh_006",
     "aesthetic": "Streetwear",
-    "era": "1980–present",
+    "era": "1980\u2013present",
     "chunk_type": "origin",
-    "tags": ["streetwear", "hip-hop", "skate", "sportswear", "logo", "youth culture"],
-    "text": "Streetwear originated simultaneously on two coasts of America: New York hip-hop culture of the early 1980s — Dapper Dan's bespoke luxury logo reworks, gold chains, tracksuits — and California skate culture, where Stüssy founder Shawn Stussy hand-scrawled his surf brand signature and turned it into a logo. By the late 80s, both streams were influencing each other. The crucial early brands: Stüssy (1984), Futura Laboratories, Cross Colours, Karl Kani. Nike and Adidas were already present but streetwear culture adopted them differently — not as athletic equipment but as cultural artifact. The Air Force 1 in white-on-white, kept pristine, was a New York street signal."
+    "tags": [
+      "streetwear",
+      "hip-hop",
+      "skate",
+      "sportswear",
+      "logo",
+      "youth culture"
+    ],
+    "text": "Streetwear originated simultaneously on two coasts of America: New York hip-hop culture of the early 1980s \u2014 Dapper Dan's bespoke luxury logo reworks, gold chains, tracksuits \u2014 and California skate culture, where St\u00fcssy founder Shawn Stussy hand-scrawled his surf brand signature and turned it into a logo. By the late 80s, both streams were influencing each other. The crucial early brands: St\u00fcssy (1984), Futura Laboratories, Cross Colours, Karl Kani. Nike and Adidas were already present but streetwear culture adopted them differently \u2014 not as athletic equipment but as cultural artifact. The Air Force 1 in white-on-white, kept pristine, was a New York street signal."
   },
   {
     "id": "fh_007",
     "aesthetic": "Streetwear",
-    "era": "2000–2020",
+    "era": "2000\u20132020",
     "chunk_type": "visual_codes",
-    "tags": ["streetwear", "hoodie", "cargo", "sneaker", "drop culture", "Supreme"],
-    "text": "The modern streetwear visual vocabulary was codified by Supreme (founded 1994, NYC) and exploded globally between 2010–2018. Key codes: box logo hoodies, cargo pants with precise pocket placement (not utilitarian but architectural), chunky sneakers (Air Jordan, Yeezy 350, New Balance 990), oversized silhouettes as deliberate — not ill-fitting but intentionally scaled up. The drop model (limited-release, line-out-the-door scarcity) became as important as the clothes themselves. Wearing streetwear required knowing the release dates, the authentication markers, the collab hierarchy. A Supreme × Louis Vuitton piece read differently than either brand alone. Scarcity and cultural knowledge were the actual products."
+    "tags": [
+      "streetwear",
+      "hoodie",
+      "cargo",
+      "sneaker",
+      "drop culture",
+      "Supreme"
+    ],
+    "text": "The modern streetwear visual vocabulary was codified by Supreme (founded 1994, NYC) and exploded globally between 2010\u20132018. Key codes: box logo hoodies, cargo pants with precise pocket placement (not utilitarian but architectural), chunky sneakers (Air Jordan, Yeezy 350, New Balance 990), oversized silhouettes as deliberate \u2014 not ill-fitting but intentionally scaled up. The drop model (limited-release, line-out-the-door scarcity) became as important as the clothes themselves. Wearing streetwear required knowing the release dates, the authentication markers, the collab hierarchy. A Supreme \u00d7 Louis Vuitton piece read differently than either brand alone. Scarcity and cultural knowledge were the actual products."
   },
   {
     "id": "fh_008",
     "aesthetic": "Streetwear",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["streetwear", "luxury crossover", "Off-White", "Virgil Abloh", "designer collaboration"],
-    "text": "The streetwear-luxury crossover was formalized when Virgil Abloh launched Off-White (2012) and was appointed Louis Vuitton Men's Creative Director in 2018. This wasn't just a business move — it was a cultural renegotiation of what luxury meant. Abloh's 'Figures of Speech' exhibition (2019, MCA Chicago) placed streetwear in an art museum context. The resulting aesthetic fused streetwear's graphic confidence with luxury's material investment: industrial quotation marks around ordinary words, deconstructed tailoring, visible stitching as decoration. The tension in post-2018 streetwear is precisely between the original underground authenticity codes and the mainstream luxury absorption that followed."
+    "tags": [
+      "streetwear",
+      "luxury crossover",
+      "Off-White",
+      "Virgil Abloh",
+      "designer collaboration"
+    ],
+    "text": "The streetwear-luxury crossover was formalized when Virgil Abloh launched Off-White (2012) and was appointed Louis Vuitton Men's Creative Director in 2018. This wasn't just a business move \u2014 it was a cultural renegotiation of what luxury meant. Abloh's 'Figures of Speech' exhibition (2019, MCA Chicago) placed streetwear in an art museum context. The resulting aesthetic fused streetwear's graphic confidence with luxury's material investment: industrial quotation marks around ordinary words, deconstructed tailoring, visible stitching as decoration. The tension in post-2018 streetwear is precisely between the original underground authenticity codes and the mainstream luxury absorption that followed."
   },
   {
     "id": "fh_009",
     "aesthetic": "Dark Academia",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "origin",
-    "tags": ["dark academia", "literary", "prep", "autumn", "books", "European university"],
-    "text": "Dark academia emerged as a Tumblr aesthetic around 2015–2016, rooted in a romanticization of European university life — specifically Oxford and Cambridge visual codes combined with the aesthetics of gothic literature. The reference points were The Secret History (Donna Tartt, 1992), Dead Poets Society (1989), and A Little Life (2015). Visually: tweed, plaid, leather-bound books, candlelight, autumn leaves, dark panelled libraries. The fashion codes drew from 1940s–1960s English prep and American Ivy League: wool blazers, collegiate scarves, Oxford shirts, brogues and loafers. The emotional register was melancholy, intellectual aspiration, and a certain theatrical earnestness about ideas."
+    "tags": [
+      "dark academia",
+      "literary",
+      "prep",
+      "autumn",
+      "books",
+      "European university"
+    ],
+    "text": "Dark academia emerged as a Tumblr aesthetic around 2015\u20132016, rooted in a romanticization of European university life \u2014 specifically Oxford and Cambridge visual codes combined with the aesthetics of gothic literature. The reference points were The Secret History (Donna Tartt, 1992), Dead Poets Society (1989), and A Little Life (2015). Visually: tweed, plaid, leather-bound books, candlelight, autumn leaves, dark panelled libraries. The fashion codes drew from 1940s\u20131960s English prep and American Ivy League: wool blazers, collegiate scarves, Oxford shirts, brogues and loafers. The emotional register was melancholy, intellectual aspiration, and a certain theatrical earnestness about ideas."
   },
   {
     "id": "fh_010",
     "aesthetic": "Dark Academia",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["dark academia", "plaid", "tweed", "layering", "brown", "autumn palette"],
-    "text": "Dark academia's color palette: deep brown, burgundy, forest green, black, cream, mustard, and burnt orange — the color of old paper and autumn foliage. The layering logic is specific: a tucked Oxford shirt under a cable-knit or argyle vest, topped with a tweed or wool blazer. Trousers are slim, tailored, above the ankle to show socks — argyle or ribbed in contrasting tones. Footwear: brogues (preferably two-tone), Oxford shoes, or loafers. Accessories carry the literary signal: leather-strap watches, tortoiseshell glasses, canvas or leather tote bags. The look signals access to intellectual culture — real or aspirational."
+    "tags": [
+      "dark academia",
+      "plaid",
+      "tweed",
+      "layering",
+      "brown",
+      "autumn palette"
+    ],
+    "text": "Dark academia's color palette: deep brown, burgundy, forest green, black, cream, mustard, and burnt orange \u2014 the color of old paper and autumn foliage. The layering logic is specific: a tucked Oxford shirt under a cable-knit or argyle vest, topped with a tweed or wool blazer. Trousers are slim, tailored, above the ankle to show socks \u2014 argyle or ribbed in contrasting tones. Footwear: brogues (preferably two-tone), Oxford shoes, or loafers. Accessories carry the literary signal: leather-strap watches, tortoiseshell glasses, canvas or leather tote bags. The look signals access to intellectual culture \u2014 real or aspirational."
   },
   {
     "id": "fh_011",
     "aesthetic": "Dark Academia",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["dark academia", "queer", "gothic", "romanticization", "class aspiration"],
-    "text": "Dark academia has a notable queer coding: the aesthetic draws heavily from same-sex college environments, from the literary tradition of Oscar Wilde, E.M. Forster's Maurice, and the Greek influence in Tartt's Secret History. Part of its appeal is the fantasy of a space outside time where intellectual passion and beauty coexist. It also carries class aspiration — old European institutional prestige — filtered through the accessible medium of clothing. Unlike actual prep culture, dark academia is explicitly theatrical; it knows it is performing. This self-awareness is part of the aesthetic's internal honesty, which explains its durability."
+    "tags": [
+      "dark academia",
+      "queer",
+      "gothic",
+      "romanticization",
+      "class aspiration"
+    ],
+    "text": "Dark academia has a notable queer coding: the aesthetic draws heavily from same-sex college environments, from the literary tradition of Oscar Wilde, E.M. Forster's Maurice, and the Greek influence in Tartt's Secret History. Part of its appeal is the fantasy of a space outside time where intellectual passion and beauty coexist. It also carries class aspiration \u2014 old European institutional prestige \u2014 filtered through the accessible medium of clothing. Unlike actual prep culture, dark academia is explicitly theatrical; it knows it is performing. This self-awareness is part of the aesthetic's internal honesty, which explains its durability."
   },
   {
     "id": "fh_012",
     "aesthetic": "Coastal Grandmother",
-    "era": "2020–present",
+    "era": "2020\u2013present",
     "chunk_type": "origin",
-    "tags": ["coastal grandmother", "linen", "relaxed", "neutral", "Diane Keaton", "Nancy Meyers"],
-    "text": "The Coastal Grandmother aesthetic was named by TikToker Lex Nicoleta in 2022 but its visual language is rooted in the films of Nancy Meyers — Something's Gotta Give (2003), It's Complicated (2009). It references a specific American upper-middle-class coastal leisure life: Nantucket, the Hamptons, Martha's Vineyard. The archetype: a woman who has finished accumulating and now lives comfortably and unhurriedly. Diane Keaton is the face. The clothes: linen in ivory and cream, wide-leg trousers, striped Breton tops, cashmere turtlenecks in winter, straw hats, basket bags, simple sandals. The color palette never departs from sand, cream, sky blue, and washed white."
+    "tags": [
+      "coastal grandmother",
+      "linen",
+      "relaxed",
+      "neutral",
+      "Diane Keaton",
+      "Nancy Meyers"
+    ],
+    "text": "The Coastal Grandmother aesthetic was named by TikToker Lex Nicoleta in 2022 but its visual language is rooted in the films of Nancy Meyers \u2014 Something's Gotta Give (2003), It's Complicated (2009). It references a specific American upper-middle-class coastal leisure life: Nantucket, the Hamptons, Martha's Vineyard. The archetype: a woman who has finished accumulating and now lives comfortably and unhurriedly. Diane Keaton is the face. The clothes: linen in ivory and cream, wide-leg trousers, striped Breton tops, cashmere turtlenecks in winter, straw hats, basket bags, simple sandals. The color palette never departs from sand, cream, sky blue, and washed white."
   },
   {
     "id": "fh_013",
     "aesthetic": "Coastal Grandmother",
-    "era": "2020–present",
+    "era": "2020\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["coastal grandmother", "linen", "natural fiber", "relaxed proportion", "blue white"],
-    "text": "Coastal Grandmother visual codes: linen is the dominant fabric — its wrinkling is intentional, a signal of relaxed ease rather than sartorial neglect. The trouser silhouette is wide and high-waisted but without rigidity — it falls, it isn't structured. Stripes appear: navy-and-white Breton, or cream-and-camel tonal. Knitwear is soft, unstructured, often tied around the shoulders. Shoes are flat: espadrilles, simple leather slides, canvas sneakers. The bag is natural — straw, woven jute, or soft leather in tan. Sunglasses are classic — nothing too fashionable. The overall effect is intentional ease, the look of someone who has dressed without effort, which of course requires considerable effort to achieve."
+    "tags": [
+      "coastal grandmother",
+      "linen",
+      "natural fiber",
+      "relaxed proportion",
+      "blue white"
+    ],
+    "text": "Coastal Grandmother visual codes: linen is the dominant fabric \u2014 its wrinkling is intentional, a signal of relaxed ease rather than sartorial neglect. The trouser silhouette is wide and high-waisted but without rigidity \u2014 it falls, it isn't structured. Stripes appear: navy-and-white Breton, or cream-and-camel tonal. Knitwear is soft, unstructured, often tied around the shoulders. Shoes are flat: espadrilles, simple leather slides, canvas sneakers. The bag is natural \u2014 straw, woven jute, or soft leather in tan. Sunglasses are classic \u2014 nothing too fashionable. The overall effect is intentional ease, the look of someone who has dressed without effort, which of course requires considerable effort to achieve."
   },
   {
     "id": "fh_014",
     "aesthetic": "Y2K Revival",
-    "era": "1999–2005 (original), 2020–present (revival)",
+    "era": "1999\u20132005 (original), 2020\u2013present (revival)",
     "chunk_type": "origin",
-    "tags": ["Y2K", "low-rise", "logo", "metallic", "playful", "paris hilton", "early internet"],
-    "text": "Y2K fashion (1999–2005 original) was defined by technological optimism, pop music dominance (Destiny's Child, Britney Spears), and a specific relationship to the body — midriff-baring, low-rise jeans, fitted everything. Cultural touchstones: Paris Hilton's Juicy Couture tracksuits, Aaliyah's low-rise cargo pants, the Von Dutch trucker hat, Manolo Blahnik's Carrie Bradshaw strappy heels. The palette was metallic (silver, gold, holographic), candy pink, baby blue, and lime green. The logo saturation was extreme — Dior Oblique pattern, LV monogram, Fendi baguette. The revival (2020–present) is driven by Gen Z on TikTok and is mediated through nostalgia — they're wearing what their older siblings or parents wore, filtered through a contemporary irony."
+    "tags": [
+      "Y2K",
+      "low-rise",
+      "logo",
+      "metallic",
+      "playful",
+      "paris hilton",
+      "early internet"
+    ],
+    "text": "Y2K fashion (1999\u20132005 original) was defined by technological optimism, pop music dominance (Destiny's Child, Britney Spears), and a specific relationship to the body \u2014 midriff-baring, low-rise jeans, fitted everything. Cultural touchstones: Paris Hilton's Juicy Couture tracksuits, Aaliyah's low-rise cargo pants, the Von Dutch trucker hat, Manolo Blahnik's Carrie Bradshaw strappy heels. The palette was metallic (silver, gold, holographic), candy pink, baby blue, and lime green. The logo saturation was extreme \u2014 Dior Oblique pattern, LV monogram, Fendi baguette. The revival (2020\u2013present) is driven by Gen Z on TikTok and is mediated through nostalgia \u2014 they're wearing what their older siblings or parents wore, filtered through a contemporary irony."
   },
   {
     "id": "fh_015",
     "aesthetic": "Y2K Revival",
-    "era": "2020–present",
+    "era": "2020\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["Y2K", "low-rise", "micro", "butterfly", "denim", "logo"],
-    "text": "Contemporary Y2K revival codes: ultra-low-rise jeans (rise sits at or below the hip bone), micro minis, butterfly clips, platform shoes (Mary Janes, chunky mules, or platforms with thin straps), baby tees and fitted cropped knits, visible branded waistbands, tinted sunglasses in oval or geometric frames. The palette references the original: candy pinks, lavender, baby blue, butter yellow, white-on-white. The styling logic is intentionally maximalist — multiple accessories, layered necklaces, visible logos treated as decoration. The current revival acknowledges its own artifice; the knowing wink is part of the aesthetic."
+    "tags": [
+      "Y2K",
+      "low-rise",
+      "micro",
+      "butterfly",
+      "denim",
+      "logo"
+    ],
+    "text": "Contemporary Y2K revival codes: ultra-low-rise jeans (rise sits at or below the hip bone), micro minis, butterfly clips, platform shoes (Mary Janes, chunky mules, or platforms with thin straps), baby tees and fitted cropped knits, visible branded waistbands, tinted sunglasses in oval or geometric frames. The palette references the original: candy pinks, lavender, baby blue, butter yellow, white-on-white. The styling logic is intentionally maximalist \u2014 multiple accessories, layered necklaces, visible logos treated as decoration. The current revival acknowledges its own artifice; the knowing wink is part of the aesthetic."
   },
   {
     "id": "fh_016",
     "aesthetic": "Workwear/Utilitarian",
-    "era": "1870–present",
+    "era": "1870\u2013present",
     "chunk_type": "origin",
-    "tags": ["utilitarian", "workwear", "Carhartt", "denim", "canvas", "functional"],
+    "tags": [
+      "utilitarian",
+      "workwear",
+      "Carhartt",
+      "denim",
+      "canvas",
+      "functional"
+    ],
     "text": "American workwear's fashion codification began with Levi Strauss's copper-riveted denim jeans (1873), designed for California gold miners. The utilitarian tradition continued through Carhartt (1889, Detroit, made for railroad workers), Dickies (1922), and Red Wing boots (1905). What enters fashion is specific: the garments are adopted by people who do not need them functionally, and the adoption is cultural appropriation of working-class authenticity. The key pieces: Carhartt WIP jacket (the fashion-adopted version of the Detroit blanket-lined jacket), oversized denim coveralls, work boots (Red Wing Iron Ranger, Timberland 6-inch), carpenter trousers, and chambray shirts. The aesthetic signals durability, anti-fashion, and a certain self-sufficient remove from trend."
   },
   {
     "id": "fh_017",
     "aesthetic": "Workwear/Utilitarian",
-    "era": "2000–present",
+    "era": "2000\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["utilitarian", "pocket detail", "olive", "khaki", "carpenter", "technical"],
-    "text": "Contemporary utilitarian/workwear visual codes: olive drab, khaki, dark navy, washed black, and raw indigo denim. Pocket placement is architectural — visible utility pockets at the thigh on carpenter trousers, chest pockets on work jackets. Fabric is heavy-duty: canvas, waxed cotton, ripstop, selvedge denim. Silhouette is functional-first: room to move, nothing tailored, nothing decorative. The footwear grounds the look — work boots, thick-soled sneakers (New Balance, Salomon XT-6 for the contemporary trail-utility crossover). The anti-fashion statement is made through fabric weight and construction honesty: you can see the stitching, the rivets, the utility zips. Nothing is hidden."
+    "tags": [
+      "utilitarian",
+      "pocket detail",
+      "olive",
+      "khaki",
+      "carpenter",
+      "technical"
+    ],
+    "text": "Contemporary utilitarian/workwear visual codes: olive drab, khaki, dark navy, washed black, and raw indigo denim. Pocket placement is architectural \u2014 visible utility pockets at the thigh on carpenter trousers, chest pockets on work jackets. Fabric is heavy-duty: canvas, waxed cotton, ripstop, selvedge denim. Silhouette is functional-first: room to move, nothing tailored, nothing decorative. The footwear grounds the look \u2014 work boots, thick-soled sneakers (New Balance, Salomon XT-6 for the contemporary trail-utility crossover). The anti-fashion statement is made through fabric weight and construction honesty: you can see the stitching, the rivets, the utility zips. Nothing is hidden."
   },
   {
     "id": "fh_018",
     "aesthetic": "Romantic/Cottagecore",
-    "era": "2018–present",
+    "era": "2018\u2013present",
     "chunk_type": "origin",
-    "tags": ["romantic", "cottagecore", "floral", "lace", "pre-raphaelite", "countryside", "pastoral"],
-    "text": "Cottagecore emerged on Tumblr and Instagram around 2017–2018, accelerated enormously during pandemic lockdowns (2020), when urban flight fantasies and agrarian nostalgia converged. Its visual language draws from the Pre-Raphaelite Brotherhood (Rossetti's women in meadows, flowers in hair, draped fabric), Laura Ashley's 1970s English countryside prints, and the pastoral watercolors of Victorian women's magazines. The aesthetic is explicitly escapist — a fantasy of simpler, nature-connected life — and has a notable queer and neurodivergent community. Cultural references: Taylor Swift's Folklore and Evermore albums, the Cottagecore TikTok community, Lirika Matoshi's strawberry dress (2020)."
+    "tags": [
+      "romantic",
+      "cottagecore",
+      "floral",
+      "lace",
+      "pre-raphaelite",
+      "countryside",
+      "pastoral"
+    ],
+    "text": "Cottagecore emerged on Tumblr and Instagram around 2017\u20132018, accelerated enormously during pandemic lockdowns (2020), when urban flight fantasies and agrarian nostalgia converged. Its visual language draws from the Pre-Raphaelite Brotherhood (Rossetti's women in meadows, flowers in hair, draped fabric), Laura Ashley's 1970s English countryside prints, and the pastoral watercolors of Victorian women's magazines. The aesthetic is explicitly escapist \u2014 a fantasy of simpler, nature-connected life \u2014 and has a notable queer and neurodivergent community. Cultural references: Taylor Swift's Folklore and Evermore albums, the Cottagecore TikTok community, Lirika Matoshi's strawberry dress (2020)."
   },
   {
     "id": "fh_019",
     "aesthetic": "Romantic/Cottagecore",
-    "era": "2018–present",
+    "era": "2018\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["romantic", "floral", "lace", "midi", "puff sleeve", "prairie", "soft"],
-    "text": "Cottagecore visual codes: floral prints (Liberty fabric, vintage rose patterns, wildflower motifs), puff sleeves (either Victorian leg-of-mutton or soft gathered), midi and maxi lengths, lace details (at collar, cuffs, or hemline), pinafore dresses worn over blouses, wicker and woven accessories, Mary Janes, and soft leather boots. The palette is soft: dusty rose, sage green, lavender, cream, warm beige, periwinkle. The fabric language is natural: linen, cotton voile, broderie anglaise, muslin. The silhouette is not structured — it floats. The aesthetic's internal logic is tactile and sensory: the clothes should feel connected to natural materials and hand-made processes."
+    "tags": [
+      "romantic",
+      "floral",
+      "lace",
+      "midi",
+      "puff sleeve",
+      "prairie",
+      "soft"
+    ],
+    "text": "Cottagecore visual codes: floral prints (Liberty fabric, vintage rose patterns, wildflower motifs), puff sleeves (either Victorian leg-of-mutton or soft gathered), midi and maxi lengths, lace details (at collar, cuffs, or hemline), pinafore dresses worn over blouses, wicker and woven accessories, Mary Janes, and soft leather boots. The palette is soft: dusty rose, sage green, lavender, cream, warm beige, periwinkle. The fabric language is natural: linen, cotton voile, broderie anglaise, muslin. The silhouette is not structured \u2014 it floats. The aesthetic's internal logic is tactile and sensory: the clothes should feel connected to natural materials and hand-made processes."
   },
   {
     "id": "fh_020",
     "aesthetic": "Japanese Minimalism",
-    "era": "1981–present",
+    "era": "1981\u2013present",
     "chunk_type": "origin",
-    "tags": ["japanese", "minimalism", "wabi-sabi", "avant-garde", "deconstructed", "Yohji", "CDG"],
-    "text": "Japanese avant-garde fashion's entry into the Western fashion system is precisely dated to 1981: Rei Kawakubo of Comme des Garçons and Yohji Yamamoto showed in Paris that year with collections that the press called 'Hiroshima chic' — deliberately provocative work in asymmetry, deconstruction, wrapping, and black-on-black. The aesthetic philosophy draws from wabi-sabi (beauty in imperfection and transience), ma (the meaning of negative space), and mono no aware (the pathos of things). The clothes were not trying to be beautiful by Western standards; they were trying to make the wearer's relationship with their own body strange and newly considered. This tradition continues through CDG PLAY, Issey Miyake's Pleats Please line, and the entire Japanese streetwear tradition (Kapital, Neighborhood)."
+    "tags": [
+      "japanese",
+      "minimalism",
+      "wabi-sabi",
+      "avant-garde",
+      "deconstructed",
+      "Yohji",
+      "CDG"
+    ],
+    "text": "Japanese avant-garde fashion's entry into the Western fashion system is precisely dated to 1981: Rei Kawakubo of Comme des Gar\u00e7ons and Yohji Yamamoto showed in Paris that year with collections that the press called 'Hiroshima chic' \u2014 deliberately provocative work in asymmetry, deconstruction, wrapping, and black-on-black. The aesthetic philosophy draws from wabi-sabi (beauty in imperfection and transience), ma (the meaning of negative space), and mono no aware (the pathos of things). The clothes were not trying to be beautiful by Western standards; they were trying to make the wearer's relationship with their own body strange and newly considered. This tradition continues through CDG PLAY, Issey Miyake's Pleats Please line, and the entire Japanese streetwear tradition (Kapital, Neighborhood)."
   },
   {
     "id": "fh_021",
     "aesthetic": "Japanese Minimalism",
-    "era": "1981–present",
+    "era": "1981\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["japanese", "black", "draping", "asymmetry", "texture", "unfinished", "proportion"],
-    "text": "Japanese avant-garde visual codes: predominantly black (Yohji's statement 'before colour there is black; black is modest and arrogant at once'), with texture doing the work color would do elsewhere — raw hems, pleating, crinkled fabric, distressed surfaces. Silhouette is body-concealing rather than body-revealing: cocoon shapes, dramatic proportions, wrapped and draped without structure. The garment relationship with the body is conceptual rather than flattering. Fit is intentional but counter-conventional — an arm hole that falls off the shoulder is deliberate, not a mistake. The aesthetic requires understanding that the designer is asking you to think about clothing as form rather than as adornment."
+    "tags": [
+      "japanese",
+      "black",
+      "draping",
+      "asymmetry",
+      "texture",
+      "unfinished",
+      "proportion"
+    ],
+    "text": "Japanese avant-garde visual codes: predominantly black (Yohji's statement 'before colour there is black; black is modest and arrogant at once'), with texture doing the work color would do elsewhere \u2014 raw hems, pleating, crinkled fabric, distressed surfaces. Silhouette is body-concealing rather than body-revealing: cocoon shapes, dramatic proportions, wrapped and draped without structure. The garment relationship with the body is conceptual rather than flattering. Fit is intentional but counter-conventional \u2014 an arm hole that falls off the shoulder is deliberate, not a mistake. The aesthetic requires understanding that the designer is asking you to think about clothing as form rather than as adornment."
   },
   {
     "id": "fh_022",
     "aesthetic": "Old Money Prep",
-    "era": "1950–present",
+    "era": "1950\u2013present",
     "chunk_type": "origin",
-    "tags": ["prep", "ivy league", "old money", "WASP", "polo", "heritage", "Brooks Brothers"],
-    "text": "American preppy style is rooted in the sartorial codes of Northeastern elite universities — Harvard, Yale, Princeton — and the WASP social world of the mid-20th century. Its canonical text is Lisa Birnbach's Official Preppy Handbook (1980), which documented with satirical precision the codes of this world: Brooks Brothers Oxford shirts, Lacoste polo shirts, chinos, Sperry Topsiders, Nantucket reds, Vineyard Vines, whale belt buckles. The underlying logic is 'dress like you're going somewhere that doesn't require you to dress up' — inherited ease, not performed effort. The aesthetic is deeply tied to specific American geographies: Nantucket, Palm Beach, the Connecticut suburbs, the Hamptons."
+    "tags": [
+      "prep",
+      "ivy league",
+      "old money",
+      "WASP",
+      "polo",
+      "heritage",
+      "Brooks Brothers"
+    ],
+    "text": "American preppy style is rooted in the sartorial codes of Northeastern elite universities \u2014 Harvard, Yale, Princeton \u2014 and the WASP social world of the mid-20th century. Its canonical text is Lisa Birnbach's Official Preppy Handbook (1980), which documented with satirical precision the codes of this world: Brooks Brothers Oxford shirts, Lacoste polo shirts, chinos, Sperry Topsiders, Nantucket reds, Vineyard Vines, whale belt buckles. The underlying logic is 'dress like you're going somewhere that doesn't require you to dress up' \u2014 inherited ease, not performed effort. The aesthetic is deeply tied to specific American geographies: Nantucket, Palm Beach, the Connecticut suburbs, the Hamptons."
   },
   {
     "id": "fh_023",
     "aesthetic": "Old Money Prep",
-    "era": "1950–present",
+    "era": "1950\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["prep", "polo", "chino", "argyle", "stripe", "navy", "green", "heritage"],
-    "text": "Prep visual codes: polo shirts (Lacoste, Ralph Lauren) tucked into chinos (stone, khaki, hunter green, navy). Blazers in madras plaid, seersucker, or navy wool — often with brass buttons and a school or club emblem. The belt is woven canvas in bright stripes or novelty print. Footwear: Sperry Topsiders (worn without socks), Gucci loafers, saddle shoes, or Jack Rogers sandals for women. Accessories: pearls (single strand), signet rings, enamel brooches, Lilly Pulitzer printed scarves. The palette extends from quiet neutrals to unexpected pops — the Kelly green, the Nantucket red, the madras plaid — but all in natural fiber. Everything is slightly worn: the point is to look like these clothes have always been there."
+    "tags": [
+      "prep",
+      "polo",
+      "chino",
+      "argyle",
+      "stripe",
+      "navy",
+      "green",
+      "heritage"
+    ],
+    "text": "Prep visual codes: polo shirts (Lacoste, Ralph Lauren) tucked into chinos (stone, khaki, hunter green, navy). Blazers in madras plaid, seersucker, or navy wool \u2014 often with brass buttons and a school or club emblem. The belt is woven canvas in bright stripes or novelty print. Footwear: Sperry Topsiders (worn without socks), Gucci loafers, saddle shoes, or Jack Rogers sandals for women. Accessories: pearls (single strand), signet rings, enamel brooches, Lilly Pulitzer printed scarves. The palette extends from quiet neutrals to unexpected pops \u2014 the Kelly green, the Nantucket red, the madras plaid \u2014 but all in natural fiber. Everything is slightly worn: the point is to look like these clothes have always been there."
   },
   {
     "id": "fh_024",
     "aesthetic": "Normcore",
-    "era": "2013–present",
+    "era": "2013\u2013present",
     "chunk_type": "origin",
-    "tags": ["normcore", "anti-fashion", "basics", "Gap", "Steve Jobs", "intentional mundane"],
-    "text": "Normcore was named in 2013 by trend forecasting group K-HOLE, who described it as 'finding liberation in sameness.' The idea was a deliberate embrace of the genuinely ordinary — Gap jeans, white New Balance 990s, simple crewnecks — as a rejection of both fashion's constant novelty and the ironic hipster aesthetic that had preceded it. The Steve Jobs turtleneck-and-Levi's is the normcore icon. The philosophical proposition was that fitting in perfectly — disappearing into the crowd — was itself an aesthetic choice, as radical in its own way as the most extreme avant-garde. The aesthetic is post-ironic: it is completely sincere about its own mundanity."
+    "tags": [
+      "normcore",
+      "anti-fashion",
+      "basics",
+      "Gap",
+      "Steve Jobs",
+      "intentional mundane"
+    ],
+    "text": "Normcore was named in 2013 by trend forecasting group K-HOLE, who described it as 'finding liberation in sameness.' The idea was a deliberate embrace of the genuinely ordinary \u2014 Gap jeans, white New Balance 990s, simple crewnecks \u2014 as a rejection of both fashion's constant novelty and the ironic hipster aesthetic that had preceded it. The Steve Jobs turtleneck-and-Levi's is the normcore icon. The philosophical proposition was that fitting in perfectly \u2014 disappearing into the crowd \u2014 was itself an aesthetic choice, as radical in its own way as the most extreme avant-garde. The aesthetic is post-ironic: it is completely sincere about its own mundanity."
   },
   {
     "id": "fh_025",
     "aesthetic": "Normcore",
-    "era": "2013–present",
+    "era": "2013\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["normcore", "basics", "white sneaker", "denim", "grey", "unbranded"],
-    "text": "Normcore visual codes: straight-leg Levi's 501s or Gap jeans in medium-wash denim. Simple crewneck sweatshirts or t-shirts in white, grey, or navy. White New Balance 990s or Adidas Gazelles. Fleece jackets (Patagonia, L.L. Bean). Parkas in navy or grey. No visible logos, no statement pieces, nothing unusual. The color palette is genuinely neutral — not a curated neutral but an actually ordinary neutral. The crucial distinction is intentionality: normcore is chosen anonymity, which separates it from just having no interest in clothes. The wearer knows exactly what they're doing. Céline's Phoebe Philo era (2008–2018) gave normcore its high-fashion translation."
+    "tags": [
+      "normcore",
+      "basics",
+      "white sneaker",
+      "denim",
+      "grey",
+      "unbranded"
+    ],
+    "text": "Normcore visual codes: straight-leg Levi's 501s or Gap jeans in medium-wash denim. Simple crewneck sweatshirts or t-shirts in white, grey, or navy. White New Balance 990s or Adidas Gazelles. Fleece jackets (Patagonia, L.L. Bean). Parkas in navy or grey. No visible logos, no statement pieces, nothing unusual. The color palette is genuinely neutral \u2014 not a curated neutral but an actually ordinary neutral. The crucial distinction is intentionality: normcore is chosen anonymity, which separates it from just having no interest in clothes. The wearer knows exactly what they're doing. C\u00e9line's Phoebe Philo era (2008\u20132018) gave normcore its high-fashion translation."
   },
   {
     "id": "fh_026",
     "aesthetic": "Boho/Bohemian",
-    "era": "1960–present",
+    "era": "1960\u2013present",
     "chunk_type": "origin",
-    "tags": ["boho", "70s", "festival", "ethnic", "Coachella", "free people", "layered"],
-    "text": "Bohemian style draws from the historical European bohème — artists, writers, and intellectuals who rejected bourgeois conventions in 19th-century Paris — and was radically transformed by the counterculture of the 1960s and 70s. Janis Joplin's peasant blouses, the Woodstock aesthetic (embroidered jeans, headbands, fringe), and the Californian hippie movement created the visual grammar. The aesthetic was revived commercially in the early 2000s through Sienna Miller's Glastonbury looks, Kate Moss's festival aesthetic, and brands like Free People and Anthropologie. The contemporary version is often called 'festival fashion': maxi dresses, crochet, cowboy boots, turquoise jewelry."
+    "tags": [
+      "boho",
+      "70s",
+      "festival",
+      "ethnic",
+      "Coachella",
+      "free people",
+      "layered"
+    ],
+    "text": "Bohemian style draws from the historical European boh\u00e8me \u2014 artists, writers, and intellectuals who rejected bourgeois conventions in 19th-century Paris \u2014 and was radically transformed by the counterculture of the 1960s and 70s. Janis Joplin's peasant blouses, the Woodstock aesthetic (embroidered jeans, headbands, fringe), and the Californian hippie movement created the visual grammar. The aesthetic was revived commercially in the early 2000s through Sienna Miller's Glastonbury looks, Kate Moss's festival aesthetic, and brands like Free People and Anthropologie. The contemporary version is often called 'festival fashion': maxi dresses, crochet, cowboy boots, turquoise jewelry."
   },
   {
     "id": "fh_027",
     "aesthetic": "Boho/Bohemian",
-    "era": "2000–present",
+    "era": "2000\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["boho", "maxi", "crochet", "earth tones", "fringe", "mixed prints", "layered"],
-    "text": "Contemporary bohemian visual codes: maxi and midi silhouettes in flowing fabric (chiffon, crepe de chine, cotton voile), crochet overlays, fringe on jackets and bags, mixed prints (floral + geometric, or ethnic-inspired combinations), layering of multiple textures. The color palette is warm earth: terracotta, mustard, rust, camel, burnt orange, forest green, with turquoise and coral as accent. Footwear is substantial: ankle boots, cowboy boots, or platform sandals. Jewelry is volume-heavy and mixed-metal: stacked rings, layered necklaces with pendants, chandelier earrings. The aesthetic principle is richness of detail — more is more, but the more must feel organic rather than chaotic."
+    "tags": [
+      "boho",
+      "maxi",
+      "crochet",
+      "earth tones",
+      "fringe",
+      "mixed prints",
+      "layered"
+    ],
+    "text": "Contemporary bohemian visual codes: maxi and midi silhouettes in flowing fabric (chiffon, crepe de chine, cotton voile), crochet overlays, fringe on jackets and bags, mixed prints (floral + geometric, or ethnic-inspired combinations), layering of multiple textures. The color palette is warm earth: terracotta, mustard, rust, camel, burnt orange, forest green, with turquoise and coral as accent. Footwear is substantial: ankle boots, cowboy boots, or platform sandals. Jewelry is volume-heavy and mixed-metal: stacked rings, layered necklaces with pendants, chandelier earrings. The aesthetic principle is richness of detail \u2014 more is more, but the more must feel organic rather than chaotic."
   },
   {
     "id": "fh_028",
     "aesthetic": "Scandinavian Minimalism",
-    "era": "2010–present",
+    "era": "2010\u2013present",
     "chunk_type": "origin",
-    "tags": ["scandinavian", "scandi", "functional minimalism", "neutral", "sustainable", "hygge"],
-    "text": "Scandinavian fashion minimalism is distinct from 90s American minimalism: it is functional rather than ideological, shaped by the design philosophy of usefulness, sustainability, and the social-democratic value of not standing out. The relevant brands: Acne Studios, COS (H&M Group's design-led line), Ganni, Arket, and a range of independent Danish designers. The Swedish concept of lagom — 'just right,' the middle path — is the underlying cultural logic. The aesthetic is also shaped by climate: the clothes must actually work for cold, grey winters. The Scandinavian approach to color is either strictly neutral (ecru, oat, charcoal, black) or unexpectedly bold but always in one disciplined accent."
+    "tags": [
+      "scandinavian",
+      "scandi",
+      "functional minimalism",
+      "neutral",
+      "sustainable",
+      "hygge"
+    ],
+    "text": "Scandinavian fashion minimalism is distinct from 90s American minimalism: it is functional rather than ideological, shaped by the design philosophy of usefulness, sustainability, and the social-democratic value of not standing out. The relevant brands: Acne Studios, COS (H&M Group's design-led line), Ganni, Arket, and a range of independent Danish designers. The Swedish concept of lagom \u2014 'just right,' the middle path \u2014 is the underlying cultural logic. The aesthetic is also shaped by climate: the clothes must actually work for cold, grey winters. The Scandinavian approach to color is either strictly neutral (ecru, oat, charcoal, black) or unexpectedly bold but always in one disciplined accent."
   },
   {
     "id": "fh_029",
     "aesthetic": "Scandinavian Minimalism",
-    "era": "2010–present",
+    "era": "2010\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["scandi", "clean line", "monochrome", "quality basics", "functional"],
-    "text": "Scandinavian minimalism visual codes: clean silhouettes with architectural interest — a seam in an unexpected place, a collar that stands, a sleeve that tapers unusually. The palette is reliably neutral with one considered accent: the classic Scandi outfit is oat-cream trousers + ecru sweater + one statement bag in a terracotta or cobalt. Fabric is quality but not ostentatious — organic cotton, quality merino, technical fabric that functions. The layering is considered: everything has a logic. Outerwear is often the statement piece — a well-cut coat is the most visible investment. Shoes are simple and quality: clean white trainers, leather loafers, ankle boots. Nothing is precious or fussy."
+    "tags": [
+      "scandi",
+      "clean line",
+      "monochrome",
+      "quality basics",
+      "functional"
+    ],
+    "text": "Scandinavian minimalism visual codes: clean silhouettes with architectural interest \u2014 a seam in an unexpected place, a collar that stands, a sleeve that tapers unusually. The palette is reliably neutral with one considered accent: the classic Scandi outfit is oat-cream trousers + ecru sweater + one statement bag in a terracotta or cobalt. Fabric is quality but not ostentatious \u2014 organic cotton, quality merino, technical fabric that functions. The layering is considered: everything has a logic. Outerwear is often the statement piece \u2014 a well-cut coat is the most visible investment. Shoes are simple and quality: clean white trainers, leather loafers, ankle boots. Nothing is precious or fussy."
   },
   {
     "id": "fh_030",
     "aesthetic": "Androgynous/Gender-Fluid",
-    "era": "1970–present",
+    "era": "1970\u2013present",
     "chunk_type": "origin",
-    "tags": ["androgynous", "gender-fluid", "David Bowie", "Yves Saint Laurent", "non-binary", "tailoring"],
-    "text": "Androgynous fashion has a long history: Coco Chanel borrowed men's jersey and wool in the 1920s; Marlene Dietrich wore tuxedo suits on film in 1930; Yves Saint Laurent put women in Le Smoking (the tuxedo suit for women) in 1966 and photographed Helmut Newton's mannish women throughout the 70s. David Bowie's Ziggy Stardust (1972) collapsed gender categories through performance and costume. The contemporary gender-fluid moment (2015–present) is more explicitly political — driven by non-binary identity visibility — but draws from the same tradition: structured tailoring worn by women, softer cuts adopted by men, the deliberate confusion of gendered signifiers."
+    "tags": [
+      "androgynous",
+      "gender-fluid",
+      "David Bowie",
+      "Yves Saint Laurent",
+      "non-binary",
+      "tailoring"
+    ],
+    "text": "Androgynous fashion has a long history: Coco Chanel borrowed men's jersey and wool in the 1920s; Marlene Dietrich wore tuxedo suits on film in 1930; Yves Saint Laurent put women in Le Smoking (the tuxedo suit for women) in 1966 and photographed Helmut Newton's mannish women throughout the 70s. David Bowie's Ziggy Stardust (1972) collapsed gender categories through performance and costume. The contemporary gender-fluid moment (2015\u2013present) is more explicitly political \u2014 driven by non-binary identity visibility \u2014 but draws from the same tradition: structured tailoring worn by women, softer cuts adopted by men, the deliberate confusion of gendered signifiers."
   },
   {
     "id": "fh_031",
     "aesthetic": "Androgynous/Gender-Fluid",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["androgynous", "oversized suit", "tailoring", "gender-neutral", "minimalist"],
-    "text": "Contemporary androgynous visual codes: oversized tailored suits in neutral or pattern (houndstooth, chalk stripe, plaid) worn with no shirt underneath or with a simple tee. Loafers or lace-up Oxford shoes as the gender-neutral footwear standard. Jewelry minimal and not gender-signifying — a signet ring, a small stud, a simple chain. Hair styling is often the clearest gender-play signal. The cut of the suit is the critical decision: structured at the shoulder but long in the body, or cropped and boxy, or double-breasted with high-waisted wide trousers. The aesthetic requires confidence to wear — it succeeds when the wearer is clearly making a choice, not defaulting."
+    "tags": [
+      "androgynous",
+      "oversized suit",
+      "tailoring",
+      "gender-neutral",
+      "minimalist"
+    ],
+    "text": "Contemporary androgynous visual codes: oversized tailored suits in neutral or pattern (houndstooth, chalk stripe, plaid) worn with no shirt underneath or with a simple tee. Loafers or lace-up Oxford shoes as the gender-neutral footwear standard. Jewelry minimal and not gender-signifying \u2014 a signet ring, a small stud, a simple chain. Hair styling is often the clearest gender-play signal. The cut of the suit is the critical decision: structured at the shoulder but long in the body, or cropped and boxy, or double-breasted with high-waisted wide trousers. The aesthetic requires confidence to wear \u2014 it succeeds when the wearer is clearly making a choice, not defaulting."
   },
   {
     "id": "fh_032",
     "aesthetic": "Gorpcore",
-    "era": "2017–present",
+    "era": "2017\u2013present",
     "chunk_type": "origin",
-    "tags": ["gorpcore", "outdoors", "technical", "Patagonia", "arc'teryx", "hiking", "functional luxury"],
-    "text": "Gorpcore (from 'GORP' — Good Old Raisins and Peanuts, trail mix) is the fashion adoption of outdoor technical gear. It began with the normcore movement's embrace of Patagonia fleeces, but accelerated significantly when high fashion began working with technical outdoor brands: Supreme × The North Face (2015–present), Gucci's collaboration with The North Face (2021), and Balenciaga's hiking boot iterations. The deeper root is the gentrification of outdoor culture — when tech workers in San Francisco made Patagonia vests office-appropriate, and when the pandemic moved city dwellers into parks and trail systems. Arc'teryx, Salomon, and Merrell moved from specialty outdoor retail to fashion boutiques."
+    "tags": [
+      "gorpcore",
+      "outdoors",
+      "technical",
+      "Patagonia",
+      "arc'teryx",
+      "hiking",
+      "functional luxury"
+    ],
+    "text": "Gorpcore (from 'GORP' \u2014 Good Old Raisins and Peanuts, trail mix) is the fashion adoption of outdoor technical gear. It began with the normcore movement's embrace of Patagonia fleeces, but accelerated significantly when high fashion began working with technical outdoor brands: Supreme \u00d7 The North Face (2015\u2013present), Gucci's collaboration with The North Face (2021), and Balenciaga's hiking boot iterations. The deeper root is the gentrification of outdoor culture \u2014 when tech workers in San Francisco made Patagonia vests office-appropriate, and when the pandemic moved city dwellers into parks and trail systems. Arc'teryx, Salomon, and Merrell moved from specialty outdoor retail to fashion boutiques."
   },
   {
     "id": "fh_033",
     "aesthetic": "Gorpcore",
-    "era": "2017–present",
+    "era": "2017\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["gorpcore", "technical fabric", "fleece", "trail shoe", "functional", "layer"],
-    "text": "Gorpcore visual codes: Gore-Tex shells and softshell jackets (Arc'teryx Atom, Patagonia Nano Puff), technical fleece in solid or pattern (Polartec fleece), trail running shoes or hiking boots (Salomon XT-6, Merrell Moab, Adidas Terrex), technical trousers with articulated knees and gussets, base-layer thermal tops worn as outerwear. The palette is functional: olive, khaki, navy, slate blue, and — in the high-fashion version — unexpected color pops from the original outdoor gear language (Arc'teryx's volatile orange, Patagonia's recycled-fleece variegated prints). The styling principle is layering systems rather than outfits: base, mid-layer, shell, as if the wearer might actually face changing weather conditions."
+    "tags": [
+      "gorpcore",
+      "technical fabric",
+      "fleece",
+      "trail shoe",
+      "functional",
+      "layer"
+    ],
+    "text": "Gorpcore visual codes: Gore-Tex shells and softshell jackets (Arc'teryx Atom, Patagonia Nano Puff), technical fleece in solid or pattern (Polartec fleece), trail running shoes or hiking boots (Salomon XT-6, Merrell Moab, Adidas Terrex), technical trousers with articulated knees and gussets, base-layer thermal tops worn as outerwear. The palette is functional: olive, khaki, navy, slate blue, and \u2014 in the high-fashion version \u2014 unexpected color pops from the original outdoor gear language (Arc'teryx's volatile orange, Patagonia's recycled-fleece variegated prints). The styling principle is layering systems rather than outfits: base, mid-layer, shell, as if the wearer might actually face changing weather conditions."
   },
   {
     "id": "fh_034",
     "aesthetic": "Contemporary Luxury Sportswear",
-    "era": "2012–present",
+    "era": "2012\u2013present",
     "chunk_type": "origin",
-    "tags": ["athleisure", "luxury sportswear", "Lululemon", "Sporty Spice", "gym-to-street"],
-    "text": "The luxury sportswear / athleisure aesthetic emerged from the convergence of two forces: the rise of wellness culture (SoulCycle, CrossFit, Pilates) as middle-class identity, and technical sportswear brands investing in design quality beyond function. The pivotal moment was Lululemon's expansion beyond yoga studios (2010–2015) and Nike's collaborations with Sacai, Comme des Garçons, and Virgil Abloh making performance gear into collector pieces. The resulting aesthetic blurs the boundary between activewear and casual dress: leggings as trousers, hoodies as outerwear, sneakers as the complete shoe wardrobe. At its luxury end: Loro Piana tracksuits, Brunello Cucinelli cashmere joggers, Alo Yoga's studio-to-street proposition."
+    "tags": [
+      "athleisure",
+      "luxury sportswear",
+      "Lululemon",
+      "Sporty Spice",
+      "gym-to-street"
+    ],
+    "text": "The luxury sportswear / athleisure aesthetic emerged from the convergence of two forces: the rise of wellness culture (SoulCycle, CrossFit, Pilates) as middle-class identity, and technical sportswear brands investing in design quality beyond function. The pivotal moment was Lululemon's expansion beyond yoga studios (2010\u20132015) and Nike's collaborations with Sacai, Comme des Gar\u00e7ons, and Virgil Abloh making performance gear into collector pieces. The resulting aesthetic blurs the boundary between activewear and casual dress: leggings as trousers, hoodies as outerwear, sneakers as the complete shoe wardrobe. At its luxury end: Loro Piana tracksuits, Brunello Cucinelli cashmere joggers, Alo Yoga's studio-to-street proposition."
   },
   {
     "id": "fh_035",
     "aesthetic": "Contemporary Luxury Sportswear",
-    "era": "2012–present",
+    "era": "2012\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["athleisure", "legging", "sports bra", "sneaker", "technical", "sleek"],
-    "text": "Luxury sportswear visual codes: high-waisted leggings in technical fabric (Lululemon Align, Alo Yoga Airlift) paired with a crop top or fitted sports bra and an oversized hoodie or zip-up. The sneaker is always clean and considered — New Balance 550, Adidas Gazelle, Nike Air Force 1 in white, Asics Gel-Nimbus in collaborative colorways. The bag is practical but elevated: Lululemon Everywhere belt bag, Dagne Dover tote, or a gym duffel in leather or technical fabric. The palette is restrained: black, white, stone, deep olive, dusty rose. The signaling logic is body investment — the clothes are constructed to show the work done at the gym while also functioning beautifully outside it."
+    "tags": [
+      "athleisure",
+      "legging",
+      "sports bra",
+      "sneaker",
+      "technical",
+      "sleek"
+    ],
+    "text": "Luxury sportswear visual codes: high-waisted leggings in technical fabric (Lululemon Align, Alo Yoga Airlift) paired with a crop top or fitted sports bra and an oversized hoodie or zip-up. The sneaker is always clean and considered \u2014 New Balance 550, Adidas Gazelle, Nike Air Force 1 in white, Asics Gel-Nimbus in collaborative colorways. The bag is practical but elevated: Lululemon Everywhere belt bag, Dagne Dover tote, or a gym duffel in leather or technical fabric. The palette is restrained: black, white, stone, deep olive, dusty rose. The signaling logic is body investment \u2014 the clothes are constructed to show the work done at the gym while also functioning beautifully outside it."
   },
   {
     "id": "fh_036",
     "aesthetic": "Maximalism/Camp",
-    "era": "1960–present",
+    "era": "1960\u2013present",
     "chunk_type": "origin",
-    "tags": ["maximalism", "camp", "Gucci", "Alessandro Michele", "More is more", "baroque", "excess"],
-    "text": "Fashion maximalism's contemporary form owes most to Alessandro Michele's Gucci (2015–2022): the deliberate accumulation of references — Renaissance portraiture, Japanese aesthetics, 70s rock, Soviet patches, botanical illustration — into a single look that was more essay than outfit. The philosophical precedent is Susan Sontag's Notes on Camp (1964): camp as sensibility that sees everything in quotation marks, that loves things as things, that has a tender relationship to excess. Maximalism is not uncontrolled — it is highly controlled excess, each element chosen, the whole exceeding the sum of its parts. The failure mode is clutter without intention; the success mode is a visual argument made in clothes."
+    "tags": [
+      "maximalism",
+      "camp",
+      "Gucci",
+      "Alessandro Michele",
+      "More is more",
+      "baroque",
+      "excess"
+    ],
+    "text": "Fashion maximalism's contemporary form owes most to Alessandro Michele's Gucci (2015\u20132022): the deliberate accumulation of references \u2014 Renaissance portraiture, Japanese aesthetics, 70s rock, Soviet patches, botanical illustration \u2014 into a single look that was more essay than outfit. The philosophical precedent is Susan Sontag's Notes on Camp (1964): camp as sensibility that sees everything in quotation marks, that loves things as things, that has a tender relationship to excess. Maximalism is not uncontrolled \u2014 it is highly controlled excess, each element chosen, the whole exceeding the sum of its parts. The failure mode is clutter without intention; the success mode is a visual argument made in clothes."
   },
   {
     "id": "fh_037",
     "aesthetic": "Maximalism/Camp",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["maximalism", "pattern mixing", "print", "embellishment", "color", "layering"],
-    "text": "Maximalist visual codes: pattern mixing as a skill — the ability to combine three or more prints (floral + plaid + abstract) in a single outfit that reads as intentional. Layering of garment types that don't conventionally belong together (a floral dress over trousers, a suit jacket over a printed shirt over a turtleneck). Embellishment: sequins, beading, embroidery, appliqué — treated not as occasion-wear but as everyday. Color saturation is high — nothing is muted unless muted is the point. Jewelry is multiple and mismatched. The styling principle is controlled abundance: everything should be present by design, nothing should appear to have arrived by accident. The look should have an internal logic that rewards looking."
+    "tags": [
+      "maximalism",
+      "pattern mixing",
+      "print",
+      "embellishment",
+      "color",
+      "layering"
+    ],
+    "text": "Maximalist visual codes: pattern mixing as a skill \u2014 the ability to combine three or more prints (floral + plaid + abstract) in a single outfit that reads as intentional. Layering of garment types that don't conventionally belong together (a floral dress over trousers, a suit jacket over a printed shirt over a turtleneck). Embellishment: sequins, beading, embroidery, appliqu\u00e9 \u2014 treated not as occasion-wear but as everyday. Color saturation is high \u2014 nothing is muted unless muted is the point. Jewelry is multiple and mismatched. The styling principle is controlled abundance: everything should be present by design, nothing should appear to have arrived by accident. The look should have an internal logic that rewards looking."
   },
   {
     "id": "fh_038",
     "aesthetic": "Mob Wife",
     "era": "2024",
     "chunk_type": "origin",
-    "tags": ["mob wife", "fur", "gold", "rich texture", "Italian-American", "Sopranos", "sensuality"],
-    "text": "The Mob Wife aesthetic emerged as a TikTok trend in late 2023/early 2024, positioned explicitly as a reaction against the 'quiet luxury' aesthetic that had dominated 2022–2023. Where quiet luxury said 'I don't need to show you,' mob wife aesthetic says 'I want you to see exactly what I have.' The cultural references are specific: Carmela Soprano from The Sopranos, Teresa Giudice from Real Housewives of New Jersey, the Italian-American women of the tristate area in the 1990s. Fur coats (real or faux), gold jewelry (chains, hoops, bangles in volume), animal prints, deep jewel tones (burgundy, emerald, deep purple), and fitted silhouettes that emphasize the body."
+    "tags": [
+      "mob wife",
+      "fur",
+      "gold",
+      "rich texture",
+      "Italian-American",
+      "Sopranos",
+      "sensuality"
+    ],
+    "text": "The Mob Wife aesthetic emerged as a TikTok trend in late 2023/early 2024, positioned explicitly as a reaction against the 'quiet luxury' aesthetic that had dominated 2022\u20132023. Where quiet luxury said 'I don't need to show you,' mob wife aesthetic says 'I want you to see exactly what I have.' The cultural references are specific: Carmela Soprano from The Sopranos, Teresa Giudice from Real Housewives of New Jersey, the Italian-American women of the tristate area in the 1990s. Fur coats (real or faux), gold jewelry (chains, hoops, bangles in volume), animal prints, deep jewel tones (burgundy, emerald, deep purple), and fitted silhouettes that emphasize the body."
   },
   {
     "id": "fh_039",
     "aesthetic": "Mob Wife",
     "era": "2024",
     "chunk_type": "visual_codes",
-    "tags": ["mob wife", "fur", "animal print", "gold", "body-conscious", "jewel tone"],
-    "text": "Mob Wife visual codes: oversized faux or real fur coat (full-length preferred) in animal print or solid jewel tone. Underneath: a body-conscious dress or fitted trousers with a deep-neck blouse. Gold jewelry in volume — multiple chains of different lengths, large hoop earrings, stacked rings, layered bracelets. The heel is significant: pointed-toe stiletto or block-heel knee boot. Hair is voluminous. Makeup is fully done — red lip or deep berry, defined brow. The palette is unambiguously rich: leopard, snakeskin, burgundy, forest green, deep purple, black. The aesthetic principle is unabashed display of material richness. There is no irony; the look is sincere in its desire to be seen and admired."
+    "tags": [
+      "mob wife",
+      "fur",
+      "animal print",
+      "gold",
+      "body-conscious",
+      "jewel tone"
+    ],
+    "text": "Mob Wife visual codes: oversized faux or real fur coat (full-length preferred) in animal print or solid jewel tone. Underneath: a body-conscious dress or fitted trousers with a deep-neck blouse. Gold jewelry in volume \u2014 multiple chains of different lengths, large hoop earrings, stacked rings, layered bracelets. The heel is significant: pointed-toe stiletto or block-heel knee boot. Hair is voluminous. Makeup is fully done \u2014 red lip or deep berry, defined brow. The palette is unambiguously rich: leopard, snakeskin, burgundy, forest green, deep purple, black. The aesthetic principle is unabashed display of material richness. There is no irony; the look is sincere in its desire to be seen and admired."
   },
   {
     "id": "fh_040",
     "aesthetic": "Business Casual Evolution",
-    "era": "1990–present",
+    "era": "1990\u2013present",
     "chunk_type": "origin",
-    "tags": ["business casual", "corporate", "smart casual", "blazer", "trousers", "office"],
-    "text": "Business casual as a dress code emerged in American corporate culture in the 1990s as Silicon Valley tech companies instituted casual Fridays that eventually became casual all-week. The dress code sits between formal business wear and casual dress: no tie required, but also not jeans (until tech culture normalized denim). The category is defined by what it excludes rather than what it includes, creating enormous uncertainty. Its contemporary evolution has been shaped by remote work (2020–2022) and the resulting blurring of professional/casual — the Zoom-top phenomenon (looking professional from the shoulders up). Current smart casual in fashion-forward workplaces: quality trousers, a considered shirt or knitwear, and a clean shoe."
+    "tags": [
+      "business casual",
+      "corporate",
+      "smart casual",
+      "blazer",
+      "trousers",
+      "office"
+    ],
+    "text": "Business casual as a dress code emerged in American corporate culture in the 1990s as Silicon Valley tech companies instituted casual Fridays that eventually became casual all-week. The dress code sits between formal business wear and casual dress: no tie required, but also not jeans (until tech culture normalized denim). The category is defined by what it excludes rather than what it includes, creating enormous uncertainty. Its contemporary evolution has been shaped by remote work (2020\u20132022) and the resulting blurring of professional/casual \u2014 the Zoom-top phenomenon (looking professional from the shoulders up). Current smart casual in fashion-forward workplaces: quality trousers, a considered shirt or knitwear, and a clean shoe."
   },
   {
     "id": "fh_041",
     "aesthetic": "Business Casual Evolution",
-    "era": "2020–present",
+    "era": "2020\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["business casual", "blazer", "tailored", "loafer", "smart casual"],
-    "text": "Contemporary business casual visual codes (post-pandemic version): tailored trousers in quality fabric (wool blend, technical stretch) paired with an untucked but fitted knit or button-down shirt. The blazer is present but unstructured — a soft-shoulder Italian cut rather than a stiff British structure. Footwear is the clearest signal: loafers (leather, structured, possibly with a slight heel) position the look as 'business;' white trainers push it toward 'creative industry casual.' The bag is structured: a quality tote or briefcase-style bag in leather or technical fabric. Color is restrained but not entirely neutral — a sage green trouser or a terracotta shirt reads as considered rather than risky."
+    "tags": [
+      "business casual",
+      "blazer",
+      "tailored",
+      "loafer",
+      "smart casual"
+    ],
+    "text": "Contemporary business casual visual codes (post-pandemic version): tailored trousers in quality fabric (wool blend, technical stretch) paired with an untucked but fitted knit or button-down shirt. The blazer is present but unstructured \u2014 a soft-shoulder Italian cut rather than a stiff British structure. Footwear is the clearest signal: loafers (leather, structured, possibly with a slight heel) position the look as 'business;' white trainers push it toward 'creative industry casual.' The bag is structured: a quality tote or briefcase-style bag in leather or technical fabric. Color is restrained but not entirely neutral \u2014 a sage green trouser or a terracotta shirt reads as considered rather than risky."
   },
   {
     "id": "fh_042",
     "aesthetic": "Parisian Style",
-    "era": "1960–present",
+    "era": "1960\u2013present",
     "chunk_type": "origin",
-    "tags": ["parisian", "effortless chic", "french girl", "navy", "stripe", "understated", "inné"],
-    "text": "The myth of Parisian style is as important as the reality: the idea of the French woman who looks effortlessly chic is a cultural product that has sold enormous quantities of French fashion. The real visual codes were established in the 1960s by Brigitte Bardot and the nouvelle vague aesthetic: cropped cigarette trousers, ballet flats, Breton stripes, a well-knotted silk scarf, minimal makeup except a defined lip. The underlying philosophy is 'je ne sais quoi' — the appearance of not having tried, which paradoxically requires considerable taste and self-knowledge to achieve. The contemporary version is associated with brands like A.P.C., Isabel Marant, Rouje, and Jacquemus — understated but with one clear fashion statement."
+    "tags": [
+      "parisian",
+      "effortless chic",
+      "french girl",
+      "navy",
+      "stripe",
+      "understated",
+      "inn\u00e9"
+    ],
+    "text": "The myth of Parisian style is as important as the reality: the idea of the French woman who looks effortlessly chic is a cultural product that has sold enormous quantities of French fashion. The real visual codes were established in the 1960s by Brigitte Bardot and the nouvelle vague aesthetic: cropped cigarette trousers, ballet flats, Breton stripes, a well-knotted silk scarf, minimal makeup except a defined lip. The underlying philosophy is 'je ne sais quoi' \u2014 the appearance of not having tried, which paradoxically requires considerable taste and self-knowledge to achieve. The contemporary version is associated with brands like A.P.C., Isabel Marant, Rouje, and Jacquemus \u2014 understated but with one clear fashion statement."
   },
   {
     "id": "fh_043",
     "aesthetic": "Parisian Style",
-    "era": "1960–present",
+    "era": "1960\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["parisian", "breton stripe", "ballet flat", "cigarette trouser", "effortless", "red lip"],
-    "text": "Parisian style visual codes: cigarette trousers (tapered, ankle-length) in black, navy, or ecru, paired with a well-tucked blouse or a slightly oversized shirt. The Breton striped top (navy and white, or Sézane's many iterations) as a wardrobe anchor. Ballet flats or simple leather loafers. A leather jacket or a classic trench coat. One statement piece per outfit — a silk scarf tied at the neck, a significant ring, a good bag. The color palette is navy, black, white, Breton stripe, with exactly one warm color accent. The cardinal rule: nothing too new-looking, nothing too matched, always the suggestion that you got dressed quickly and it just happened to be perfect."
+    "tags": [
+      "parisian",
+      "breton stripe",
+      "ballet flat",
+      "cigarette trouser",
+      "effortless",
+      "red lip"
+    ],
+    "text": "Parisian style visual codes: cigarette trousers (tapered, ankle-length) in black, navy, or ecru, paired with a well-tucked blouse or a slightly oversized shirt. The Breton striped top (navy and white, or S\u00e9zane's many iterations) as a wardrobe anchor. Ballet flats or simple leather loafers. A leather jacket or a classic trench coat. One statement piece per outfit \u2014 a silk scarf tied at the neck, a significant ring, a good bag. The color palette is navy, black, white, Breton stripe, with exactly one warm color accent. The cardinal rule: nothing too new-looking, nothing too matched, always the suggestion that you got dressed quickly and it just happened to be perfect."
   },
   {
     "id": "fh_044",
     "aesthetic": "Bauhaus/Architectural",
-    "era": "1919–present",
+    "era": "1919\u2013present",
     "chunk_type": "origin",
-    "tags": ["bauhaus", "geometric", "primary color", "form follows function", "modernist", "structural"],
-    "text": "The Bauhaus school (Dessau, 1919–1933) generated a design philosophy — form follows function, geometric clarity, primary color palette — that has influenced fashion in recurring waves. The fashion translation: geometric cut as decoration, primary color blocking (the primary red/blue/yellow palette), surface minimalism in service of silhouette maximalism. Designers who draw from this tradition: Paco Rabanne (geometric chainmail), Mary Quant (the mod mini as Bauhaus applied to fashion), Rudi Gernreich, and in the contemporary moment, Peter Do and Christoph Rumpf. The Bauhaus sensibility is analytical — it treats clothing as a designed object first and a garment second."
+    "tags": [
+      "bauhaus",
+      "geometric",
+      "primary color",
+      "form follows function",
+      "modernist",
+      "structural"
+    ],
+    "text": "The Bauhaus school (Dessau, 1919\u20131933) generated a design philosophy \u2014 form follows function, geometric clarity, primary color palette \u2014 that has influenced fashion in recurring waves. The fashion translation: geometric cut as decoration, primary color blocking (the primary red/blue/yellow palette), surface minimalism in service of silhouette maximalism. Designers who draw from this tradition: Paco Rabanne (geometric chainmail), Mary Quant (the mod mini as Bauhaus applied to fashion), Rudi Gernreich, and in the contemporary moment, Peter Do and Christoph Rumpf. The Bauhaus sensibility is analytical \u2014 it treats clothing as a designed object first and a garment second."
   },
   {
     "id": "fh_045",
     "aesthetic": "Bauhaus/Architectural",
-    "era": "1919–present",
+    "era": "1919\u2013present",
     "chunk_type": "visual_codes",
-    "tags": ["bauhaus", "color block", "geometric", "structured", "primary", "modern"],
-    "text": "Architectural/Bauhaus fashion visual codes: strong geometric color blocking — two or three colors separated by seam lines rather than surface decoration. The silhouette is the design: boxy, A-line, or cylindrical shapes that create form independently of the body inside them. Primary colors (Bauhaus red, cobalt, yellow) appear cleanly, unmixed. When surface decoration exists, it is geometric — stripe, grid, circle — not organic. Fabric is structured: heavy cotton, technical fabric, or stiff wool that holds the shape. Footwear is geometric too: block-heel shoes, simple boots with clean lines, nothing delicate. The look reads as thought through and resolved."
+    "tags": [
+      "bauhaus",
+      "color block",
+      "geometric",
+      "structured",
+      "primary",
+      "modern"
+    ],
+    "text": "Architectural/Bauhaus fashion visual codes: strong geometric color blocking \u2014 two or three colors separated by seam lines rather than surface decoration. The silhouette is the design: boxy, A-line, or cylindrical shapes that create form independently of the body inside them. Primary colors (Bauhaus red, cobalt, yellow) appear cleanly, unmixed. When surface decoration exists, it is geometric \u2014 stripe, grid, circle \u2014 not organic. Fabric is structured: heavy cotton, technical fabric, or stiff wool that holds the shape. Footwear is geometric too: block-heel shoes, simple boots with clean lines, nothing delicate. The look reads as thought through and resolved."
   },
   {
     "id": "fh_046",
     "aesthetic": "90s Minimalism",
-    "era": "1990–1999",
+    "era": "1990\u20131999",
     "chunk_type": "key_figures",
-    "tags": ["minimalism", "Calvin Klein", "Helmut Lang", "Jil Sander", "Donna Karan"],
-    "text": "The key designers of 90s minimalism and their specific signatures: Calvin Klein — the slip dress, the underwear-as-outerwear proposition, the photography of Herb Ritts and Bruce Weber that made understatement look like desire. Helmut Lang — deconstructed tailoring, transparent fabrics, gender-neutral silhouettes, the first major designer to show via CD-ROM rather than runway. Jil Sander — precision tailoring, complete rejection of surface decoration, the idea that a perfectly cut coat was the highest luxury. Donna Karan — the 'Seven Easy Pieces' concept (1985), the bodysuit as foundation, the wrap skirt, dressing as layering a second skin. Each pushed minimalism from different conceptual positions."
+    "tags": [
+      "minimalism",
+      "Calvin Klein",
+      "Helmut Lang",
+      "Jil Sander",
+      "Donna Karan"
+    ],
+    "text": "The key designers of 90s minimalism and their specific signatures: Calvin Klein \u2014 the slip dress, the underwear-as-outerwear proposition, the photography of Herb Ritts and Bruce Weber that made understatement look like desire. Helmut Lang \u2014 deconstructed tailoring, transparent fabrics, gender-neutral silhouettes, the first major designer to show via CD-ROM rather than runway. Jil Sander \u2014 precision tailoring, complete rejection of surface decoration, the idea that a perfectly cut coat was the highest luxury. Donna Karan \u2014 the 'Seven Easy Pieces' concept (1985), the bodysuit as foundation, the wrap skirt, dressing as layering a second skin. Each pushed minimalism from different conceptual positions."
   },
   {
     "id": "fh_047",
     "aesthetic": "Quiet Luxury",
-    "era": "2022–present",
+    "era": "2022\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["quiet luxury", "succession", "Shiv Roy", "The Row", "anti-conspicuous"],
-    "text": "The explicit cultural trigger for Quiet Luxury's naming and mainstream visibility was HBO's Succession (2018–2023) and specifically costume designer Michelle Crowe's work on Shiv Roy's wardrobe. Shiv's clothes were deliberately anti-conspicuous: The Row blazers, Loro Piana cashmere, Hermès scarves used as belts — never a logo visible, always a fabric quality detectable only by those who knew. The Succession effect was that people began learning to read the codes: understanding that a cashmere turtleneck in oyster from Brunello Cucinelli costs more than a logo-covered Gucci belt, and that knowing this was the point. The aesthetic is inseparable from this metacognitive dimension — knowing what to look for, and looking."
+    "tags": [
+      "quiet luxury",
+      "succession",
+      "Shiv Roy",
+      "The Row",
+      "anti-conspicuous"
+    ],
+    "text": "The explicit cultural trigger for Quiet Luxury's naming and mainstream visibility was HBO's Succession (2018\u20132023) and specifically costume designer Michelle Crowe's work on Shiv Roy's wardrobe. Shiv's clothes were deliberately anti-conspicuous: The Row blazers, Loro Piana cashmere, Herm\u00e8s scarves used as belts \u2014 never a logo visible, always a fabric quality detectable only by those who knew. The Succession effect was that people began learning to read the codes: understanding that a cashmere turtleneck in oyster from Brunello Cucinelli costs more than a logo-covered Gucci belt, and that knowing this was the point. The aesthetic is inseparable from this metacognitive dimension \u2014 knowing what to look for, and looking."
   },
   {
     "id": "fh_048",
     "aesthetic": "Streetwear",
-    "era": "2020–present",
+    "era": "2020\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["streetwear", "post-hype", "gorpcore crossover", "functional", "anti-hypebeast"],
-    "text": "Post-2020 streetwear has undergone a significant reorientation away from hype-driven scarcity and logo saturation toward what analysts call 'post-hypebeast' aesthetics. The drop model has been satirized and exhausted. The current moment in streetwear is characterized by: the gorpcore crossover (technical outdoor gear as street), the Japanese streetwear influence (Kapital, Engineered Garments, Needles — reconstruction and craft), the vintage turn (buying dead-stock rather than new), and the anti-logo response (removing visible branding, wearing the inside-out). The cultural energy has moved from the big brands (Supreme) toward smaller, more artisanal labels and archive hunting."
+    "tags": [
+      "streetwear",
+      "post-hype",
+      "gorpcore crossover",
+      "functional",
+      "anti-hypebeast"
+    ],
+    "text": "Post-2020 streetwear has undergone a significant reorientation away from hype-driven scarcity and logo saturation toward what analysts call 'post-hypebeast' aesthetics. The drop model has been satirized and exhausted. The current moment in streetwear is characterized by: the gorpcore crossover (technical outdoor gear as street), the Japanese streetwear influence (Kapital, Engineered Garments, Needles \u2014 reconstruction and craft), the vintage turn (buying dead-stock rather than new), and the anti-logo response (removing visible branding, wearing the inside-out). The cultural energy has moved from the big brands (Supreme) toward smaller, more artisanal labels and archive hunting."
   },
   {
     "id": "fh_049",
     "aesthetic": "Romantic/Cottagecore",
     "era": "2020",
     "chunk_type": "cultural_context",
-    "tags": ["cottagecore", "pandemic", "escapism", "queer", "agrarian fantasy"],
-    "text": "Cottagecore's pandemic spike (spring/summer 2020) was driven by the convergence of urban lockdowns and a nostalgia for a pre-industrial, nature-connected life. The aesthetic's queer dimension is significant: cottagecore became a space for trans and non-binary people to explore feminine presentation in a way that felt removed from contemporary fashion's body-focus — the billowing fabric, the covered arms, the focus on sensory texture rather than silhouette. The 'sapphic cottagecore' TikTok community made visible a relationship between the aesthetic and LGBTQ+ identity that had been implicit. The pastoral fantasy carried an escape from urban modernity and from the gender binary simultaneously."
+    "tags": [
+      "cottagecore",
+      "pandemic",
+      "escapism",
+      "queer",
+      "agrarian fantasy"
+    ],
+    "text": "Cottagecore's pandemic spike (spring/summer 2020) was driven by the convergence of urban lockdowns and a nostalgia for a pre-industrial, nature-connected life. The aesthetic's queer dimension is significant: cottagecore became a space for trans and non-binary people to explore feminine presentation in a way that felt removed from contemporary fashion's body-focus \u2014 the billowing fabric, the covered arms, the focus on sensory texture rather than silhouette. The 'sapphic cottagecore' TikTok community made visible a relationship between the aesthetic and LGBTQ+ identity that had been implicit. The pastoral fantasy carried an escape from urban modernity and from the gender binary simultaneously."
   },
   {
     "id": "fh_050",
     "aesthetic": "Gorpcore",
-    "era": "2020–present",
+    "era": "2020\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["gorpcore", "pandemic outdoors", "trail running", "Japanese outdoor culture"],
-    "text": "Gorpcore's acceleration was pandemic-driven in the same way as cottagecore but from the opposite angle: instead of pastoral escape into the home, gorpcore represents the move outdoors — trail running, hiking, and camping becoming genuine leisure pursuits for people who had never done them before. The Japanese outdoor culture influence is significant: brands like Goldwin, Snow Peak, and And Wander have a considered design philosophy that aligns with fashion sensibility in ways that American outdoor brands historically didn't. The high-fashion endorsement (Gucci × The North Face, Balenciaga's hiking boots at €800) gave mainstream permission, but the genuine enthusiasm for functional technical design is what sustains it."
+    "tags": [
+      "gorpcore",
+      "pandemic outdoors",
+      "trail running",
+      "Japanese outdoor culture"
+    ],
+    "text": "Gorpcore's acceleration was pandemic-driven in the same way as cottagecore but from the opposite angle: instead of pastoral escape into the home, gorpcore represents the move outdoors \u2014 trail running, hiking, and camping becoming genuine leisure pursuits for people who had never done them before. The Japanese outdoor culture influence is significant: brands like Goldwin, Snow Peak, and And Wander have a considered design philosophy that aligns with fashion sensibility in ways that American outdoor brands historically didn't. The high-fashion endorsement (Gucci \u00d7 The North Face, Balenciaga's hiking boots at \u20ac800) gave mainstream permission, but the genuine enthusiasm for functional technical design is what sustains it."
   },
   {
     "id": "fh_051",
     "aesthetic": "Minimalism",
-    "era": "1990–present",
+    "era": "1990\u2013present",
     "chunk_type": "fabric_language",
-    "tags": ["minimalism", "fabric", "wool crepe", "gabardine", "matte", "structure"],
-    "text": "Minimalism's fabric language is as specific as its color palette. The canonical minimalist fabrics: wool crepe (matte surface, drapes without movement, holds structure), gabardine (tightly woven, takes a sharp crease, reads as precision), double-face wool (no lining needed, clean on both sides), silk charmeuse (liquid drape, body-revealing without decoration), and cashmere in structured jersey form. What minimalism excludes: anything with texture that reads as embellishment (boucle, tweed), anything shiny or reflective (sequin, satin without reason), anything with surface decoration (embroidery, print). The fabric must either hold form or reveal it — nothing in between."
+    "tags": [
+      "minimalism",
+      "fabric",
+      "wool crepe",
+      "gabardine",
+      "matte",
+      "structure"
+    ],
+    "text": "Minimalism's fabric language is as specific as its color palette. The canonical minimalist fabrics: wool crepe (matte surface, drapes without movement, holds structure), gabardine (tightly woven, takes a sharp crease, reads as precision), double-face wool (no lining needed, clean on both sides), silk charmeuse (liquid drape, body-revealing without decoration), and cashmere in structured jersey form. What minimalism excludes: anything with texture that reads as embellishment (boucle, tweed), anything shiny or reflective (sequin, satin without reason), anything with surface decoration (embroidery, print). The fabric must either hold form or reveal it \u2014 nothing in between."
   },
   {
     "id": "fh_052",
     "aesthetic": "Quiet Luxury",
-    "era": "2010–present",
+    "era": "2010\u2013present",
     "chunk_type": "fabric_language",
-    "tags": ["quiet luxury", "cashmere", "Loro Piana", "vicuña", "double-face", "quality markers"],
-    "text": "Quiet luxury's quality markers are legible to those who know and invisible to those who don't — which is precisely the point. The hierarchy of fabric signals: vicuña (Loro Piana, the rarest animal fiber, produces an almost invisible softness), cashmere in double-ply or heavy gauge (Brunello Cucinelli, Johnstons of Elgin), double-face wool or cashmere (the inside is as clean as the outside, no lining required — a construction that eliminates the cheap shortcut). The key tells: absence of pilling after one season, the weight and drape of a properly weighted trouser, the lack of any synthetic sheen. Quiet luxury clothing is identifiable by its silence — it makes no noise when you move."
+    "tags": [
+      "quiet luxury",
+      "cashmere",
+      "Loro Piana",
+      "vicu\u00f1a",
+      "double-face",
+      "quality markers"
+    ],
+    "text": "Quiet luxury's quality markers are legible to those who know and invisible to those who don't \u2014 which is precisely the point. The hierarchy of fabric signals: vicu\u00f1a (Loro Piana, the rarest animal fiber, produces an almost invisible softness), cashmere in double-ply or heavy gauge (Brunello Cucinelli, Johnstons of Elgin), double-face wool or cashmere (the inside is as clean as the outside, no lining required \u2014 a construction that eliminates the cheap shortcut). The key tells: absence of pilling after one season, the weight and drape of a properly weighted trouser, the lack of any synthetic sheen. Quiet luxury clothing is identifiable by its silence \u2014 it makes no noise when you move."
   },
   {
     "id": "fh_053",
     "aesthetic": "Streetwear",
-    "era": "1984–present",
+    "era": "1984\u2013present",
     "chunk_type": "fabric_language",
-    "tags": ["streetwear", "cotton", "fleece", "technical", "heavyweight", "wash"],
-    "text": "Streetwear's fabric signature is heavyweight cotton — the specific weight of a quality hoodie (at least 400gsm French terry), the ring-spun cotton of a good graphic tee. The cultural gatekeeping of streetwear includes textile knowledge: understanding that a Supreme box logo hoodie in USA-made Champion body (pre-2010) feels categorically different from a screen-printed Gildan. The wash and distress matters — streetwear garments are meant to age well and visibly; a pair of Kapital boro-patched jeans tells a story of use. Technical fabrics (Gore-Tex, CORDURA) carry the gorpcore crossover and the utility aesthetic. Denim is significant: selvedge, raw, or deadstock Japanese denim is a marker of seriousness."
+    "tags": [
+      "streetwear",
+      "cotton",
+      "fleece",
+      "technical",
+      "heavyweight",
+      "wash"
+    ],
+    "text": "Streetwear's fabric signature is heavyweight cotton \u2014 the specific weight of a quality hoodie (at least 400gsm French terry), the ring-spun cotton of a good graphic tee. The cultural gatekeeping of streetwear includes textile knowledge: understanding that a Supreme box logo hoodie in USA-made Champion body (pre-2010) feels categorically different from a screen-printed Gildan. The wash and distress matters \u2014 streetwear garments are meant to age well and visibly; a pair of Kapital boro-patched jeans tells a story of use. Technical fabrics (Gore-Tex, CORDURA) carry the gorpcore crossover and the utility aesthetic. Denim is significant: selvedge, raw, or deadstock Japanese denim is a marker of seriousness."
   },
   {
     "id": "fh_054",
     "aesthetic": "Romantic/Cottagecore",
-    "era": "2018–present",
+    "era": "2018\u2013present",
     "chunk_type": "fabric_language",
-    "tags": ["romantic", "linen", "cotton voile", "broderie anglaise", "natural fiber", "texture"],
-    "text": "Cottagecore's fabric language is tactile and natural: linen (its wrinkles are feature, not bug), cotton voile (transparent delicacy, sense of floating), broderie anglaise (cutwork embroidery on cotton, the whitework tradition), muslin (the fabric of early English romanticism and also of Indian textile tradition), and Liberty print cotton (the house of Liberty's archive prints have been the canonical romantic-fashion fabric since the 1970s). What these fabrics share: they breathe, they age gracefully, they have texture that rewards close looking, and they carry historical associations with handcraft. Synthetic approximations of these fabrics immediately read as inauthentic — the touch and drape are detectably different."
+    "tags": [
+      "romantic",
+      "linen",
+      "cotton voile",
+      "broderie anglaise",
+      "natural fiber",
+      "texture"
+    ],
+    "text": "Cottagecore's fabric language is tactile and natural: linen (its wrinkles are feature, not bug), cotton voile (transparent delicacy, sense of floating), broderie anglaise (cutwork embroidery on cotton, the whitework tradition), muslin (the fabric of early English romanticism and also of Indian textile tradition), and Liberty print cotton (the house of Liberty's archive prints have been the canonical romantic-fashion fabric since the 1970s). What these fabrics share: they breathe, they age gracefully, they have texture that rewards close looking, and they carry historical associations with handcraft. Synthetic approximations of these fabrics immediately read as inauthentic \u2014 the touch and drape are detectably different."
   },
   {
     "id": "fh_055",
     "aesthetic": "Dark Academia",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "fabric_language",
-    "tags": ["dark academia", "tweed", "wool", "flannel", "cashmere", "winter fabric"],
-    "text": "Dark academia's fabric vocabulary is autumn/winter weighted: Harris Tweed (the Scottish island-woven fabric with its distinctive flecked texture and raw wool smell), heavyweight flannel (the suit fabric of mid-century men's tailoring), argyle and cable-knit wool (the knitwear of golf clubs and Ivy League libraries), corduroy (wide-wale in autumnal colors), and heavy cotton Oxford cloth (the shirt fabric of every American university campus). The leather element is important: a good leather-bound notebook, a leather satchel or briefcase, leather-soled shoes. These materials all age gracefully — the dark academic look is improved by visible use. A tweed jacket with a worn elbow is better than a pristine one."
+    "tags": [
+      "dark academia",
+      "tweed",
+      "wool",
+      "flannel",
+      "cashmere",
+      "winter fabric"
+    ],
+    "text": "Dark academia's fabric vocabulary is autumn/winter weighted: Harris Tweed (the Scottish island-woven fabric with its distinctive flecked texture and raw wool smell), heavyweight flannel (the suit fabric of mid-century men's tailoring), argyle and cable-knit wool (the knitwear of golf clubs and Ivy League libraries), corduroy (wide-wale in autumnal colors), and heavy cotton Oxford cloth (the shirt fabric of every American university campus). The leather element is important: a good leather-bound notebook, a leather satchel or briefcase, leather-soled shoes. These materials all age gracefully \u2014 the dark academic look is improved by visible use. A tweed jacket with a worn elbow is better than a pristine one."
   },
   {
     "id": "fh_056",
     "aesthetic": "Gorpcore",
-    "era": "2017–present",
+    "era": "2017\u2013present",
     "chunk_type": "fabric_language",
-    "tags": ["gorpcore", "gore-tex", "polartec", "ripstop", "technical", "DWR"],
-    "text": "Gorpcore's technical fabric literacy is part of the aesthetic's authenticity signal. The relevant technologies: Gore-Tex (waterproof-breathable membrane, the gold standard), Polartec fleece (various grades: Thermal Pro for warmth, Windbloc for wind resistance, Power Stretch for mobility), CORDURA nylon (abrasion-resistant, used in Carhartt WIP and utility bags), DWR coating (Durable Water Repellent, the spray-on water-beading finish), and Pertex (a lighter-weight but still technical outer shell). Knowing these fabric distinctions — knowing that a Gore-Tex Arc'teryx shell performs differently from a budget waterproof — signals genuine outdoor culture literacy, which in gorpcore is the authentic foundation of the aesthetic."
+    "tags": [
+      "gorpcore",
+      "gore-tex",
+      "polartec",
+      "ripstop",
+      "technical",
+      "DWR"
+    ],
+    "text": "Gorpcore's technical fabric literacy is part of the aesthetic's authenticity signal. The relevant technologies: Gore-Tex (waterproof-breathable membrane, the gold standard), Polartec fleece (various grades: Thermal Pro for warmth, Windbloc for wind resistance, Power Stretch for mobility), CORDURA nylon (abrasion-resistant, used in Carhartt WIP and utility bags), DWR coating (Durable Water Repellent, the spray-on water-beading finish), and Pertex (a lighter-weight but still technical outer shell). Knowing these fabric distinctions \u2014 knowing that a Gore-Tex Arc'teryx shell performs differently from a budget waterproof \u2014 signals genuine outdoor culture literacy, which in gorpcore is the authentic foundation of the aesthetic."
   },
   {
     "id": "fh_057",
     "aesthetic": "Y2K Revival",
-    "era": "2020–present",
+    "era": "2020\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["Y2K", "nostalgia", "gen-z", "TikTok", "vintage", "fast fashion concern"],
-    "text": "The Y2K revival's relationship to the original is mediated and nostalgic. Gen Z, who are wearing it now, were toddlers when the original was current — they are experiencing it through TikTok video archives, their parents' old photos, and vintage stores. The resulting aesthetic is both more knowing and more selective than the original: it picks the most culturally legible signals (low-rise, butterfly clips, Von Dutch) and wears them with contemporary awareness. The ethical complication: Y2K's original aesthetic was tied to fast fashion consumption and low-cost manufacturing conditions; the contemporary embrace of it via fast fashion (Shein, Fashion Nova Y2K collections) replicates those conditions. The alternative, vintage-Y2K sourcing, is where the aesthetic has the most integrity."
+    "tags": [
+      "Y2K",
+      "nostalgia",
+      "gen-z",
+      "TikTok",
+      "vintage",
+      "fast fashion concern"
+    ],
+    "text": "The Y2K revival's relationship to the original is mediated and nostalgic. Gen Z, who are wearing it now, were toddlers when the original was current \u2014 they are experiencing it through TikTok video archives, their parents' old photos, and vintage stores. The resulting aesthetic is both more knowing and more selective than the original: it picks the most culturally legible signals (low-rise, butterfly clips, Von Dutch) and wears them with contemporary awareness. The ethical complication: Y2K's original aesthetic was tied to fast fashion consumption and low-cost manufacturing conditions; the contemporary embrace of it via fast fashion (Shein, Fashion Nova Y2K collections) replicates those conditions. The alternative, vintage-Y2K sourcing, is where the aesthetic has the most integrity."
   },
   {
     "id": "fh_058",
     "aesthetic": "Parisian Style",
-    "era": "2015–present",
+    "era": "2015\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["parisian", "french girl", "effortless myth", "privilege", "access"],
-    "text": "The 'effortless French girl' myth has been productively critiqued: the apparent effortlessness requires significant time, money, and cultural capital. The French fashion system invests enormously in cultivating this impression — French Vogue, the Paris shows, the French cultural attachés in every major city promoting 'French style' as a national product. What is genuinely distinct about Parisian style (as documented by actual Paris residents rather than the myth) is the emphasis on investment dressing rather than trend-following: fewer pieces, higher quality, kept longer. This is a purchasing philosophy as much as an aesthetic, and it's incompatible with fast fashion consumption even if fast fashion brands appropriate the visual codes."
+    "tags": [
+      "parisian",
+      "french girl",
+      "effortless myth",
+      "privilege",
+      "access"
+    ],
+    "text": "The 'effortless French girl' myth has been productively critiqued: the apparent effortlessness requires significant time, money, and cultural capital. The French fashion system invests enormously in cultivating this impression \u2014 French Vogue, the Paris shows, the French cultural attach\u00e9s in every major city promoting 'French style' as a national product. What is genuinely distinct about Parisian style (as documented by actual Paris residents rather than the myth) is the emphasis on investment dressing rather than trend-following: fewer pieces, higher quality, kept longer. This is a purchasing philosophy as much as an aesthetic, and it's incompatible with fast fashion consumption even if fast fashion brands appropriate the visual codes."
   },
   {
     "id": "fh_059",
     "aesthetic": "Maximalism/Camp",
-    "era": "2015–2022",
+    "era": "2015\u20132022",
     "chunk_type": "key_figures",
-    "tags": ["maximalism", "Alessandro Michele", "Gucci", "Rihanna", "Billy Porter", "Lizzo"],
-    "text": "Contemporary fashion maximalism's key figures and their specific contributions: Alessandro Michele at Gucci (2015–2022) — the intellectual maximalism of layered cultural references, vintage and new in deliberate collision. Rihanna's red carpet and Fenty era — the confidence that maximalism requires, the unapologetic use of volume and embellishment. Billy Porter at the Met Gala and in Pose — the queer Black tradition of fashion as statement and as armor. Lizzo — the intersection of body positivity and fashion maximalism, the refusal of the idea that certain bodies should dress 'minimally.' Each represents a different ideological position within maximalism: Michele's intellectualism, Rihanna's hedonism, Porter's politics, Lizzo's joy."
+    "tags": [
+      "maximalism",
+      "Alessandro Michele",
+      "Gucci",
+      "Rihanna",
+      "Billy Porter",
+      "Lizzo"
+    ],
+    "text": "Contemporary fashion maximalism's key figures and their specific contributions: Alessandro Michele at Gucci (2015\u20132022) \u2014 the intellectual maximalism of layered cultural references, vintage and new in deliberate collision. Rihanna's red carpet and Fenty era \u2014 the confidence that maximalism requires, the unapologetic use of volume and embellishment. Billy Porter at the Met Gala and in Pose \u2014 the queer Black tradition of fashion as statement and as armor. Lizzo \u2014 the intersection of body positivity and fashion maximalism, the refusal of the idea that certain bodies should dress 'minimally.' Each represents a different ideological position within maximalism: Michele's intellectualism, Rihanna's hedonism, Porter's politics, Lizzo's joy."
   },
   {
     "id": "fh_060",
     "aesthetic": "Workwear/Utilitarian",
-    "era": "2010–present",
+    "era": "2010\u2013present",
     "chunk_type": "cultural_context",
-    "tags": ["utilitarian", "gentrification", "class signal", "Carhartt WIP", "authenticity"],
+    "tags": [
+      "utilitarian",
+      "gentrification",
+      "class signal",
+      "Carhartt WIP",
+      "authenticity"
+    ],
     "text": "The adoption of working-class functional garments by fashion culture is always a complicated cultural transaction. Carhartt Work In Progress (WIP), the European fashion subsidiary of Carhartt, was founded in 1994 specifically to translate American workwear into European fashion sensibility. Their product is now significantly more expensive than the American original but looks similar. The cultural politics: wearing Carhartt when you don't need it for work appropriates working-class signals without their economic reality. Some argue this is straightforward class cosplay; others argue that the craft and durability of the garments transcend their original context. What is clear: the fashion adoption has raised prices and made the garments less accessible to the workers they were designed for."
+  },
+  {
+    "id": "fh_ind_001",
+    "aesthetic": "Contemporary Indian Wear",
+    "era": "2010s-Present",
+    "chunk_type": "origin",
+    "tags": [
+      "indian",
+      "kurta",
+      "ethnic",
+      "south asian",
+      "contemporary"
+    ],
+    "text": "Contemporary Indian wear represents a shift from occasion-only heavy ethnic wear to fluid, daily-wear elegance. Modern Indian designers have reimagined the traditional kurta, anarkali, and lehenga by stripping away heavy zari and embroidery in favor of breathable fabrics, block prints, and minimalist chikankari. The aesthetic signals a return to indigenous textiles (handloom cottons, Chanderi silks, khadi) combined with modern, relaxed silhouettes that fit a globalized lifestyle."
+  },
+  {
+    "id": "fh_ind_002",
+    "aesthetic": "Contemporary Indian Wear",
+    "era": "2010s-Present",
+    "chunk_type": "visual_codes",
+    "tags": [
+      "kurta",
+      "block print",
+      "drape",
+      "cotton",
+      "breezy"
+    ],
+    "text": "The visual codes of Contemporary Indian Wear prioritize drape and textile quality over heavy ornamentation. Key elements include A-line or straight-cut cotton kurtas, palazzo pants, wide dupattas worn casually, and block prints like Ajrakh or Kalamkari. Colors range from earthy indigo and madder red to soft pastels. The silhouette is fundamentally breezy and comfortable, often paired with oxidized silver jewelry and traditional juttis to ground the look."
+  },
+  {
+    "id": "fh_ind_003",
+    "aesthetic": "Indo-Western Fusion",
+    "era": "2020s",
+    "chunk_type": "visual_codes",
+    "tags": [
+      "fusion",
+      "sari",
+      "blazer",
+      "drape",
+      "modern",
+      "indian"
+    ],
+    "text": "Indo-Western Fusion relies on the tension between structural Western tailoring and fluid Indian draping. Think a structured oversized blazer worn over a silk sari, a crop top paired with a voluminous lehenga skirt, or a classic tailored trouser worn under an asymmetrical kurta. The success of this aesthetic depends entirely on proportion discipline\u2014ensuring that the voluminous ethnic elements don't overwhelm the clean lines of the Western pieces."
   }
 ]

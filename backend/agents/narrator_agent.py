@@ -72,6 +72,7 @@ def _build_narrator_prompt(
     identity_result: IdentityResult,
     gap_result: GapResult,
     intake_result: IntakeResult,
+    goal: str,
 ) -> str:
     worlds_summary = "\n\n".join([
         f"AESTHETIC: {w.name}\nDESCRIPTION: {w.description}\nASPIRATION: {w.aspiration_reading}"
@@ -96,6 +97,12 @@ def _build_narrator_prompt(
 
     cultural_context_text = "\n\n".join(cultural_chunks[:4])
 
+    goal_instruction = {
+        "styling": "Provide an array of execution_suggestions (specific styling tips, material choices, or silhouettes to nail this aesthetic authentically)",
+        "shopping": "Provide an array of execution_suggestions detailing the exact key pieces/items to buy to build this wardrobe",
+        "trends": "Provide an array of execution_suggestions explaining why this silhouette is trending and where it is evolving next"
+    }.get(goal, "Provide an array of execution_suggestions (specific styling tips, material choices, or silhouettes to nail this aesthetic authentically)")
+
     return f"""You are synthesising a fashion analysis into a final, precise report. 
 
 DETECTED AESTHETICS:
@@ -113,8 +120,8 @@ CULTURAL CONTEXT FROM RETRIEVED SOURCES:
 TASK: Write 3-4 cultural context statements that ground the analysis in fashion history. Each statement must:
 1. Make a specific claim about what the images reveal
 2. Follow it with "because [cultural/historical reason]"
-3. Include a detailed_analysis paragraph exploring the origins, evolution, and cultural meaning of this aesthetic
-4. Provide an array of execution_suggestions (specific styling tips, material choices, or silhouettes to nail this aesthetic authentically)
+3. Include a detailed_analysis section (exactly 2 highly effective sentences hitting the right keywords) exploring the origins, evolution, and cultural meaning of this aesthetic
+4. {goal_instruction}
 5. Cite the source era and context
 6. Be specific to THIS person's collection — not generic aesthetic description
 
@@ -136,6 +143,7 @@ async def run_narrator(
     identity_result: IdentityResult,
     gap_result: GapResult,
     session_id: str = "",
+    goal: str = "styling",
     progress_callback=None,
 ) -> NarratorResult:
     """
@@ -144,10 +152,10 @@ async def run_narrator(
     from langchain_groq import ChatGroq
 
     llm = ChatGroq(
-        model="llama3-70b-8192",
+        model="llama-3.3-70b-versatile",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.4,  # slightly higher for narrative synthesis
-        max_tokens=1500,
+        max_tokens=4096,
     )
 
     if progress_callback:
@@ -156,9 +164,10 @@ async def run_narrator(
     # Build cultural context statements
     cultural_context: List[Dict[str, Any]] = []
     try:
-        narrator_prompt = _build_narrator_prompt(identity_result, gap_result, intake_result)
+        narrator_prompt = _build_narrator_prompt(identity_result, gap_result, intake_result, goal)
         response = llm.invoke(narrator_prompt)
         content = response.content.strip()
+        print(f"[Narrator] RAW OUTPUT:\n{content}")
 
         if "```json" in content:
             content = content.split("```json")[1].split("```")[0].strip()
@@ -176,10 +185,10 @@ async def run_narrator(
                 cultural_context.append({
                     "claim": f"Your images signal {world.name}",
                     "because": chunk.get("text", "")[:200],
-                    "detailed_analysis": chunk.get("text", ""),
+                    "detailed_analysis": chunk.get("text", "")[:400],
                     "execution_suggestions": ["Focus on authentic silhouettes", "Reference original designers from this era"],
                     "source_era": chunk.get("era", ""),
-                    "cultural_code": ", ".join(chunk.get("tags", [])),
+                    "cultural_code": ", ".join(chunk.get("tags", [])[:5]),
                 })
 
     # Build cluster summaries for frontend

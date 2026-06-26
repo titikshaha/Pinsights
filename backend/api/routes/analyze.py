@@ -90,6 +90,7 @@ async def start_analysis(
     source: str = Form(...),
     board: Optional[str] = Form(None),
     query: Optional[str] = Form(None),
+    goal: str = Form("styling"),
     per_page: int = Form(20),
     files: List[UploadFile] = File(default=[]),
 ):
@@ -131,7 +132,7 @@ async def start_analysis(
 
     # Run pipeline in background
     background_tasks.add_task(
-        _run_pipeline_task, session_id, image_paths, event_queue
+        _run_pipeline_task, session_id, image_paths, goal, event_queue
     )
 
     return AnalyzeStartResponse(session_id=session_id)
@@ -140,11 +141,12 @@ async def start_analysis(
 async def _run_pipeline_task(
     session_id: str,
     image_paths: List[str],
+    goal: str,
     event_queue: asyncio.Queue,
 ):
     """Background task: run pipeline and save result."""
     try:
-        result = await run_pipeline_streaming(image_paths, session_id, event_queue)
+        result = await run_pipeline_streaming(image_paths, session_id, goal, event_queue)
         if result:
             # Save to session store
             session_store.save_session(session_id, result.to_dict())

@@ -3,279 +3,402 @@
     "id": "ae_001",
     "aesthetic": "90s Minimalism",
     "execution_marker": "Proportion discipline",
-    "what_it_requires": "Trousers with a high, clean rise — not high-waisted in the fashion-trend sense, but a rise that elongates the torso without bunching at the crotch. Jacket shoulders that land exactly at the edge of the shoulder joint, neither dropped nor padded. Sleeve length on jackets to the wrist bone, no further. Trouser hem with a specific break — barely touching the shoe, not pooling. The proportions create the look; the color is irrelevant if the proportions are wrong.",
-    "common_miss": "People buy neutral colours and call it minimalism, but keep the proportions of fast fashion — boxy unstructured tees, mid-rise jeans that cut the body awkwardly, oversized but unsculpted jackets. The result looks underdressed, not minimal. True minimalism requires more precise fit than almost any other aesthetic.",
-    "your_tell": ["rise point on trousers", "shoulder seam position", "jacket sleeve length", "trouser hem break", "absence of bunching anywhere"],
+    "what_it_requires": "Trousers with a high, clean rise \u2014 not high-waisted in the fashion-trend sense, but a rise that elongates the torso without bunching at the crotch. Jacket shoulders that land exactly at the edge of the shoulder joint, neither dropped nor padded. Sleeve length on jackets to the wrist bone, no further. Trouser hem with a specific break \u2014 barely touching the shoe, not pooling. The proportions create the look; the color is irrelevant if the proportions are wrong.",
+    "common_miss": "People buy neutral colours and call it minimalism, but keep the proportions of fast fashion \u2014 boxy unstructured tees, mid-rise jeans that cut the body awkwardly, oversized but unsculpted jackets. The result looks underdressed, not minimal. True minimalism requires more precise fit than almost any other aesthetic.",
+    "your_tell": [
+      "rise point on trousers",
+      "shoulder seam position",
+      "jacket sleeve length",
+      "trouser hem break",
+      "absence of bunching anywhere"
+    ],
     "gap_type": "construction"
   },
   {
     "id": "ae_002",
     "aesthetic": "90s Minimalism",
     "execution_marker": "Fabric weight and matte surface",
-    "what_it_requires": "Wool crepe or gabardine for trousers and structured pieces — not polyester crepe, which reflects light and moves differently. Silk charmeuse for anything fluid. The fabric must be either structure-holding (wool crepe, gabardine) or body-revealing without decoration (charmeuse, matte jersey). Nothing with sheen, nothing with visible weave texture that reads as rustic. The surface should disappear into the color.",
+    "what_it_requires": "Wool crepe or gabardine for trousers and structured pieces \u2014 not polyester crepe, which reflects light and moves differently. Silk charmeuse for anything fluid. The fabric must be either structure-holding (wool crepe, gabardine) or body-revealing without decoration (charmeuse, matte jersey). Nothing with sheen, nothing with visible weave texture that reads as rustic. The surface should disappear into the color.",
     "common_miss": "Polyester fabric in the right color reads as cheap approximation. The fabric breaks the minimalist promise because it moves wrong, catches light wrong, and doesn't drape with the authority the aesthetic requires. Minimalism with synthetic fabric is just monochrome dressing.",
-    "your_tell": ["fabric surface under light", "drape when fabric hangs freely", "movement when walking", "weight in hand"],
+    "your_tell": [
+      "fabric surface under light",
+      "drape when fabric hangs freely",
+      "movement when walking",
+      "weight in hand"
+    ],
     "gap_type": "material"
   },
   {
     "id": "ae_003",
     "aesthetic": "90s Minimalism",
     "execution_marker": "Restraint in accessories",
-    "what_it_requires": "One accessory maximum that is visible. Watch or ring, not both. Bag that is structural and undecorated — no hardware, no visible stitching that reads as embellishment. Shoes that are either completely quiet (a simple leather pump, a clean Oxford) or are the single statement (a sculptural heel in the same family as the palette). The restraint must be total — adding even one extra element tips the look from minimal to just neutral.",
-    "common_miss": "Wearing minimalist clothes but adding multiple accessories 'because the outfit needs something' — a necklace, earrings, a bracelet, a belt. Each individual item is simple; the aggregate is maximalism in minimalist clothes. Minimalism is not empty; it is precisely full of one or two things.",
-    "your_tell": ["number of visible accessories", "whether the bag has decorative hardware", "whether shoes compete or resolve"],
+    "what_it_requires": "One accessory maximum that is visible. Watch or ring, not both. Bag that is structural and undecorated \u2014 no hardware, no visible stitching that reads as embellishment. Shoes that are either completely quiet (a simple leather pump, a clean Oxford) or are the single statement (a sculptural heel in the same family as the palette). The restraint must be total \u2014 adding even one extra element tips the look from minimal to just neutral.",
+    "common_miss": "Wearing minimalist clothes but adding multiple accessories 'because the outfit needs something' \u2014 a necklace, earrings, a bracelet, a belt. Each individual item is simple; the aggregate is maximalism in minimalist clothes. Minimalism is not empty; it is precisely full of one or two things.",
+    "your_tell": [
+      "number of visible accessories",
+      "whether the bag has decorative hardware",
+      "whether shoes compete or resolve"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_004",
     "aesthetic": "Quiet Luxury",
     "execution_marker": "Fabric quality literacy",
-    "what_it_requires": "The ability to distinguish cashmere grades by touch — single-ply cashmere versus double-ply, fine gauge versus thick. Understanding that the cashmere turtleneck that makes quiet luxury land is a 2-ply heavy-gauge piece from Brunello Cucinelli or John Smedley, not a single-ply that pills after two wears. Similarly, trousers in 100% wool (not wool-blend polyester) with enough weight that they hold their crease and drape properly without a belt. The quality is tactile — it rewards close examination.",
+    "what_it_requires": "The ability to distinguish cashmere grades by touch \u2014 single-ply cashmere versus double-ply, fine gauge versus thick. Understanding that the cashmere turtleneck that makes quiet luxury land is a 2-ply heavy-gauge piece from Brunello Cucinelli or John Smedley, not a single-ply that pills after two wears. Similarly, trousers in 100% wool (not wool-blend polyester) with enough weight that they hold their crease and drape properly without a belt. The quality is tactile \u2014 it rewards close examination.",
     "common_miss": "The quiet luxury palette (camel, ivory, oat) without the fabric quality. The look becomes 'beige clothing' rather than quiet luxury. The neutral colours that quiet luxury depends on have no decoration to hide behind; the fabric must do the work that pattern or embellishment would do elsewhere.",
-    "your_tell": ["whether cashmere pills quickly", "whether trousers hold crease without belt", "whether fabric drapes or hangs stiffly"],
+    "your_tell": [
+      "whether cashmere pills quickly",
+      "whether trousers hold crease without belt",
+      "whether fabric drapes or hangs stiffly"
+    ],
     "gap_type": "material"
   },
   {
     "id": "ae_005",
     "aesthetic": "Quiet Luxury",
     "execution_marker": "Logo discipline",
-    "what_it_requires": "Knowing precisely which logos are in and which are out, and why. The Hermès H buckle on a belt: out — visible logo on a consumable item. The Hermès Kelly bag with hardware turned inward: in — the object's quality speaks, the logo is incidental. A Brunello Cucinelli label that faces in: in. A Gucci GG monogram print: out. A Gucci horse-bit loafer: in — the hardware is not a logo, it's a design. The distinction requires knowing specific pieces and their cultural position, not applying a blanket 'no logos' rule.",
+    "what_it_requires": "Knowing precisely which logos are in and which are out, and why. The Herm\u00e8s H buckle on a belt: out \u2014 visible logo on a consumable item. The Herm\u00e8s Kelly bag with hardware turned inward: in \u2014 the object's quality speaks, the logo is incidental. A Brunello Cucinelli label that faces in: in. A Gucci GG monogram print: out. A Gucci horse-bit loafer: in \u2014 the hardware is not a logo, it's a design. The distinction requires knowing specific pieces and their cultural position, not applying a blanket 'no logos' rule.",
     "common_miss": "Assuming quiet luxury means no labels at all, and ending up in generic 'nice basics' rather than the intentional non-logo aesthetic. Or overcorrecting into label obsession while claiming to be anti-logo.",
-    "your_tell": ["which logos are present or absent", "whether hardware reads as design or brand announcement", "cultural position of specific pieces worn"],
+    "your_tell": [
+      "which logos are present or absent",
+      "whether hardware reads as design or brand announcement",
+      "cultural position of specific pieces worn"
+    ],
     "gap_type": "knowledge"
   },
   {
     "id": "ae_006",
     "aesthetic": "Quiet Luxury",
     "execution_marker": "Silhouette polish",
-    "what_it_requires": "Clothes that fit without alteration would be unusual. Quiet luxury assumes tailoring — trouser hems shortened to the right break, jacket sleeves adjusted, shirts that fit the shoulder exactly. The silhouette should look like the garment was made for you, not purchased and worn. This means either buying at a price point where fit is precise, or budgeting for alterations on quality pieces. A perfectly fitting £200 trouser looks better than a poorly fitting £800 one.",
-    "common_miss": "Buying the right brand and wearing it at the wrong size because that's what was available or affordable. A Loro Piana cashmere sweater in the wrong size reads as simply expensive, not as polished. Quiet luxury requires fit above all else — the quality amplifies it, not replaces it.",
-    "your_tell": ["whether trousers break correctly", "whether jacket sleeves hit the wrist bone", "whether shirt shoulders sit exactly on the joint"],
+    "what_it_requires": "Clothes that fit without alteration would be unusual. Quiet luxury assumes tailoring \u2014 trouser hems shortened to the right break, jacket sleeves adjusted, shirts that fit the shoulder exactly. The silhouette should look like the garment was made for you, not purchased and worn. This means either buying at a price point where fit is precise, or budgeting for alterations on quality pieces. A perfectly fitting \u00a3200 trouser looks better than a poorly fitting \u00a3800 one.",
+    "common_miss": "Buying the right brand and wearing it at the wrong size because that's what was available or affordable. A Loro Piana cashmere sweater in the wrong size reads as simply expensive, not as polished. Quiet luxury requires fit above all else \u2014 the quality amplifies it, not replaces it.",
+    "your_tell": [
+      "whether trousers break correctly",
+      "whether jacket sleeves hit the wrist bone",
+      "whether shirt shoulders sit exactly on the joint"
+    ],
     "gap_type": "fit"
   },
   {
     "id": "ae_007",
     "aesthetic": "Streetwear",
     "execution_marker": "Cultural literacy",
-    "what_it_requires": "Knowing the hierarchy of streetwear — which collaborations matter and why, which releases were significant, the difference between a Supreme × Louis Vuitton piece and a Supreme × Vans piece in terms of cultural capital. Knowing which era of a brand is respected (Nike Jordan 1 OG colorways versus recent retros). Wearing pieces that signal knowledge, not just pieces that look like streetwear. The authentication markers: the stitching on a vintage Supreme box logo, the sole of a real Air Force 1 versus a replica.",
-    "common_miss": "Wearing streetwear aesthetic without streetwear knowledge — buying pieces that look right but carry no cultural weight with people who know the culture. This reads as costume, not as belonging. The alternative is wearing archive or vintage pieces that carry genuine history.",
-    "your_tell": ["whether pieces are current-season or archive", "which collaborations are present", "whether the wearer can narrate the history of what they're wearing"],
+    "what_it_requires": "Knowing the hierarchy of streetwear \u2014 which collaborations matter and why, which releases were significant, the difference between a Supreme \u00d7 Louis Vuitton piece and a Supreme \u00d7 Vans piece in terms of cultural capital. Knowing which era of a brand is respected (Nike Jordan 1 OG colorways versus recent retros). Wearing pieces that signal knowledge, not just pieces that look like streetwear. The authentication markers: the stitching on a vintage Supreme box logo, the sole of a real Air Force 1 versus a replica.",
+    "common_miss": "Wearing streetwear aesthetic without streetwear knowledge \u2014 buying pieces that look right but carry no cultural weight with people who know the culture. This reads as costume, not as belonging. The alternative is wearing archive or vintage pieces that carry genuine history.",
+    "your_tell": [
+      "whether pieces are current-season or archive",
+      "which collaborations are present",
+      "whether the wearer can narrate the history of what they're wearing"
+    ],
     "gap_type": "knowledge"
   },
   {
     "id": "ae_008",
     "aesthetic": "Streetwear",
     "execution_marker": "Proportion intention",
-    "what_it_requires": "Oversized in streetwear is not accidental — it is architecturally oversized. The hoodie is 2-3 sizes up but worn with a very clean bottom (track pant with precise taper, or straight-leg denim with no excess). The cap is worn forward or at exact angle, not vaguely. The sneaker is clean — zero creasing on a pair worn for the look rather than for training. The proportion contrast between oversized top and fitted or tapered bottom is the foundational geometry of the aesthetic.",
-    "common_miss": "Wearing oversized everything and calling it streetwear. Oversized top + oversized bottom with no taper is shapeless, not intentional. The deliberateness of proportion is the signal — every element of the streetwear silhouette is measured against every other.",
-    "your_tell": ["top-to-bottom proportion relationship", "whether the cap brim is considered", "sneaker condition relative to outfit occasion"],
+    "what_it_requires": "Oversized in streetwear is not accidental \u2014 it is architecturally oversized. The hoodie is 2-3 sizes up but worn with a very clean bottom (track pant with precise taper, or straight-leg denim with no excess). The cap is worn forward or at exact angle, not vaguely. The sneaker is clean \u2014 zero creasing on a pair worn for the look rather than for training. The proportion contrast between oversized top and fitted or tapered bottom is the foundational geometry of the aesthetic.",
+    "common_miss": "Wearing oversized everything and calling it streetwear. Oversized top + oversized bottom with no taper is shapeless, not intentional. The deliberateness of proportion is the signal \u2014 every element of the streetwear silhouette is measured against every other.",
+    "your_tell": [
+      "top-to-bottom proportion relationship",
+      "whether the cap brim is considered",
+      "sneaker condition relative to outfit occasion"
+    ],
     "gap_type": "proportion"
   },
   {
     "id": "ae_009",
     "aesthetic": "Dark Academia",
     "execution_marker": "Layering logic",
-    "what_it_requires": "Dark academia layering has a specific internal logic: the Oxford shirt is the foundation (tucked in, collar open or with a loosely knotted tie), the vest or tank-top knit is the mid-layer (fitted, either argyle or cable), and the blazer or tweed jacket is the outer layer. Each layer should be visible — the shirt collar above the vest, the vest below the jacket. The trouser must be tailored (slim, ankle-length, showing sock). Breaking this logic — e.g., wearing a vest over a hoodie, or a blazer without the shirt — produces Halloween costume rather than aesthetic.",
-    "common_miss": "Wearing one or two dark academia pieces with no system: a tweed blazer over a t-shirt, or an argyle vest over jeans. The aesthetic is about systemic layering — the full stack — not single statement pieces. It is also a complete look from head to toe, including footwear.",
-    "your_tell": ["whether each layer is visible", "whether trouser is tailored and the right length", "whether footwear (brogue, loafer) completes the look"],
+    "what_it_requires": "Dark academia layering has a specific internal logic: the Oxford shirt is the foundation (tucked in, collar open or with a loosely knotted tie), the vest or tank-top knit is the mid-layer (fitted, either argyle or cable), and the blazer or tweed jacket is the outer layer. Each layer should be visible \u2014 the shirt collar above the vest, the vest below the jacket. The trouser must be tailored (slim, ankle-length, showing sock). Breaking this logic \u2014 e.g., wearing a vest over a hoodie, or a blazer without the shirt \u2014 produces Halloween costume rather than aesthetic.",
+    "common_miss": "Wearing one or two dark academia pieces with no system: a tweed blazer over a t-shirt, or an argyle vest over jeans. The aesthetic is about systemic layering \u2014 the full stack \u2014 not single statement pieces. It is also a complete look from head to toe, including footwear.",
+    "your_tell": [
+      "whether each layer is visible",
+      "whether trouser is tailored and the right length",
+      "whether footwear (brogue, loafer) completes the look"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_010",
     "aesthetic": "Dark Academia",
     "execution_marker": "Autumnal color discipline",
-    "what_it_requires": "The dark academia palette is specific within brown and autumn tones: deep burgundy (not bright red), forest green (not bright green), camel (not orange-tan), cream (not white), mustard (not yellow), charcoal (not black). These distinctions matter because the aesthetic is about a particular emotional temperature — melancholy, warm, enclosed. Bright versions of any of these colors break the mood. The palette should evoke old paper, autumn leaves, dark wood panelling.",
+    "what_it_requires": "The dark academia palette is specific within brown and autumn tones: deep burgundy (not bright red), forest green (not bright green), camel (not orange-tan), cream (not white), mustard (not yellow), charcoal (not black). These distinctions matter because the aesthetic is about a particular emotional temperature \u2014 melancholy, warm, enclosed. Bright versions of any of these colors break the mood. The palette should evoke old paper, autumn leaves, dark wood panelling.",
     "common_miss": "Wearing black with brown accessories and calling it dark academia. Black reads as gothic or normcore; the dark academic wardrobe is specifically warm-dark, not cold-dark. Similarly, wearing any of the colors too bright or too saturated loses the specific autumnal, faded quality the aesthetic requires.",
-    "your_tell": ["colour temperature (warm vs cold dark)", "saturation level of each piece", "whether the overall palette reads as a unified emotional temperature"],
+    "your_tell": [
+      "colour temperature (warm vs cold dark)",
+      "saturation level of each piece",
+      "whether the overall palette reads as a unified emotional temperature"
+    ],
     "gap_type": "color"
   },
   {
     "id": "ae_011",
     "aesthetic": "Coastal Grandmother",
     "execution_marker": "Fabric and drape ease",
-    "what_it_requires": "Linen that is allowed to wrinkle — not pressed flat, which kills the ease the aesthetic requires. Wide-leg trouser in linen or cotton with enough weight that it falls rather than billows. Knitwear that is soft and unstructured — not fitted ribbing but a relaxed gauge. The ease of the silhouette must be genuine: nothing should look pulled or fitted. The specific challenge is that 'relaxed' without quality fabric reads as shapeless; the quality of the linen or cotton makes the ease look intentional rather than defeated.",
+    "what_it_requires": "Linen that is allowed to wrinkle \u2014 not pressed flat, which kills the ease the aesthetic requires. Wide-leg trouser in linen or cotton with enough weight that it falls rather than billows. Knitwear that is soft and unstructured \u2014 not fitted ribbing but a relaxed gauge. The ease of the silhouette must be genuine: nothing should look pulled or fitted. The specific challenge is that 'relaxed' without quality fabric reads as shapeless; the quality of the linen or cotton makes the ease look intentional rather than defeated.",
     "common_miss": "Wearing linen that is too lightweight (it goes transparent and clingy) or cotton that is too structured (reads as workwear). Or wearing the palette in synthetic fabric, which achieves the colour but not the texture and drape that makes coastal grandmother clothing look coastal grandmother rather than casual beige.",
-    "your_tell": ["whether fabric wrinkles in the right way", "trouser weight and whether it falls cleanly", "overall ease and relaxation of the silhouette"],
+    "your_tell": [
+      "whether fabric wrinkles in the right way",
+      "trouser weight and whether it falls cleanly",
+      "overall ease and relaxation of the silhouette"
+    ],
     "gap_type": "material"
   },
   {
     "id": "ae_012",
     "aesthetic": "Coastal Grandmother",
     "execution_marker": "Accessory restraint with natural materials",
-    "what_it_requires": "Accessories exclusively in natural materials: straw bag, woven jute, leather in tan or cream, shell or bone jewellery. The palette extension through accessories stays within the coastal range — nothing metallic, nothing hard-edged. Sunglasses are classic (tortoiseshell, slightly oversized, never sporty or geometric-fashion). Footwear is flat or low-heeled — espadrille, leather slide, canvas sneaker, never a heel that would read as evening or fashion. The overall effect of accessories should be that they look like they came with the house.",
-    "common_miss": "Wearing the coastal grandmother palette with contemporary-fashion accessories — a chain-link bag, chunky gold hoops, a trendy sneaker. The aesthetic is specifically anti-trend; the accessories should look enduring rather than current. A single modern-fashion piece will make the whole look slide from 'coastal grandmother' into 'trying to be coastal grandmother.'",
-    "your_tell": ["material of bag", "heel height", "whether glasses frame reads as classic or current-fashion"],
+    "what_it_requires": "Accessories exclusively in natural materials: straw bag, woven jute, leather in tan or cream, shell or bone jewellery. The palette extension through accessories stays within the coastal range \u2014 nothing metallic, nothing hard-edged. Sunglasses are classic (tortoiseshell, slightly oversized, never sporty or geometric-fashion). Footwear is flat or low-heeled \u2014 espadrille, leather slide, canvas sneaker, never a heel that would read as evening or fashion. The overall effect of accessories should be that they look like they came with the house.",
+    "common_miss": "Wearing the coastal grandmother palette with contemporary-fashion accessories \u2014 a chain-link bag, chunky gold hoops, a trendy sneaker. The aesthetic is specifically anti-trend; the accessories should look enduring rather than current. A single modern-fashion piece will make the whole look slide from 'coastal grandmother' into 'trying to be coastal grandmother.'",
+    "your_tell": [
+      "material of bag",
+      "heel height",
+      "whether glasses frame reads as classic or current-fashion"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_013",
     "aesthetic": "Y2K Revival",
     "execution_marker": "The right low-rise",
-    "what_it_requires": "Low-rise in Y2K is not just any low-cut waistband — it is a specific geometry. The waistband sits at or just below the widest part of the hip, creating a horizontal visual emphasis there. The gap between waistband and shirt hem (or lack of a gap — the crop top reveals midriff) is intentional and measured, not accidental. Jeans are straight or slightly flared through the leg, not slim-tapered. The visual result is a silhouette that is deliberately different from current-fashion high-rise aesthetics — it is an active historical reference.",
-    "common_miss": "Wearing low-rise jeans that are simply unflattering rather than intentionally referential. The Y2K aesthetic works because of its total commitment — the whole look (low-rise, crop, platform or strappy shoe, hair accessories) reads as Y2K. A single low-rise piece without the surrounding context reads as badly fitting contemporary clothes.",
-    "your_tell": ["precise rise point", "relationship between top hem and trouser waistband", "whether total look has enough Y2K signals to read as intentional"],
+    "what_it_requires": "Low-rise in Y2K is not just any low-cut waistband \u2014 it is a specific geometry. The waistband sits at or just below the widest part of the hip, creating a horizontal visual emphasis there. The gap between waistband and shirt hem (or lack of a gap \u2014 the crop top reveals midriff) is intentional and measured, not accidental. Jeans are straight or slightly flared through the leg, not slim-tapered. The visual result is a silhouette that is deliberately different from current-fashion high-rise aesthetics \u2014 it is an active historical reference.",
+    "common_miss": "Wearing low-rise jeans that are simply unflattering rather than intentionally referential. The Y2K aesthetic works because of its total commitment \u2014 the whole look (low-rise, crop, platform or strappy shoe, hair accessories) reads as Y2K. A single low-rise piece without the surrounding context reads as badly fitting contemporary clothes.",
+    "your_tell": [
+      "precise rise point",
+      "relationship between top hem and trouser waistband",
+      "whether total look has enough Y2K signals to read as intentional"
+    ],
     "gap_type": "proportion"
   },
   {
     "id": "ae_014",
     "aesthetic": "Y2K Revival",
     "execution_marker": "Accessory saturation",
-    "what_it_requires": "Y2K accessories work by accumulation: butterfly clips used in groups of three or more, multiple necklaces of different lengths (including visible branded pendants), multiple bracelets or bangles, chunky rings on multiple fingers, tinted or novelty sunglasses. The accessories should feel like too many — because in Y2K, too many was the point. The individual items are small and relatively inexpensive; it is the volume that makes the look. Hair accessories are part of the outfit.",
-    "common_miss": "Adding one Y2K accessory (a single butterfly clip, one charm necklace) to an otherwise contemporary outfit. This reads as a trend gesture rather than commitment to the aesthetic. Y2K requires the whole energy — the maximalism of its accessory layer is what separates it from just wearing low-rise jeans.",
-    "your_tell": ["number and type of hair accessories", "jewellery layering and volume", "whether accessories are period-appropriate (butterfly, charm, initial necklace, visible brand pendant)"],
+    "what_it_requires": "Y2K accessories work by accumulation: butterfly clips used in groups of three or more, multiple necklaces of different lengths (including visible branded pendants), multiple bracelets or bangles, chunky rings on multiple fingers, tinted or novelty sunglasses. The accessories should feel like too many \u2014 because in Y2K, too many was the point. The individual items are small and relatively inexpensive; it is the volume that makes the look. Hair accessories are part of the outfit.",
+    "common_miss": "Adding one Y2K accessory (a single butterfly clip, one charm necklace) to an otherwise contemporary outfit. This reads as a trend gesture rather than commitment to the aesthetic. Y2K requires the whole energy \u2014 the maximalism of its accessory layer is what separates it from just wearing low-rise jeans.",
+    "your_tell": [
+      "number and type of hair accessories",
+      "jewellery layering and volume",
+      "whether accessories are period-appropriate (butterfly, charm, initial necklace, visible brand pendant)"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_015",
     "aesthetic": "Workwear/Utilitarian",
     "execution_marker": "Construction authenticity",
-    "what_it_requires": "The workwear aesthetic requires honest construction: visible stitching that is functional (triple-stitched seams on Carhartt, bartacked stress points on Dickies), genuine hardware (YKK zippers, copper rivets, metal buckles rather than plastic), and fabric weight appropriate to the garment's ostensible function. A Carhartt Detroit jacket in the fashion context should be the same jacket a Detroit auto worker would wear — the construction doesn't change. What changes is the styling context.",
-    "common_miss": "Buying fashion-workwear interpretations that have the visual codes (patch pockets, the right palette) but in thin fabric with plastic hardware and approximate construction. The inauthenticity is tactile — the fabric doesn't feel durable, the zippers don't feel heavy. Fashion workwear without workwear construction is costume.",
-    "your_tell": ["stitch count on seams", "hardware material (metal vs plastic)", "fabric weight in hand"],
+    "what_it_requires": "The workwear aesthetic requires honest construction: visible stitching that is functional (triple-stitched seams on Carhartt, bartacked stress points on Dickies), genuine hardware (YKK zippers, copper rivets, metal buckles rather than plastic), and fabric weight appropriate to the garment's ostensible function. A Carhartt Detroit jacket in the fashion context should be the same jacket a Detroit auto worker would wear \u2014 the construction doesn't change. What changes is the styling context.",
+    "common_miss": "Buying fashion-workwear interpretations that have the visual codes (patch pockets, the right palette) but in thin fabric with plastic hardware and approximate construction. The inauthenticity is tactile \u2014 the fabric doesn't feel durable, the zippers don't feel heavy. Fashion workwear without workwear construction is costume.",
+    "your_tell": [
+      "stitch count on seams",
+      "hardware material (metal vs plastic)",
+      "fabric weight in hand"
+    ],
     "gap_type": "construction"
   },
   {
     "id": "ae_016",
     "aesthetic": "Workwear/Utilitarian",
     "execution_marker": "Proportion and function relationship",
-    "what_it_requires": "Workwear silhouette is functional: room to move, nothing pulled across the back when reaching, pockets in positions that make sense for use. Cargo pockets sit at thigh, accessible when hands are in use. Jacket is long enough to cover the lumbar when bending. Trousers have enough thigh room for movement. This functional proportion — designed for labour — is what makes workwear's silhouette distinct. It is looser in specific places because those places need room; it is not uniformly baggy.",
-    "common_miss": "Wearing oversized clothes in workwear colours and calling it utilitarian. True workwear has precise functional proportions — it looks purposeful, not simply large. The function-proportion logic is what prevents it from being shapeless.",
-    "your_tell": ["whether pockets are at accessible thigh level", "whether jacket provides lumbar coverage", "whether silhouette reads as functional-purposeful or just oversized"],
+    "what_it_requires": "Workwear silhouette is functional: room to move, nothing pulled across the back when reaching, pockets in positions that make sense for use. Cargo pockets sit at thigh, accessible when hands are in use. Jacket is long enough to cover the lumbar when bending. Trousers have enough thigh room for movement. This functional proportion \u2014 designed for labour \u2014 is what makes workwear's silhouette distinct. It is looser in specific places because those places need room; it is not uniformly baggy.",
+    "common_miss": "Wearing oversized clothes in workwear colours and calling it utilitarian. True workwear has precise functional proportions \u2014 it looks purposeful, not simply large. The function-proportion logic is what prevents it from being shapeless.",
+    "your_tell": [
+      "whether pockets are at accessible thigh level",
+      "whether jacket provides lumbar coverage",
+      "whether silhouette reads as functional-purposeful or just oversized"
+    ],
     "gap_type": "proportion"
   },
   {
     "id": "ae_017",
     "aesthetic": "Romantic/Cottagecore",
     "execution_marker": "The full-length commitment",
-    "what_it_requires": "The cottagecore silhouette is specifically midi or maxi: the hem should either fall at the calf (midi) or at the ankle (maxi). Mini lengths break the aesthetic entirely — the visual poetry of cottagecore is in the flowing hem, the sense of fabric moving around the body as if in a breeze. The fabric must be light enough to move (cotton voile, linen, lawn cotton) or have enough volume (cotton with petticoat underneath) to create that effect. The neckline is typically high or ruffled — the chest and shoulder should be covered or at least romantically framed.",
-    "common_miss": "Wearing a floral midi dress with contemporary styling (white trainers, a crossbody bag with metal chain, sunglasses that read as fashion). Each element kills the cottagecore mood. The aesthetic requires total commitment — the dress, the footwear, the bag, the hair styling all need to signal the same pastoral register.",
-    "your_tell": ["hem length", "whether fabric has enough weight or volume to move", "whether styling elements (shoes, bag) are period-appropriate"],
+    "what_it_requires": "The cottagecore silhouette is specifically midi or maxi: the hem should either fall at the calf (midi) or at the ankle (maxi). Mini lengths break the aesthetic entirely \u2014 the visual poetry of cottagecore is in the flowing hem, the sense of fabric moving around the body as if in a breeze. The fabric must be light enough to move (cotton voile, linen, lawn cotton) or have enough volume (cotton with petticoat underneath) to create that effect. The neckline is typically high or ruffled \u2014 the chest and shoulder should be covered or at least romantically framed.",
+    "common_miss": "Wearing a floral midi dress with contemporary styling (white trainers, a crossbody bag with metal chain, sunglasses that read as fashion). Each element kills the cottagecore mood. The aesthetic requires total commitment \u2014 the dress, the footwear, the bag, the hair styling all need to signal the same pastoral register.",
+    "your_tell": [
+      "hem length",
+      "whether fabric has enough weight or volume to move",
+      "whether styling elements (shoes, bag) are period-appropriate"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_018",
     "aesthetic": "Romantic/Cottagecore",
     "execution_marker": "Embellishment authenticity",
-    "what_it_requires": "Cottagecore embellishment should look hand-made or at least hand-made-inspired: broderie anglaise cutwork, hand-embroidered florals (or very good machine-embroidery on quality fabric), lace that is intricate rather than regular. The embellishment reads as labour-intensive, as something a nineteenth-century woman might have worked on by a window. Printed florals should be vintage-pattern — not graphic or contemporary digital prints. The specific flower vocabulary matters: wild meadow flowers (poppy, cornflower, buttercup) or English cottage garden (rose, wisteria, delphinium) rather than tropical or graphic interpretations.",
-    "common_miss": "Wearing polyester with a digital floral print in the right palette and thinking it reads as cottagecore. The print quality matters enormously — Liberty fabric prints age and saturate differently from fast-fashion digital prints. The handcraft signal requires actual handcraft quality.",
-    "your_tell": ["embroidery quality and density", "whether print reads as vintage-inspired or contemporary digital", "fabric quality under the print"],
+    "what_it_requires": "Cottagecore embellishment should look hand-made or at least hand-made-inspired: broderie anglaise cutwork, hand-embroidered florals (or very good machine-embroidery on quality fabric), lace that is intricate rather than regular. The embellishment reads as labour-intensive, as something a nineteenth-century woman might have worked on by a window. Printed florals should be vintage-pattern \u2014 not graphic or contemporary digital prints. The specific flower vocabulary matters: wild meadow flowers (poppy, cornflower, buttercup) or English cottage garden (rose, wisteria, delphinium) rather than tropical or graphic interpretations.",
+    "common_miss": "Wearing polyester with a digital floral print in the right palette and thinking it reads as cottagecore. The print quality matters enormously \u2014 Liberty fabric prints age and saturate differently from fast-fashion digital prints. The handcraft signal requires actual handcraft quality.",
+    "your_tell": [
+      "embroidery quality and density",
+      "whether print reads as vintage-inspired or contemporary digital",
+      "fabric quality under the print"
+    ],
     "gap_type": "material"
   },
   {
     "id": "ae_019",
     "aesthetic": "Japanese Minimalism",
     "execution_marker": "Deconstruction intentionality",
-    "what_it_requires": "Comme des Garçons / Yohji-inspired deconstruction requires that every apparent 'flaw' is clearly intentional: a raw hem at the right length, visible basting stitches as a design choice, a collar that stands without support because it was cut that way. The construction must be excellent enough that the deconstruction reads as a choice, not as poor workmanship. The aesthetic fails if the deliberate irregularity looks like an accident. This requires a level of garment literacy to achieve — you need to understand construction well enough to break its rules intelligibly.",
+    "what_it_requires": "Comme des Gar\u00e7ons / Yohji-inspired deconstruction requires that every apparent 'flaw' is clearly intentional: a raw hem at the right length, visible basting stitches as a design choice, a collar that stands without support because it was cut that way. The construction must be excellent enough that the deconstruction reads as a choice, not as poor workmanship. The aesthetic fails if the deliberate irregularity looks like an accident. This requires a level of garment literacy to achieve \u2014 you need to understand construction well enough to break its rules intelligibly.",
     "common_miss": "Wearing visibly deconstructed or distressed clothing without the foundation of excellent construction elsewhere in the outfit. If everything reads as unfinished, nothing reads as intentional deconstruction. The Japanese avant-garde aesthetic requires contrast: one element that breaks the rule against a background of precision.",
-    "your_tell": ["whether raw or irregular elements read as intentional choices", "quality of construction in surrounding pieces", "whether the look makes a visual argument or just looks unfinished"],
+    "your_tell": [
+      "whether raw or irregular elements read as intentional choices",
+      "quality of construction in surrounding pieces",
+      "whether the look makes a visual argument or just looks unfinished"
+    ],
     "gap_type": "construction"
   },
   {
     "id": "ae_020",
     "aesthetic": "Japanese Minimalism",
     "execution_marker": "Proportion drama",
-    "what_it_requires": "The Japanese avant-garde silhouette uses deliberate proportion contrast: a very large top against a slim bottom (the cocoon jacket), or the opposite (a voluminous skirt with a fitted plain top). The proportion statement is the point of the garment. This requires courage to wear because it looks unconventional. The proportion must be extreme enough to read as intentional — a slightly oversized top is just casual; a dramatically oversized top with a slim trouser is an aesthetic position.",
-    "common_miss": "Wearing slightly off-proportion pieces without committing to the drama the aesthetic requires. Japanese avant-garde proportion is extreme by Western standards — the cocoon, the dropped crotch, the extra-long torso. Half-measures look like poor fit rather than aesthetic choice.",
-    "your_tell": ["degree of proportion contrast between pieces", "whether the silhouette reads as bold choice or as fitting wrong"],
+    "what_it_requires": "The Japanese avant-garde silhouette uses deliberate proportion contrast: a very large top against a slim bottom (the cocoon jacket), or the opposite (a voluminous skirt with a fitted plain top). The proportion statement is the point of the garment. This requires courage to wear because it looks unconventional. The proportion must be extreme enough to read as intentional \u2014 a slightly oversized top is just casual; a dramatically oversized top with a slim trouser is an aesthetic position.",
+    "common_miss": "Wearing slightly off-proportion pieces without committing to the drama the aesthetic requires. Japanese avant-garde proportion is extreme by Western standards \u2014 the cocoon, the dropped crotch, the extra-long torso. Half-measures look like poor fit rather than aesthetic choice.",
+    "your_tell": [
+      "degree of proportion contrast between pieces",
+      "whether the silhouette reads as bold choice or as fitting wrong"
+    ],
     "gap_type": "proportion"
   },
   {
     "id": "ae_021",
     "aesthetic": "Old Money Prep",
     "execution_marker": "The worn-in factor",
-    "what_it_requires": "Prep clothes should look like they have lived with you: the Sperry Topsiders are scuffed on the sole, the madras blazer has faded slightly, the Lacoste polo has been washed many times (the piqué softens). This is not distressed or artificially aged — it is genuinely used. New prep clothes look like you just discovered the aesthetic; worn prep clothes look like you were born into it. The relevant shopping strategy is charity shops, dead-stock, and genuinely old Ralph Lauren from the 80s and 90s.",
+    "what_it_requires": "Prep clothes should look like they have lived with you: the Sperry Topsiders are scuffed on the sole, the madras blazer has faded slightly, the Lacoste polo has been washed many times (the piqu\u00e9 softens). This is not distressed or artificially aged \u2014 it is genuinely used. New prep clothes look like you just discovered the aesthetic; worn prep clothes look like you were born into it. The relevant shopping strategy is charity shops, dead-stock, and genuinely old Ralph Lauren from the 80s and 90s.",
     "common_miss": "Buying everything new and wearing it as a costume. A pristine new Polo Ralph Lauren blazer with its original buttons is recognizable as a new purchase; a 1990s Heritage Ralph Lauren blazer in the same style reads as genuine. The provenance is legible.",
-    "your_tell": ["whether pieces look genuinely aged", "whether the fabrication era is contemporary or vintage", "visible signs of use vs artificial distress vs pristine new"],
+    "your_tell": [
+      "whether pieces look genuinely aged",
+      "whether the fabrication era is contemporary or vintage",
+      "visible signs of use vs artificial distress vs pristine new"
+    ],
     "gap_type": "sourcing"
   },
   {
     "id": "ae_022",
     "aesthetic": "Old Money Prep",
     "execution_marker": "The specific colour vocabulary",
-    "what_it_requires": "Prep colour is specific: Nantucket red (the faded-brick salmon colour of Nantucket canvas), hunter green, navy, khaki, madras plaid (the handwoven Indian cotton plaid in muted red/blue/green), seersucker blue-white stripe. The Kelly green pop. The coral and turquoise of Palm Beach. These are not approximations — prep colour is almost heraldic in its specificity. The Nantucket red must be the specific dusty-brick, not a brighter salmon. The navy must be deep and true, not a washed-out 'navy-ish.'",
-    "common_miss": "Wearing the right silhouettes (polo + chino + boat shoe) in the wrong colour palette — a contemporary grey or off-brand print. The colour specificity is how old money prep distinguishes itself from general smart-casual. Getting the specific colours right signals cultural knowledge of the tradition.",
-    "your_tell": ["whether Nantucket red is the right dusty brick or too bright/orange", "whether navy is deep enough", "whether any madras or seersucker is genuinely woven rather than printed"],
+    "what_it_requires": "Prep colour is specific: Nantucket red (the faded-brick salmon colour of Nantucket canvas), hunter green, navy, khaki, madras plaid (the handwoven Indian cotton plaid in muted red/blue/green), seersucker blue-white stripe. The Kelly green pop. The coral and turquoise of Palm Beach. These are not approximations \u2014 prep colour is almost heraldic in its specificity. The Nantucket red must be the specific dusty-brick, not a brighter salmon. The navy must be deep and true, not a washed-out 'navy-ish.'",
+    "common_miss": "Wearing the right silhouettes (polo + chino + boat shoe) in the wrong colour palette \u2014 a contemporary grey or off-brand print. The colour specificity is how old money prep distinguishes itself from general smart-casual. Getting the specific colours right signals cultural knowledge of the tradition.",
+    "your_tell": [
+      "whether Nantucket red is the right dusty brick or too bright/orange",
+      "whether navy is deep enough",
+      "whether any madras or seersucker is genuinely woven rather than printed"
+    ],
     "gap_type": "color"
   },
   {
     "id": "ae_023",
     "aesthetic": "Parisian Style",
     "execution_marker": "The singular statement",
-    "what_it_requires": "Parisian style allows exactly one thing to be noticed per outfit. One good scarf knotted at the neck: nothing else. One red lip: simple outfit. One significant ring: no other jewellery. One interesting shoe: everything else plain. The disciplined limitation to one statement is the hardest rule to apply because it requires confidence that the one thing is enough — and it is, if the one thing is genuinely considered. The selection of that one thing is the exercise of taste.",
-    "common_miss": "Adding multiple statement elements: a scarf, statement earrings, an interesting top, and shoes that make a point. The accumulation kills the effortless effect. Parisian style is about editing — removing rather than adding. The visible effort of multiple statements is what the aesthetic refuses.",
-    "your_tell": ["number of elements that demand attention", "whether the outfit resolves into one clear focus or diffuses attention", "confidence of the singular choice"],
+    "what_it_requires": "Parisian style allows exactly one thing to be noticed per outfit. One good scarf knotted at the neck: nothing else. One red lip: simple outfit. One significant ring: no other jewellery. One interesting shoe: everything else plain. The disciplined limitation to one statement is the hardest rule to apply because it requires confidence that the one thing is enough \u2014 and it is, if the one thing is genuinely considered. The selection of that one thing is the exercise of taste.",
+    "common_miss": "Adding multiple statement elements: a scarf, statement earrings, an interesting top, and shoes that make a point. The accumulation kills the effortless effect. Parisian style is about editing \u2014 removing rather than adding. The visible effort of multiple statements is what the aesthetic refuses.",
+    "your_tell": [
+      "number of elements that demand attention",
+      "whether the outfit resolves into one clear focus or diffuses attention",
+      "confidence of the singular choice"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_024",
     "aesthetic": "Parisian Style",
     "execution_marker": "The deliberate imperfection",
-    "what_it_requires": "The Parisian aesthetic's effortlessness is partly achieved through a specific kind of imperfection: the shirt is slightly untucked, the blazer sleeve is pushed up, the hair has movement rather than precision, the belt is loosely buckled. These aren't accidents — they are an editorial strategy of making the look appear unlaboured. This is distinct from actual carelessness (a genuinely untucked shirt with no styling) by the precision of everything else. The imperfection is the one deliberate looseness in an otherwise considered outfit.",
-    "common_miss": "Trying too hard to look like you're not trying — deliberate imperfections that look performed rather than natural. Or genuinely not trying and looking unkempt. The calibration requires genuine style instinct rather than a formula.",
-    "your_tell": ["whether imperfections read as natural ease or performed effortlessness", "whether the outfit has sufficient precision elsewhere to make the loose element work"],
+    "what_it_requires": "The Parisian aesthetic's effortlessness is partly achieved through a specific kind of imperfection: the shirt is slightly untucked, the blazer sleeve is pushed up, the hair has movement rather than precision, the belt is loosely buckled. These aren't accidents \u2014 they are an editorial strategy of making the look appear unlaboured. This is distinct from actual carelessness (a genuinely untucked shirt with no styling) by the precision of everything else. The imperfection is the one deliberate looseness in an otherwise considered outfit.",
+    "common_miss": "Trying too hard to look like you're not trying \u2014 deliberate imperfections that look performed rather than natural. Or genuinely not trying and looking unkempt. The calibration requires genuine style instinct rather than a formula.",
+    "your_tell": [
+      "whether imperfections read as natural ease or performed effortlessness",
+      "whether the outfit has sufficient precision elsewhere to make the loose element work"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_025",
     "aesthetic": "Normcore",
     "execution_marker": "The quality ordinary",
-    "what_it_requires": "Normcore is not cheap or careless — it is a curated selection of the genuinely ordinary. The white New Balance 990 is specific: not a generic white trainer, not an Adidas or Nike equivalent, but the New Balance 990 because its very unglamorousness is a specific aesthetic choice. The Gap straight-leg jeans are the Gap straight-leg jeans. The Patagonia fleece is the Patagonia fleece. These are specific brand selections that function as cultural references within the aesthetic. The ordinary must be authentic ordinary — the specific items that don't try.",
-    "common_miss": "Wearing cheap, genuinely random basics without understanding that normcore is curated anonymity. Or wearing trendy basics (Uniqlo's current season pieces) when normcore requires the anti-trend ordinary. The pieces should be out of trend completely — the Gap jeans from three years ago, not this season.",
-    "your_tell": ["specific brands and models present (NB990, Gap, Patagonia)", "whether pieces are genuinely out of fashion-cycle", "overall impression of deliberate ordinariness vs actual no-interest in clothing"],
+    "what_it_requires": "Normcore is not cheap or careless \u2014 it is a curated selection of the genuinely ordinary. The white New Balance 990 is specific: not a generic white trainer, not an Adidas or Nike equivalent, but the New Balance 990 because its very unglamorousness is a specific aesthetic choice. The Gap straight-leg jeans are the Gap straight-leg jeans. The Patagonia fleece is the Patagonia fleece. These are specific brand selections that function as cultural references within the aesthetic. The ordinary must be authentic ordinary \u2014 the specific items that don't try.",
+    "common_miss": "Wearing cheap, genuinely random basics without understanding that normcore is curated anonymity. Or wearing trendy basics (Uniqlo's current season pieces) when normcore requires the anti-trend ordinary. The pieces should be out of trend completely \u2014 the Gap jeans from three years ago, not this season.",
+    "your_tell": [
+      "specific brands and models present (NB990, Gap, Patagonia)",
+      "whether pieces are genuinely out of fashion-cycle",
+      "overall impression of deliberate ordinariness vs actual no-interest in clothing"
+    ],
     "gap_type": "knowledge"
   },
   {
     "id": "ae_026",
     "aesthetic": "Maximalism/Camp",
     "execution_marker": "Pattern mixing discipline",
-    "what_it_requires": "Pattern mixing in maximalism requires a unifying logic: mixing a large floral with a small geometric works because the scale differs; mixing a plaid with a stripe works because they share a linear structure; mixing a graphic print with an ethnic-inspired print works when they share a colour family. The discipline is that each combination must have a reason — shared colour, shared scale, shared structural grammar. Pure random mixing reads as confused; disciplined mixed patterns read as considered abundance.",
-    "common_miss": "Mixing patterns that compete at the same scale with no colour relationship — three different busy prints in three different colour families. The result is visual noise, not camp abundance. Camp has a point of view; maximalism without a unifying logic is just clutter.",
-    "your_tell": ["whether mixed patterns share colour family or structural logic", "scale relationships between prints", "whether the combination reads as curated or accidental"],
+    "what_it_requires": "Pattern mixing in maximalism requires a unifying logic: mixing a large floral with a small geometric works because the scale differs; mixing a plaid with a stripe works because they share a linear structure; mixing a graphic print with an ethnic-inspired print works when they share a colour family. The discipline is that each combination must have a reason \u2014 shared colour, shared scale, shared structural grammar. Pure random mixing reads as confused; disciplined mixed patterns read as considered abundance.",
+    "common_miss": "Mixing patterns that compete at the same scale with no colour relationship \u2014 three different busy prints in three different colour families. The result is visual noise, not camp abundance. Camp has a point of view; maximalism without a unifying logic is just clutter.",
+    "your_tell": [
+      "whether mixed patterns share colour family or structural logic",
+      "scale relationships between prints",
+      "whether the combination reads as curated or accidental"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_027",
     "aesthetic": "Maximalism/Camp",
     "execution_marker": "Embellishment quality",
-    "what_it_requires": "Camp embellishment — sequins, beading, embroidery, appliqué — must be of a quality that rewards looking. Cheap sequins lose their backing, fade, and fall off; quality sequins are backed properly and catch light with depth. Beading on cheap garments uses plastic beads strung on thread that breaks; quality beading uses glass beads French-knotted to fabric. The theatre of camp requires props that hold up to scrutiny. The point of camp is that it takes its excess seriously.",
+    "what_it_requires": "Camp embellishment \u2014 sequins, beading, embroidery, appliqu\u00e9 \u2014 must be of a quality that rewards looking. Cheap sequins lose their backing, fade, and fall off; quality sequins are backed properly and catch light with depth. Beading on cheap garments uses plastic beads strung on thread that breaks; quality beading uses glass beads French-knotted to fabric. The theatre of camp requires props that hold up to scrutiny. The point of camp is that it takes its excess seriously.",
     "common_miss": "Wearing fast-fashion embellished pieces that fall apart after two wears. The embellishment reads as cheap rather than intentional. Camp that acknowledges its own cheapness with irony is a valid position (John Waters' aesthetic); camp that genuinely aspires to luxury requires the material quality to support the aspiration.",
-    "your_tell": ["sequin quality (backing, light-catching depth)", "beading security and material", "embroidery density and finishing"],
+    "your_tell": [
+      "sequin quality (backing, light-catching depth)",
+      "beading security and material",
+      "embroidery density and finishing"
+    ],
     "gap_type": "material"
   },
   {
     "id": "ae_028",
     "aesthetic": "Gorpcore",
     "execution_marker": "Technical authenticity",
-    "what_it_requires": "Gorpcore requires knowing the function of what you're wearing: understanding that a Gore-Tex shell has seam-sealed waterproof construction, that a Polartec fleece mid-layer traps body heat without absorbing moisture, that a trail shoe has specific lug patterns for specific terrain. You don't need to use the clothes for outdoor activities, but you need to understand their function. This knowledge shows in how you wear them — a Gore-Tex jacket worn properly (cinched at the hem, wrists sealed) reads differently from the same jacket worn as a fashion item.",
-    "common_miss": "Wearing technical outdoor gear as pure fashion without functional awareness — wearing the Arc'teryx shell unbuckled at the bottom, with jeans that would be useless in actual cold, and indoor shoes. The fashionable iteration of gorpcore succeeds when you look like you could be genuinely about to use what you're wearing. Costume-gorpcore reads as fashion with no foundation.",
-    "your_tell": ["whether technical garments are worn with functional awareness", "appropriateness of total layering system", "footwear functionality"],
+    "what_it_requires": "Gorpcore requires knowing the function of what you're wearing: understanding that a Gore-Tex shell has seam-sealed waterproof construction, that a Polartec fleece mid-layer traps body heat without absorbing moisture, that a trail shoe has specific lug patterns for specific terrain. You don't need to use the clothes for outdoor activities, but you need to understand their function. This knowledge shows in how you wear them \u2014 a Gore-Tex jacket worn properly (cinched at the hem, wrists sealed) reads differently from the same jacket worn as a fashion item.",
+    "common_miss": "Wearing technical outdoor gear as pure fashion without functional awareness \u2014 wearing the Arc'teryx shell unbuckled at the bottom, with jeans that would be useless in actual cold, and indoor shoes. The fashionable iteration of gorpcore succeeds when you look like you could be genuinely about to use what you're wearing. Costume-gorpcore reads as fashion with no foundation.",
+    "your_tell": [
+      "whether technical garments are worn with functional awareness",
+      "appropriateness of total layering system",
+      "footwear functionality"
+    ],
     "gap_type": "knowledge"
   },
   {
     "id": "ae_029",
     "aesthetic": "Gorpcore",
     "execution_marker": "The colour logic of technical gear",
-    "what_it_requires": "Technical outdoor colour has specific conventions: high-visibility colours (Arc'teryx volatile orange, Salomon yellow) for safety, earth tones (olive, khaki, slate) for camouflage, dark navy and black for versatility. Fashion gorpcore uses these colours intentionally — the orange shell is a statement because it is the specific orange of safety gear. The palette is never fashion-neutral; it derives from function. Understanding which colourways are authentic to specific brands and their outdoor heritage versus which are fashion-year specific recolours is part of gorpcore literacy.",
+    "what_it_requires": "Technical outdoor colour has specific conventions: high-visibility colours (Arc'teryx volatile orange, Salomon yellow) for safety, earth tones (olive, khaki, slate) for camouflage, dark navy and black for versatility. Fashion gorpcore uses these colours intentionally \u2014 the orange shell is a statement because it is the specific orange of safety gear. The palette is never fashion-neutral; it derives from function. Understanding which colourways are authentic to specific brands and their outdoor heritage versus which are fashion-year specific recolours is part of gorpcore literacy.",
     "common_miss": "Wearing technical gear in colours that read as fashion-season (a pastel Gore-Tex from a collaboration) without understanding the departure from the functional colour vocabulary. The interesting gorpcore tension is precisely between functional authenticity and fashion interpretation.",
-    "your_tell": ["whether colourways derive from outdoor gear conventions or fashion-season influence", "understanding of brand-specific colour heritage"],
+    "your_tell": [
+      "whether colourways derive from outdoor gear conventions or fashion-season influence",
+      "understanding of brand-specific colour heritage"
+    ],
     "gap_type": "color"
   },
   {
     "id": "ae_030",
     "aesthetic": "Androgynous/Gender-Fluid",
     "execution_marker": "Tailoring confidence",
-    "what_it_requires": "Androgynous tailoring — particularly women wearing men's-cut suits — requires the suit to actually fit. A men's suit on a woman with a different shoulder and hip structure must be altered: the shoulder taken in, the chest widened if needed, the waist possibly suppressed to create shape within the masculine cut. The result should look intentionally tailored to the wearer's body, not borrowed from someone else's wardrobe. The effect is the deliberate blurring of gendered codes, not the appearance of wearing clothes that don't fit.",
+    "what_it_requires": "Androgynous tailoring \u2014 particularly women wearing men's-cut suits \u2014 requires the suit to actually fit. A men's suit on a woman with a different shoulder and hip structure must be altered: the shoulder taken in, the chest widened if needed, the waist possibly suppressed to create shape within the masculine cut. The result should look intentionally tailored to the wearer's body, not borrowed from someone else's wardrobe. The effect is the deliberate blurring of gendered codes, not the appearance of wearing clothes that don't fit.",
     "common_miss": "Wearing a men's suit bought from a charity shop without alteration. The shoulders swim, the waist billows, the trousers are too long. This reads as literal borrowing rather than aesthetic statement. The androgynous suit works when you can see the wearer's body within the masculine garment, creating the gender tension intentionally.",
-    "your_tell": ["shoulder seam position", "waist shaping", "trouser break relative to shoe"],
+    "your_tell": [
+      "shoulder seam position",
+      "waist shaping",
+      "trouser break relative to shoe"
+    ],
     "gap_type": "fit"
   },
   {
     "id": "ae_031",
     "aesthetic": "Androgynous/Gender-Fluid",
     "execution_marker": "Gendered signifier deliberateness",
-    "what_it_requires": "Androgynous dressing works through deliberate collisions of gendered signals: a masculine suit with a pearl necklace, a men's Oxford shirt with a flared midi skirt, a femme trouser with a masculine boot. Each element should be readable as belonging to a specific gender code, and the combination should be clearly intentional rather than just mismatched. The deliberateness is the aesthetic — the look makes a statement about gender as a costume, as a choice.",
-    "common_miss": "Wearing clothes from different gender categories without the deliberateness — just mixing because you like the pieces. The look reads as miscellaneous rather than intentional. Androgynous fashion requires the wearer to know the codes they are mixing and to mix them with purpose.",
-    "your_tell": ["whether individual elements read as specifically gendered", "whether the combination creates clear gender tension or is just casual mixing"],
+    "what_it_requires": "Androgynous dressing works through deliberate collisions of gendered signals: a masculine suit with a pearl necklace, a men's Oxford shirt with a flared midi skirt, a femme trouser with a masculine boot. Each element should be readable as belonging to a specific gender code, and the combination should be clearly intentional rather than just mismatched. The deliberateness is the aesthetic \u2014 the look makes a statement about gender as a costume, as a choice.",
+    "common_miss": "Wearing clothes from different gender categories without the deliberateness \u2014 just mixing because you like the pieces. The look reads as miscellaneous rather than intentional. Androgynous fashion requires the wearer to know the codes they are mixing and to mix them with purpose.",
+    "your_tell": [
+      "whether individual elements read as specifically gendered",
+      "whether the combination creates clear gender tension or is just casual mixing"
+    ],
     "gap_type": "styling"
   },
   {
@@ -283,62 +406,87 @@
     "aesthetic": "Boho/Bohemian",
     "execution_marker": "Print and texture coherence",
     "what_it_requires": "Bohemian layering of prints and textures requires a warm colour family to unite them: terracotta, mustard, rust, forest green, warm red. Within that warm family, prints can mix freely because they share emotional temperature. The crochet overlay goes over the floral dress because they share the same warm palette. The fringe bag echoes the warm brown of the embroidery. Without the colour unification, bohemian layering reads as chaos; with it, it reads as richness.",
-    "common_miss": "Mixing bohemian elements from different colour families — a cool-toned floral print with warm-toned crochet and an orange bag. The pieces are individually bohemian but they don't create a coherent whole. The fundamental bohemian principle is warm abundance, and warmth is the binding agent.",
-    "your_tell": ["colour temperature consistency across pieces", "whether warm palette unifies the mixed prints", "overall impression of warmth and abundance vs clash"],
+    "common_miss": "Mixing bohemian elements from different colour families \u2014 a cool-toned floral print with warm-toned crochet and an orange bag. The pieces are individually bohemian but they don't create a coherent whole. The fundamental bohemian principle is warm abundance, and warmth is the binding agent.",
+    "your_tell": [
+      "colour temperature consistency across pieces",
+      "whether warm palette unifies the mixed prints",
+      "overall impression of warmth and abundance vs clash"
+    ],
     "gap_type": "color"
   },
   {
     "id": "ae_033",
     "aesthetic": "Boho/Bohemian",
     "execution_marker": "Jewellery layering logic",
-    "what_it_requires": "Bohemian jewellery works by accumulation within a material and colour constraint: mixed metal (gold and silver together are permissible in boho in a way they are not in minimalism), natural materials (turquoise, amber, coral, bone, wood, shell), and multiple pieces that look individually found rather than sold as a set. The necklaces are stacked at different lengths with different pendant types. The rings are stacked on multiple fingers. The bracelets are mixed — beaded, metal, leather, woven. The unity is the organic material vocabulary, not a matching set.",
-    "common_miss": "Wearing too-matching or too-fashion jewellery with bohemian clothes. A contemporary chain-link necklace with a bohemian dress reads as styling mismatch. The jewellery must look like it was collected over time from different sources — a market in Marrakech, a vintage store, a craft fair. The individual provenance should be legible.",
-    "your_tell": ["whether jewellery looks collected or matched", "material vocabulary (natural vs contemporary metal)", "layering volume and variety"],
+    "what_it_requires": "Bohemian jewellery works by accumulation within a material and colour constraint: mixed metal (gold and silver together are permissible in boho in a way they are not in minimalism), natural materials (turquoise, amber, coral, bone, wood, shell), and multiple pieces that look individually found rather than sold as a set. The necklaces are stacked at different lengths with different pendant types. The rings are stacked on multiple fingers. The bracelets are mixed \u2014 beaded, metal, leather, woven. The unity is the organic material vocabulary, not a matching set.",
+    "common_miss": "Wearing too-matching or too-fashion jewellery with bohemian clothes. A contemporary chain-link necklace with a bohemian dress reads as styling mismatch. The jewellery must look like it was collected over time from different sources \u2014 a market in Marrakech, a vintage store, a craft fair. The individual provenance should be legible.",
+    "your_tell": [
+      "whether jewellery looks collected or matched",
+      "material vocabulary (natural vs contemporary metal)",
+      "layering volume and variety"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_034",
     "aesthetic": "Scandinavian Minimalism",
     "execution_marker": "The considered accent",
-    "what_it_requires": "Scandinavian style's single accent colour must be selected with the same care that a graphic designer would bring to a brand palette decision. The terracotta with the oat cream should be a specific, warm terracotta — not orange, not brown, not rust, but the exact hue that creates warmth without clashing. The cobalt blue accent in a grey-and-white outfit must be a clean, clear blue — not navy (too conservative) not turquoise (too saturated). The accent's relationship to the neutral base is the whole design.",
-    "common_miss": "Adding an accent colour that is close to right but not exactly right — a warm camel instead of terracotta, or a greyed-out teal instead of clean cobalt. The Scandinavian colour system is precise; approximate versions look like they didn't quite know what they were doing.",
-    "your_tell": ["precision of the accent colour hue", "relationship between accent and neutral base", "whether the overall palette reads as considered or approximate"],
+    "what_it_requires": "Scandinavian style's single accent colour must be selected with the same care that a graphic designer would bring to a brand palette decision. The terracotta with the oat cream should be a specific, warm terracotta \u2014 not orange, not brown, not rust, but the exact hue that creates warmth without clashing. The cobalt blue accent in a grey-and-white outfit must be a clean, clear blue \u2014 not navy (too conservative) not turquoise (too saturated). The accent's relationship to the neutral base is the whole design.",
+    "common_miss": "Adding an accent colour that is close to right but not exactly right \u2014 a warm camel instead of terracotta, or a greyed-out teal instead of clean cobalt. The Scandinavian colour system is precise; approximate versions look like they didn't quite know what they were doing.",
+    "your_tell": [
+      "precision of the accent colour hue",
+      "relationship between accent and neutral base",
+      "whether the overall palette reads as considered or approximate"
+    ],
     "gap_type": "color"
   },
   {
     "id": "ae_035",
     "aesthetic": "Scandinavian Minimalism",
     "execution_marker": "Outerwear as statement",
-    "what_it_requires": "In the Scandi wardrobe, the coat or jacket is typically the highest-investment and most visible garment. It should be both technically excellent (wool or technical fabric that performs in cold grey weather) and aesthetically considered — an unusual cut (an asymmetric front, a circular hem, a dramatic collar) that the rest of the outfit is built to support. Everything else is quiet; the coat speaks. This inversion — maximum investment and expression in outerwear — is distinctly Scandinavian and distinguishes it from other minimal aesthetics where clothes are the statement.",
-    "common_miss": "Having a carefully considered outfit undermined by a coat that is purely practical rather than considered — a standard puffer, a plain belted trench, a fleece. The Scandinavian wardrobe treats the coat as the garment, not as weather protection added to the outfit. A great coat over a simple outfit is the Scandi formula.",
-    "your_tell": ["quality and design consideration of outerwear vs. rest of outfit", "whether the coat has an interesting cut or just practical function"],
+    "what_it_requires": "In the Scandi wardrobe, the coat or jacket is typically the highest-investment and most visible garment. It should be both technically excellent (wool or technical fabric that performs in cold grey weather) and aesthetically considered \u2014 an unusual cut (an asymmetric front, a circular hem, a dramatic collar) that the rest of the outfit is built to support. Everything else is quiet; the coat speaks. This inversion \u2014 maximum investment and expression in outerwear \u2014 is distinctly Scandinavian and distinguishes it from other minimal aesthetics where clothes are the statement.",
+    "common_miss": "Having a carefully considered outfit undermined by a coat that is purely practical rather than considered \u2014 a standard puffer, a plain belted trench, a fleece. The Scandinavian wardrobe treats the coat as the garment, not as weather protection added to the outfit. A great coat over a simple outfit is the Scandi formula.",
+    "your_tell": [
+      "quality and design consideration of outerwear vs. rest of outfit",
+      "whether the coat has an interesting cut or just practical function"
+    ],
     "gap_type": "investment_priority"
   },
   {
     "id": "ae_036",
     "aesthetic": "Quiet Luxury",
     "execution_marker": "Grooming as completion",
-    "what_it_requires": "Quiet luxury is completed by grooming that matches its register: clean, considered, never conspicuous. Nails are short and neutral — a clear or sheer blush, never bright or sculptural. Makeup is precise and skin-focused — SPF, good foundation, a single product that improves without announcing itself. Hair is either immaculate (a clean updo, a precise blowout) or intentionally casual (air-dried and healthy). The logic is the same as the clothes: quality that rewards close attention, nothing that shouts. Perfume is present but not identifiable from across the room.",
-    "common_miss": "Wearing quiet luxury clothes with high-maintenance conspicuous grooming — long acrylic nails, heavy social-media makeup, a dramatic blowout. The grooming contradicts the register of the clothes. Quiet luxury requires restraint from head to toe. Each element must belong to the same emotional register.",
-    "your_tell": ["nail length and colour", "makeup intensity", "whether grooming reads as understated quality or high-maintenance visibility"],
+    "what_it_requires": "Quiet luxury is completed by grooming that matches its register: clean, considered, never conspicuous. Nails are short and neutral \u2014 a clear or sheer blush, never bright or sculptural. Makeup is precise and skin-focused \u2014 SPF, good foundation, a single product that improves without announcing itself. Hair is either immaculate (a clean updo, a precise blowout) or intentionally casual (air-dried and healthy). The logic is the same as the clothes: quality that rewards close attention, nothing that shouts. Perfume is present but not identifiable from across the room.",
+    "common_miss": "Wearing quiet luxury clothes with high-maintenance conspicuous grooming \u2014 long acrylic nails, heavy social-media makeup, a dramatic blowout. The grooming contradicts the register of the clothes. Quiet luxury requires restraint from head to toe. Each element must belong to the same emotional register.",
+    "your_tell": [
+      "nail length and colour",
+      "makeup intensity",
+      "whether grooming reads as understated quality or high-maintenance visibility"
+    ],
     "gap_type": "styling"
   },
   {
     "id": "ae_037",
     "aesthetic": "Dark Academia",
     "execution_marker": "Proportional length on trousers",
-    "what_it_requires": "Dark academia trousers are ankle-length, not full-length — they break just above the shoe, showing approximately one inch of sock. This is non-negotiable: the sock is part of the look (argyle, ribbed tonal, or bold coloured contrast) and must be visible. Full-length trousers hide the sock and break the layering logic. The trouser silhouette is slim or straight, never wide-leg, because wide-leg would eliminate the ankle-length sock reveal. This precision of trouser length is a critical authenticating detail.",
+    "what_it_requires": "Dark academia trousers are ankle-length, not full-length \u2014 they break just above the shoe, showing approximately one inch of sock. This is non-negotiable: the sock is part of the look (argyle, ribbed tonal, or bold coloured contrast) and must be visible. Full-length trousers hide the sock and break the layering logic. The trouser silhouette is slim or straight, never wide-leg, because wide-leg would eliminate the ankle-length sock reveal. This precision of trouser length is a critical authenticating detail.",
     "common_miss": "Wearing dark academia pieces with full-length trousers that hide the sock, or with wide-leg trousers that belong to a different aesthetic. The trouser-sock relationship is a dark academia signature; missing it makes the look read as generic smart-casual in autumn colours.",
-    "your_tell": ["trouser break and sock visibility", "silhouette of trouser (slim/straight vs wide)"],
+    "your_tell": [
+      "trouser break and sock visibility",
+      "silhouette of trouser (slim/straight vs wide)"
+    ],
     "gap_type": "fit"
   },
   {
     "id": "ae_038",
     "aesthetic": "Boho/Bohemian",
     "execution_marker": "The footwear foundation",
-    "what_it_requires": "Bohemian footwear must be substantial enough to ground the volume of the clothes: ankle boots (preferably heeled, in tan, cognac, or brown leather), cowboy boots (in leather with embroidery or a plain brown), platform sandals (for warmer months), or simple leather sandals with multiple straps. What doesn't work: trainers (wrong energy), simple ballet flats (too delicate for the richness of the look), heeled court shoes (too corporate). The boot specifically creates the contrast between the volume of the skirt and the precision of the foot — this contrast is part of what makes the bohemian silhouette work.",
+    "what_it_requires": "Bohemian footwear must be substantial enough to ground the volume of the clothes: ankle boots (preferably heeled, in tan, cognac, or brown leather), cowboy boots (in leather with embroidery or a plain brown), platform sandals (for warmer months), or simple leather sandals with multiple straps. What doesn't work: trainers (wrong energy), simple ballet flats (too delicate for the richness of the look), heeled court shoes (too corporate). The boot specifically creates the contrast between the volume of the skirt and the precision of the foot \u2014 this contrast is part of what makes the bohemian silhouette work.",
     "common_miss": "Wearing a full bohemian outfit with contemporary trainers or simple flat sandals. The footwear either reads as wrong (trainers) or too delicate (simple flats) to support the visual weight of the clothes. Bohemian volume needs grounding from the foot up.",
-    "your_tell": ["footwear type and weight", "whether foot-level grounding matches clothing volume"],
+    "your_tell": [
+      "footwear type and weight",
+      "whether foot-level grounding matches clothing volume"
+    ],
     "gap_type": "styling"
   },
   {
@@ -346,17 +494,60 @@
     "aesthetic": "Workwear/Utilitarian",
     "execution_marker": "Palette authenticity",
     "what_it_requires": "Workwear palette derives from its function context: the duck canvas jacket is the brown of undyed duck canvas, the denim is raw indigo blue, the work trousers are olive drab (army field trousers), khaki (British military), or dark navy (naval work). These colours are specific because they were chosen for specific functional reasons (camouflage, durability, coal-hiding). The fashion workwear palette stays within these functional derivations; straying into contemporary fashion neutrals (greige, stone, taupe) loses the utilitarian authenticity.",
-    "common_miss": "Wearing the workwear silhouette in contemporary fashion neutral colours — grey, beige, off-white. The palette makes the look fashion-workwear rather than genuine workwear translation. The colour should feel like it belongs to a specific industry or military tradition, not a generic neutral.",
-    "your_tell": ["whether palette derives from functional workwear tradition or fashion-neutral palette", "specific colour authenticity (duck canvas brown vs fashion tan, raw indigo vs washed denim)"],
+    "common_miss": "Wearing the workwear silhouette in contemporary fashion neutral colours \u2014 grey, beige, off-white. The palette makes the look fashion-workwear rather than genuine workwear translation. The colour should feel like it belongs to a specific industry or military tradition, not a generic neutral.",
+    "your_tell": [
+      "whether palette derives from functional workwear tradition or fashion-neutral palette",
+      "specific colour authenticity (duck canvas brown vs fashion tan, raw indigo vs washed denim)"
+    ],
     "gap_type": "color"
   },
   {
     "id": "ae_040",
     "aesthetic": "90s Minimalism",
     "execution_marker": "The monochrome discipline",
-    "what_it_requires": "90s minimalism's monochrome is tonal, not identical: cream coat with ivory trousers and ecru shirt — three whites that differ in warmth and value but read as unified. Or charcoal blazer with slate trousers and stone shirt — three greys at different values. The tonal monochrome requires selecting shades that are related but distinct, because identical pieces in the same colour (matching suit) read as fashion uniform, not minimalism. The skill is in the calibration — close enough to read as monochrome, different enough to show the palette has been considered.",
-    "common_miss": "Wearing a perfect matching set (jacket and trouser in identical fabric and colour) and calling it minimalism. Matching sets are fashion; tonal monochrome is minimalism. Or wearing black and white together and calling it minimalist — black/white contrast is not monochrome.",
-    "your_tell": ["whether tonal variation within the palette is intentional", "warmth and value differences between nominally same-colour pieces"],
+    "what_it_requires": "90s minimalism's monochrome is tonal, not identical: cream coat with ivory trousers and ecru shirt \u2014 three whites that differ in warmth and value but read as unified. Or charcoal blazer with slate trousers and stone shirt \u2014 three greys at different values. The tonal monochrome requires selecting shades that are related but distinct, because identical pieces in the same colour (matching suit) read as fashion uniform, not minimalism. The skill is in the calibration \u2014 close enough to read as monochrome, different enough to show the palette has been considered.",
+    "common_miss": "Wearing a perfect matching set (jacket and trouser in identical fabric and colour) and calling it minimalism. Matching sets are fashion; tonal monochrome is minimalism. Or wearing black and white together and calling it minimalist \u2014 black/white contrast is not monochrome.",
+    "your_tell": [
+      "whether tonal variation within the palette is intentional",
+      "warmth and value differences between nominally same-colour pieces"
+    ],
     "gap_type": "color"
+  },
+  {
+    "id": "ae_ind_001",
+    "aesthetic": "Contemporary Indian Wear",
+    "rule_type": "fabric_choice",
+    "tags": [
+      "fabric",
+      "kurta",
+      "drape",
+      "synthetic",
+      "cheap"
+    ],
+    "text": "The most common failure in Contemporary Indian wear is relying on stiff, synthetic fabrics (polyester blends) that refuse to drape correctly. A kurta relies on fluid movement; synthetic fabrics cling statically and lack the breathable, crinkled charm of natural handlooms like cotton, linen, or Chanderi. The fix is strictly upgrading to natural fibers that hold dyes well and flow with the body."
+  },
+  {
+    "id": "ae_ind_002",
+    "aesthetic": "Contemporary Indian Wear",
+    "rule_type": "proportion_balance",
+    "tags": [
+      "proportion",
+      "kurta",
+      "palazzo",
+      "fit"
+    ],
+    "text": "Another frequent miss is poor proportion pairing between the top and bottom. Wearing a voluminous, heavily gathered anarkali kurta with an equally wide, unstructured palazzo swallows the figure entirely. If the kurta is voluminous, it must be paired with straight-cut pants or churidars; if the kurta is a straight-cut tunic, it can support wide-leg palazzos. Balance is mandatory."
+  },
+  {
+    "id": "ae_ind_003",
+    "aesthetic": "Indo-Western Fusion",
+    "rule_type": "clashing_contexts",
+    "tags": [
+      "fusion",
+      "sneakers",
+      "jewelry",
+      "over-accessorizing"
+    ],
+    "text": "In Indo-Western fusion, the fatal flaw is over-accessorizing both sides. If pairing a traditional heavy lehenga skirt with a modern white button-down shirt, the execution fails if you also pile on heavy traditional Kundan jewelry. The look requires a 'hero' element. The actionable step is to strip away competing accessories\u2014let the tension between the crisp white shirt and the embroidered skirt speak for itself without clutter."
   }
 ]

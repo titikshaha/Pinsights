@@ -118,6 +118,7 @@ export async function startAnalysis(
     files?: File[]
     board?: string
     query?: string
+    goal?: string
   }
 ): Promise<string> {
   const form = new FormData()
@@ -131,6 +132,9 @@ export async function startAnalysis(
   }
   if (source === 'unsplash' && options.query) {
     form.append('query', options.query)
+  }
+  if (options.goal) {
+    form.append('goal', options.goal)
   }
 
   const res = await fetch(`${BASE}/analyze`, { method: 'POST', body: form })
