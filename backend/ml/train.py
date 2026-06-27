@@ -9,6 +9,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from pathlib import Path
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Import our existing embedder
 from backend.ml.embedder import embed_images
@@ -108,7 +111,7 @@ def train():
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
     
-    model = AestheticClassifier(input_dim=512, num_classes=num_classes).to(device)
+    model = AestheticClassifier(input_dim=768, num_classes=num_classes).to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
     

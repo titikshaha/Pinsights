@@ -61,7 +61,7 @@ def embed_images(image_paths: List[str], batch_size: int = 32) -> np.ndarray:
     Embed a list of image file paths using CLIP vision encoder.
 
     Returns:
-        np.ndarray of shape (N, 512), L2-normalised.
+        np.ndarray of shape (N, 768), L2-normalised.
     """
     _ensure_loaded()
 
@@ -80,7 +80,7 @@ def embed_images(image_paths: List[str], batch_size: int = 32) -> np.ndarray:
             except Exception as e:
                 print(f"[Embedder] Warning: could not open {path}: {e}")
                 # Insert zero vector placeholder
-                all_embeddings.append(np.zeros(512, dtype=np.float32))
+                all_embeddings.append(np.zeros(768, dtype=np.float32))
 
         if not images:
             continue
@@ -102,7 +102,7 @@ def embed_images(image_paths: List[str], batch_size: int = 32) -> np.ndarray:
                 all_embeddings.append(item)
 
     if not all_embeddings:
-        return np.zeros((0, 512), dtype=np.float32)
+        return np.zeros((0, 768), dtype=np.float32)
 
     return np.vstack(all_embeddings).astype(np.float32)
 
@@ -112,7 +112,7 @@ def embed_texts(texts: List[str], batch_size: int = 64) -> np.ndarray:
     Embed a list of text strings using CLIP text encoder.
 
     Returns:
-        np.ndarray of shape (N, 512), L2-normalised.
+        np.ndarray of shape (N, 768), L2-normalised.
     """
     _ensure_loaded()
 
@@ -127,11 +127,11 @@ def embed_texts(texts: List[str], batch_size: int = 64) -> np.ndarray:
         all_embeddings.append(feats.cpu().numpy().astype(np.float32))
 
     if not all_embeddings:
-        return np.zeros((0, 512), dtype=np.float32)
+        return np.zeros((0, 768), dtype=np.float32)
 
     return np.vstack(all_embeddings).astype(np.float32)
 
 
 def embed_single_text(text: str) -> np.ndarray:
-    """Embed a single text string. Returns 1D array of shape (512,)."""
+    """Embed a single text string. Returns 1D array of shape (768,)."""
     return embed_texts([text])[0]
