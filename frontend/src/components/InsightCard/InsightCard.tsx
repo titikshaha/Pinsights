@@ -20,7 +20,7 @@ function GapItem({ gap }: { gap: Gap }) {
           <span className="gap-item__name">{gap.gap_name}</span>
         </div>
         <button className="gap-item__toggle">
-          {open ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+          {open ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
         </button>
       </div>
 
@@ -43,7 +43,7 @@ function GapItem({ gap }: { gap: Gap }) {
             </div>
             {gap.actionable_step && (
               <div className="gap-action">
-                <ArrowRight size={14} />
+                <ArrowRight size={13} />
                 <span>{gap.actionable_step}</span>
               </div>
             )}
@@ -52,16 +52,29 @@ function GapItem({ gap }: { gap: Gap }) {
       </AnimatePresence>
 
       <style>{`
-        .gap-item { border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
-        .gap-item__header { display: flex; justify-content: space-between; align-items: center; padding: var(--space-3) var(--space-4); cursor: pointer; gap: var(--space-3); }
+        .gap-item {
+          border: 1px solid var(--color-border);
+          border-radius: var(--radius-md);
+          overflow: hidden;
+          background: var(--color-surface);
+        }
+        .gap-item__header {
+          display: flex; justify-content: space-between; align-items: center;
+          padding: var(--space-3) var(--space-4); cursor: pointer; gap: var(--space-3);
+          transition: background var(--duration-fast);
+        }
         .gap-item__header:hover { background: var(--color-surface-2); }
         .gap-item__title-row { display: flex; align-items: center; gap: var(--space-2); }
-        .gap-item__name { font-size: 0.875rem; font-weight: 500; color: var(--color-text-primary); }
-        .gap-item__toggle { background: none; border: none; color: var(--color-text-muted); cursor: pointer; }
+        .gap-item__name { font-size: 0.8125rem; font-weight: 500; color: var(--color-text-primary); }
+        .gap-item__toggle { background: none; border: none; color: var(--color-text-muted); cursor: pointer; flex-shrink: 0; }
         .gap-item__body { overflow: hidden; }
         .gap-detail { padding: var(--space-3) var(--space-4); border-top: 1px solid var(--color-border); }
-        .gap-detail p { font-size: 0.875rem; }
-        .gap-action { display: flex; align-items: flex-start; gap: var(--space-2); padding: var(--space-3) var(--space-4); border-top: 1px solid var(--color-border); color: var(--color-accent); font-size: 0.875rem; font-weight: 500; }
+        .gap-detail p { font-size: 0.8125rem; color: var(--color-text-secondary); }
+        .gap-action {
+          display: flex; align-items: flex-start; gap: var(--space-2);
+          padding: var(--space-3) var(--space-4); border-top: 1px solid var(--color-border);
+          color: var(--color-accent); font-size: 0.8125rem; font-weight: 500;
+        }
       `}</style>
     </div>
   )
@@ -73,11 +86,11 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
       className={`insight-card ${isSelected ? 'insight-card--selected' : ''}`}
       onClick={onClick}
       layout
-      initial={{ opacity: 0, y: 16 }}
+      initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* Representative image grid */}
+      {/* Images */}
       <div className="insight-card__images">
         {cluster.representative_paths.slice(0, 3).map((path, i) => (
           <img key={i} src={imageUrl(path)} alt="" />
@@ -91,12 +104,12 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
         ))}
       </div>
 
-      {/* Aesthetic name */}
+      {/* Name */}
       <h3 className="insight-card__name">{cluster.aesthetic_name}</h3>
 
       {/* Description */}
       {cluster.description && (
-        <p className="insight-card__description">{cluster.description}</p>
+        <p className="insight-card__desc">{cluster.description}</p>
       )}
 
       <AnimatePresence>
@@ -106,11 +119,10 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.28 }}
           >
             <hr className="divider" />
 
-            {/* Aspiration reading */}
             {cluster.aspiration_reading && (
               <div className="insight-section">
                 <div className="section-label">Aspiration reading</div>
@@ -118,7 +130,6 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
               </div>
             )}
 
-            {/* Palette story */}
             {cluster.palette_story && (
               <div className="insight-section">
                 <div className="section-label">What your palette says</div>
@@ -126,12 +137,10 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
               </div>
             )}
 
-            {/* Cultural origin */}
             {cluster.cultural_origin && (
               <div className="because">{cluster.cultural_origin}</div>
             )}
 
-            {/* Visual signals */}
             {cluster.visual_signals.length > 0 && (
               <div className="insight-section">
                 <div className="section-label">Visual signals detected</div>
@@ -143,7 +152,6 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
               </div>
             )}
 
-            {/* Gaps */}
             {cluster.gaps.length > 0 && (
               <div className="insight-section">
                 <div className="section-label">Execution gaps</div>
@@ -165,14 +173,16 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
           border-radius: var(--radius-lg);
           overflow: hidden;
           cursor: pointer;
+          box-shadow: var(--shadow-sm);
           transition: border-color var(--duration-base), box-shadow var(--duration-base);
         }
         .insight-card:hover {
           border-color: var(--color-border-hover);
+          box-shadow: var(--shadow-md);
         }
         .insight-card--selected {
-          border-color: rgba(200,168,130,0.4);
-          box-shadow: 0 0 0 1px rgba(200,168,130,0.2);
+          border-color: rgba(156,123,90,0.35);
+          box-shadow: 0 0 0 2px rgba(156,123,90,0.12), var(--shadow-md);
         }
         .insight-card__images {
           display: grid;
@@ -180,40 +190,39 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
           gap: 2px;
           background: var(--color-surface-3);
         }
-        .insight-card__images img {
-          width: 100%;
-          aspect-ratio: 1;
-          object-fit: cover;
-          display: block;
-        }
-        .insight-card__palette {
-          display: flex;
-          gap: var(--space-1);
-          padding: var(--space-3) var(--space-4) 0;
-        }
+        .insight-card__images img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+        .insight-card__palette { display: flex; gap: var(--space-1); padding: var(--space-3) var(--space-4) 0; }
         .insight-card__swatch {
-          width: 18px;
-          height: 18px;
-          border-radius: 50%;
-          flex-shrink: 0;
-          box-shadow: 0 0 0 1px rgba(255,255,255,0.08);
+          width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0;
+          box-shadow: 0 0 0 1px rgba(28,25,19,0.08);
         }
         .insight-card__name {
           font-family: var(--font-display);
-          font-size: 1.25rem;
+          font-size: 1.175rem;
           padding: var(--space-2) var(--space-4) 0;
+          color: var(--color-text-primary);
         }
-        .insight-card__description {
-          font-size: 0.875rem;
+        .insight-card__desc {
+          font-size: 0.8125rem;
           padding: var(--space-2) var(--space-4) var(--space-4);
           color: var(--color-text-secondary);
+          line-height: 1.55;
         }
         .insight-card__expanded { padding: 0 var(--space-4) var(--space-4); overflow: hidden; }
         .insight-section { margin-bottom: var(--space-4); }
         .insight-section:last-child { margin-bottom: 0; }
         .insight-section p { font-size: 0.875rem; }
         .insight-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2); }
-        .insight-tag { background: var(--color-surface-3); color: var(--color-text-secondary); padding: 2px var(--space-3); border-radius: 100px; font-size: 0.75rem; }
+        .insight-tag {
+          background: var(--color-surface-2);
+          color: var(--color-text-secondary);
+          border: 1px solid var(--color-border);
+          padding: 2px var(--space-3);
+          border-radius: 100px;
+          font-size: 0.6875rem;
+          font-weight: 500;
+          letter-spacing: 0.04em;
+        }
         .insight-gaps { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-2); }
       `}</style>
     </motion.div>

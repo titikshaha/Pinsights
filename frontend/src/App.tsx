@@ -9,8 +9,12 @@ type Page = 'landing' | 'analysis'
 function Nav({ page, onNavigate }: { page: Page; onNavigate: (p: Page) => void }) {
   return (
     <nav className="nav">
-      <span className="nav__logo" onClick={() => onNavigate('landing')} style={{ cursor: 'pointer' }}>
-        Pin<span>sights</span>
+      <span
+        className="nav__logo"
+        onClick={() => onNavigate('landing')}
+        style={{ cursor: 'pointer' }}
+      >
+        Pin<em>sights</em>
       </span>
       <div className="nav__links">
         <span
@@ -53,7 +57,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.25 }}
           >
             <Landing
               onAnalysisStarted={handleAnalysisStarted}
@@ -67,7 +71,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.25 }}
           >
             <Analysis state={state} onReset={handleReset} />
           </motion.div>
