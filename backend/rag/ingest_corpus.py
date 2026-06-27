@@ -96,7 +96,8 @@ def main():
     load_dotenv()
 
     # Load CLIP model
-    load_model()
+    from backend.ml.embedder import _ensure_loaded
+    _ensure_loaded()
 
     # Ensure collections exist
     ensure_collections()
