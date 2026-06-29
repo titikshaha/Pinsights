@@ -14,10 +14,10 @@ function GapItem({ gap }: { gap: Gap }) {
   const [open, setOpen] = useState(false)
   return (
     <div className="gap-item">
-      <div className="gap-item__header" onClick={() => setOpen(o => !o)}>
+      <div className="gap-item__header" onClick={(e) => { e.stopPropagation(); setOpen(o => !o); }}>
         <div className="gap-item__title-row">
-          <span className={`badge badge--${gap.severity}`}>{gap.severity}</span>
-          <span className="gap-item__name">{gap.gap_name}</span>
+          <span className={`badge badge--${gap.severity}`}>{gap.severity === 'critical' ? 'key guide' : gap.severity === 'moderate' ? 'suggestion' : 'refinement'}</span>
+          <span className="gap-item__name">{gap.gap_name.replace('Gap', 'Guide').replace('gap', 'guide').replace('Incorrect', 'Refining').replace('Improper', 'Refining')}</span>
         </div>
         <button className="gap-item__toggle">
           {open ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
@@ -92,7 +92,7 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
     >
       {/* Images */}
       <div className="insight-card__images">
-        {cluster.representative_paths.slice(0, 3).map((path, i) => (
+        {cluster.representative_paths.map((path, i) => (
           <img key={i} src={imageUrl(path)} alt="" />
         ))}
       </div>
@@ -123,40 +123,11 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
           >
             <hr className="divider" />
 
-            {cluster.aspiration_reading && (
-              <div className="insight-section">
-                <div className="section-label">Aspiration reading</div>
-                <p>{cluster.aspiration_reading}</p>
-              </div>
-            )}
-
-            {cluster.palette_story && (
-              <div className="insight-section">
-                <div className="section-label">What your palette says</div>
-                <p>{cluster.palette_story}</p>
-              </div>
-            )}
-
-            {cluster.cultural_origin && (
-              <div className="because">{cluster.cultural_origin}</div>
-            )}
-
-            {cluster.visual_signals.length > 0 && (
-              <div className="insight-section">
-                <div className="section-label">Visual signals detected</div>
-                <div className="insight-tags">
-                  {cluster.visual_signals.map((s, i) => (
-                    <span key={i} className="insight-tag">{s}</span>
-                  ))}
-                </div>
-              </div>
-            )}
-
             {cluster.gaps.length > 0 && (
               <div className="insight-section">
-                <div className="section-label">Execution gaps</div>
+                <div className="section-label">Styling Suggestion</div>
                 <div className="insight-gaps">
-                  {cluster.gaps.map((g, i) => (
+                  {cluster.gaps.slice(0, 1).map((g, i) => (
                     <GapItem key={i} gap={g} />
                   ))}
                 </div>
@@ -186,7 +157,7 @@ export default function InsightCard({ cluster, isSelected, onClick }: InsightCar
         }
         .insight-card__images {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
           gap: 2px;
           background: var(--color-surface-3);
         }

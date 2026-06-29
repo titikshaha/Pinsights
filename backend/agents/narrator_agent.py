@@ -11,6 +11,7 @@ Hard constraints:
 from __future__ import annotations
 import os
 import json
+import re
 from dataclasses import dataclass, field
 from typing import List, Dict, Any, Optional
 
@@ -26,8 +27,7 @@ class NarratorResult:
     # Aesthetic DNA
     primary_world: str
     secondary_world: Optional[str]
-    visual_tension: str
-    overall_aspiration: str
+    executive_summary: str
 
     # Per-cluster summaries
     clusters: List[Dict[str, Any]]
@@ -36,8 +36,8 @@ class NarratorResult:
     gaps: List[Dict[str, Any]]
     primary_gap: Optional[Dict[str, Any]]
 
-    # Cultural context (retrieved + synthesised)
-    cultural_context: List[Dict[str, Any]]
+    # Filter conclusion (replaces cultural context)
+    filter_conclusion: List[str]
 
     # Drift signal (populated by history route, empty on first analysis)
     drift_signal: Optional[str] = None
@@ -52,13 +52,12 @@ class NarratorResult:
             "aesthetic_dna": {
                 "primary_world": self.primary_world,
                 "secondary_world": self.secondary_world,
-                "visual_tension": self.visual_tension,
-                "overall_aspiration": self.overall_aspiration,
+                "executive_summary": self.executive_summary,
             },
             "clusters": self.clusters,
             "gaps": self.gaps,
             "primary_gap": self.primary_gap,
-            "cultural_context": self.cultural_context,
+            "filter_conclusion": self.filter_conclusion,
             "drift_signal": self.drift_signal,
             "meta": {
                 "session_id": self.session_id,
@@ -98,44 +97,40 @@ def _build_narrator_prompt(
     cultural_context_text = "\n\n".join(cultural_chunks[:4])
 
     goal_instruction = {
-        "styling": "Provide an array of execution_suggestions (specific styling tips, material choices, or silhouettes to nail this aesthetic authentically)",
-        "shopping": "Provide an array of execution_suggestions detailing the exact key pieces/items to buy to build this wardrobe",
-        "trends": "Provide an array of execution_suggestions explaining why this silhouette is trending and where it is evolving next"
-    }.get(goal, "Provide an array of execution_suggestions (specific styling tips, material choices, or silhouettes to nail this aesthetic authentically)")
+        "styling": "Provide 4-5 highly specific, actionable styling rules to nail this aesthetic authentically. Prepend an appropriate emoji to each point.",
+        "shopping": "Provide a curated shopping list of 4-5 exact key pieces/items to buy to build this wardrobe. Prepend an appropriate emoji (like 🧥, 👜, etc.) to each point.",
+        "trends": "Provide 4-5 bullet points explaining why this silhouette is trending and where it is evolving next. Prepend an appropriate emoji to each point."
+    }.get(goal, "Provide 4-5 specific styling tips. Prepend an emoji to each.")
 
-    return f"""You are synthesising a fashion analysis into a final, precise report. 
+    return f"""You are synthesising a fashion analysis into a final, highly concise report. 
+Do NOT write long paragraphs. Keep it punchy and direct.
 
 DETECTED AESTHETICS:
 {worlds_summary}
 
-VISUAL TENSION: {identity_result.visual_tension}
-OVERALL ASPIRATION: {identity_result.overall_aspiration}
-
 IDENTIFIED GAPS:
 {gaps_summary}
 
-CULTURAL CONTEXT FROM RETRIEVED SOURCES:
+CULTURAL CONTEXT FROM RETRIEVED SOURCES (For your background knowledge):
 {cultural_context_text}
 
-TASK: Write 3-4 cultural context statements that ground the analysis in fashion history. Each statement must:
-1. Make a specific claim about what the images reveal
-2. Follow it with "because [cultural/historical reason]"
-3. Include a detailed_analysis section (exactly 2 highly effective sentences hitting the right keywords) exploring the origins, evolution, and cultural meaning of this aesthetic
-4. {goal_instruction}
-5. Cite the source era and context
-6. Be specific to THIS person's collection — not generic aesthetic description
+TASK: Generate a strictly structured JSON object containing an executive summary and a filter conclusion.
 
-Format as JSON array:
-[
-  {{
-    "claim": "<specific claim about what the images reveal>",
-    "because": "<the cultural/historical reason this is what it is>",
-    "detailed_analysis": "<2-3 sentences diving deep into the history and nuance of this aesthetic signal>",
-    "execution_suggestions": ["<specific styling tip 1>", "<specific styling tip 2>"],
-    "source_era": "<e.g. '1990s New York'>",
-    "cultural_code": "<what this signal means in its cultural context>"
-  }}
-]"""
+CRITICAL: Your recommendations in the filter_conclusion MUST be strictly grounded in the visual signals of the clothes actually seen in the images. Do not recommend unrelated garments just because they appear in the cultural context. If the images are of black lace dresses, recommend black lace pieces, not sarees or blazers unless they are actually present. Ensure your output is perfectly valid JSON.
+
+1. "executive_summary": Write a single, punchy 2-3 sentence overview of this person's entire aesthetic DNA. What is the vibe?
+2. "filter_conclusion": {goal_instruction}
+
+Format strictly as this JSON object:
+{{
+  "executive_summary": "<2-3 sentences>",
+  "filter_conclusion": [
+    "<point 1>",
+    "<point 2>",
+    "<point 3>",
+    "<point 4>"
+  ]
+}}"""
 
 
 async def run_narrator(
@@ -161,8 +156,9 @@ async def run_narrator(
     if progress_callback:
         await progress_callback("narrating", 0.94)
 
-    # Build cultural context statements
-    cultural_context: List[Dict[str, Any]] = []
+    # Build executive summary and filter conclusion
+    executive_summary = identity_result.overall_aspiration
+    filter_conclusion: List[str] = []
     try:
         narrator_prompt = _build_narrator_prompt(identity_result, gap_result, intake_result, goal)
         response = llm.invoke(narrator_prompt)
@@ -173,23 +169,17 @@ async def run_narrator(
             content = content.split("```json")[1].split("```")[0].strip()
         elif "```" in content:
             content = content.split("```")[1].split("```")[0].strip()
+        else:
+            match = re.search(r'\{.*\}', content, re.DOTALL)
+            if match:
+                content = match.group(0)
 
-        cultural_context = json.loads(content)
-        if not isinstance(cultural_context, list):
-            cultural_context = [cultural_context]
+        parsed = json.loads(content)
+        executive_summary = parsed.get("executive_summary", executive_summary)
+        filter_conclusion = parsed.get("filter_conclusion", [])
     except Exception as e:
-        print(f"[Narrator] Error building cultural context: {e}")
-        # Fallback: build from retrieved chunks directly
-        for world in identity_result.aesthetic_worlds:
-            for chunk in world.retrieved_chunks[:1]:
-                cultural_context.append({
-                    "claim": f"Your images signal {world.name}",
-                    "because": chunk.get("text", "")[:200],
-                    "detailed_analysis": chunk.get("text", "")[:400],
-                    "execution_suggestions": ["Focus on authentic silhouettes", "Reference original designers from this era"],
-                    "source_era": chunk.get("era", ""),
-                    "cultural_code": ", ".join(chunk.get("tags", [])[:5]),
-                })
+        print(f"[Narrator] Error building synthesis: {e}")
+        filter_conclusion = ["Focus on authentic silhouettes", "Reference original designers from this era"]
 
     # Build cluster summaries for frontend
     clusters = []
@@ -205,13 +195,9 @@ async def run_narrator(
             "size": cluster.size,
             "representative_paths": cluster.representative_paths,
             "dominant_palette": cluster.dominant_palette,
-            "palette_tags": cluster.palette_tags,
             "aesthetic_name": world.name if world else f"Cluster {cluster.cluster_id}",
             "description": world.description if world else "",
-            "visual_signals": world.visual_signals if world else [],
-            "aspiration_reading": world.aspiration_reading if world else "",
-            "palette_story": world.palette_story if world else "",
-            "cultural_origin": world.cultural_origin if world else "",
+            "palette_tags": cluster.palette_tags,
             "gaps": [
                 {
                     "gap_name": g.gap_name,
@@ -261,12 +247,11 @@ async def run_narrator(
     return NarratorResult(
         primary_world=identity_result.primary_world,
         secondary_world=identity_result.secondary_world,
-        visual_tension=identity_result.visual_tension,
-        overall_aspiration=identity_result.overall_aspiration,
+        executive_summary=executive_summary,
         clusters=clusters,
         gaps=gaps,
         primary_gap=primary_gap_dict,
-        cultural_context=cultural_context,
+        filter_conclusion=filter_conclusion,
         session_id=session_id,
         total_images=intake_result.total_images,
         method=intake_result.method,

@@ -171,18 +171,47 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
       <section className="analyse-section" id="analyse">
         <div className="analyse-section__header container">
           <div className="section-label">Start now</div>
-          <h2 className="analyse-section__heading">Your aesthetic,<br /><em>decoded.</em></h2>
+          <h2 className="analyse-section__heading">Your aesthetic,<em> decoded.</em></h2>
         </div>
         <div className="container analyse-section__body">
-          <div className="analyse-section__model">
-            <motion.img 
-              src="public/images/f2.png" 
-              alt="Model" 
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            />
+          <div className="analyse-section__blueprint">
+            <div className="blueprint-frame">
+              {/* Corner crosshairs */}
+              <div className="crosshair top-left" />
+              <div className="crosshair top-right" />
+              <div className="crosshair bottom-left" />
+              <div className="crosshair bottom-right" />
+              
+              {/* Frame labels */}
+              <div className="frame-label frame-label--top">
+                <span>CAM</span><span className="line"></span><span>ANALYZE</span>
+              </div>
+              <div className="frame-label frame-label--bottom">
+                PINSIGHTS
+              </div>
+
+              <motion.img 
+                src="public/images/f2.png" 
+                alt="Model" 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+              />
+
+              {/* Bounding boxes mimicking ML vision detection */}
+              <div className="bounding-box box-1">
+                <div className="box-label">LV/01</div>
+              </div>
+              
+              <div className="bounding-box box-2">
+                <div className="box-label">A.P./04</div>
+              </div>
+
+              <div className="bounding-box box-3">
+                <div className="box-label">LV/02</div>
+              </div>
+            </div>
           </div>
           <div className="upload-card">
             <UploadZone
@@ -196,7 +225,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
 
       <footer className="landing-footer container">
         <span className="landing-footer__logo">Pin<em>sights</em></span>
-        <span className="landing-footer__copy">Personal Aesthetic Intelligence · 2025</span>
+        <span className="landing-footer__copy">Personal Aesthetic Intelligence · 2026</span>
       </footer>
 
       <style>{`
@@ -246,7 +275,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
         }
         .hero__model--1 { left: -3%; height: 110%; z-index: 1; }
         .hero__model--2 { left: 29%; transform: translateX(-50%); height: 65%; z-index: 15; }
-        .hero__model--3 { left: 84.4%; height: 75%; z-index: 15; }
+        .hero__model--3 { left: 82.4%; height: 75%; z-index: 15; }
 
         .hero__overlay {
           position: absolute;
@@ -311,7 +340,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
           border-bottom: 1px solid var(--color-border);
         }
         .how-it-works__label {
-          font-size: 0.625rem;
+          font-size: 0.825rem;
           font-weight: 600;
           letter-spacing: 0.16em;
           text-transform: uppercase;
@@ -330,7 +359,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
         }
         .how-step:last-child { border-right: none; }
         .how-step__n {
-          font-size: 0.625rem;
+          font-size: 0.825rem;
           font-weight: 600;
           letter-spacing: 0.14em;
           color: var(--color-accent);
@@ -338,14 +367,14 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
         }
         .how-step__title {
           font-family: var(--font-display);
-          font-size: 1.25rem;
+          font-size: 1.55rem;
           font-weight: 600;
           color: var(--color-text-primary);
           margin-bottom: var(--space-3);
           letter-spacing: -0.01em;
         }
         .how-step__body {
-          font-size: 0.8125rem;
+          font-size: 0.9125rem;
           line-height: 1.65;
           color: var(--color-text-muted);
         }
@@ -407,23 +436,92 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
 
         .analyse-section__body {
           display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
-          gap: var(--space-6);
+          justify-content: center;
+          align-items: flex-start;
+          gap: var(--space-8);
+          padding-top: var(--space-4);
         }
 
-        .analyse-section__model {
+        .analyse-section__blueprint {
           flex: 1;
           display: flex;
           justify-content: center;
-          align-items: flex-end;
+          align-items: flex-start;
         }
+
+        .blueprint-frame {
+          position: relative;
+          padding: var(--space-7) var(--space-6);
+          border: 1px solid rgba(15, 14, 12, 0.15);
+          display: inline-block;
+          background: var(--color-bg);
+        }
+
+        .crosshair {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+        }
+        .crosshair::before, .crosshair::after {
+          content: '';
+          position: absolute;
+          background: rgba(15, 14, 12, 0.5);
+        }
+        .crosshair::before { width: 100%; height: 1px; top: 50%; left: 0; }
+        .crosshair::after { width: 1px; height: 100%; left: 50%; top: 0; }
         
-        .analyse-section__model img {
-          max-height: 650px;
+        .top-left { top: -8px; left: -8px; }
+        .top-right { top: -8px; right: -8px; }
+        .bottom-left { bottom: -8px; left: -8px; }
+        .bottom-right { bottom: -8px; right: -8px; }
+
+        .frame-label {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 0.55rem;
+          font-weight: 600;
+          letter-spacing: 0.15em;
+          color: var(--color-text-muted);
+          display: flex;
+          align-items: center;
+          gap: var(--space-3);
+          background: var(--color-bg);
+          padding: 0 var(--space-4);
+        }
+        .frame-label--top { top: -6px; }
+        .frame-label--bottom { bottom: -6px; }
+        .frame-label .line { width: 24px; height: 1px; background: var(--color-border); }
+
+        .blueprint-frame img {
+          max-height: 520px;
           width: auto;
           object-fit: contain;
+          display: block;
         }
+
+        .bounding-box {
+          position: absolute;
+          border: 1px solid var(--color-text-primary);
+          background: rgba(15, 14, 12, 0.02);
+        }
+        .box-label {
+          position: absolute;
+          top: -10px;
+          left: -1px;
+          background: var(--color-text-primary);
+          color: var(--color-surface);
+          font-size: 0.55rem;
+          font-weight: 700;
+          padding: 2px 6px;
+          letter-spacing: 0.1em;
+          white-space: nowrap;
+        }
+
+        /* Adjust these percentages slightly if f2.png proportions change */
+        .box-1 { top: 25%; left: 15%; width: 35%; height: 25%; }
+        .box-2 { top: 55%; right: 15%; width: 28%; height: 35%; }
+        .box-3 { bottom: 8%; left: 25%; width: 22%; height: 12%; }
 
         .upload-card {
           width: 100%;
@@ -469,7 +567,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
           .how-step:last-child { border-bottom: none; }
           
           .analyse-section__body { flex-direction: column; align-items: center; }
-          .analyse-section__model { display: none; } /* Hide the model on mobile to save space */
+          .analyse-section__blueprint { display: none; } /* Hide blueprint on mobile to save space */
           .upload-card { padding: var(--space-5); max-width: 100%; }
         }
       `}</style>

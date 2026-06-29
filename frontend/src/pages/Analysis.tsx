@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { type AnalysisState } from '../hooks/useAnalysis'
-import ClusterMap from '../components/ClusterMap/ClusterMap'
-import InsightCard from '../components/InsightCard/InsightCard'
-import { type CulturalContextItem } from '../lib/api'
+import { type ClusterSummary, imageUrl } from '../lib/api'
 import { RotateCcw } from 'lucide-react'
 
 interface AnalysisPageProps {
@@ -11,6 +9,7 @@ interface AnalysisPageProps {
   onReset: () => void
 }
 
+// ─── Progress view ────────────────────────────────────────────────────────────
 function ProgressView({ state }: { state: AnalysisState }) {
   return (
     <div className="progress-view">
@@ -32,153 +31,211 @@ function ProgressView({ state }: { state: AnalysisState }) {
           <p className="progress-view__pct">{state.progress}%</p>
         </div>
       </div>
-      <style>{`
-        .progress-view {
-          display: flex; align-items: center; justify-content: center;
-          min-height: 65vh;
-        }
-        .progress-view__inner {
-          display: flex; flex-direction: column; align-items: center;
-          gap: var(--space-6);
-        }
-        .progress-view__spinner {
-          width: 52px; height: 52px;
-          border-radius: 50%;
-          border: 1.5px solid var(--color-border);
-          border-top-color: var(--color-accent);
-        }
-        .progress-view__text { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
-        .progress-view__stage { color: var(--color-text-secondary); font-size: 0.9rem; }
-        .progress-view__pct { color: var(--color-text-muted); font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
-      `}</style>
     </div>
   )
 }
 
-function CulturalContext({ items }: { items: CulturalContextItem[] }) {
+// ─── Polaroid card ────────────────────────────────────────────────────────────
+function PolaroidCard({
+  src,
+  label,
+  isHero,
+  rotation,
+}: {
+  src: string
+  label: string
+  isHero?: boolean
+  rotation?: number
+}) {
   return (
-    <div className="cultural-context">
-      <div className="section-label">Cultural Context & Insights</div>
-      <div className="cultural-items">
-        {items.map((item, i) => (
+    <div
+      className={`polaroid ${isHero ? 'polaroid--hero' : ''}`}
+      style={{ '--rot': `${rotation ?? 0}deg` } as React.CSSProperties}
+    >
+      <div className="polaroid__img-wrap">
+        <img src={src} alt={label} />
+      </div>
+      <div className="polaroid__label">{label}</div>
+    </div>
+  )
+}
+
+// ─── Expanded cluster panel ────────────────────────────────────────────────────
+function ClusterPanel({ cluster, index }: { cluster: ClusterSummary; index: number }) {
+  const images = cluster.representative_paths
+  const [heroIdx, setHeroIdx] = useState(0)
+  const heroSrc = imageUrl(images[heroIdx] ?? images[0])
+
+  const rotations = [-3, 2, -1.5, 3, -2, 1]
+
+  const gap = cluster.gaps[0] ?? null
+
+  return (
+    <div className="cluster-panel">
+      {/* Left: polaroid scatter */}
+      <div className="cluster-panel__left">
+        <div className="cluster-panel__board">
+          {/* Hero polaroid — large centred */}
           <motion.div
-            key={i}
-            className="cultural-item"
-            initial={{ opacity: 0, x: -12 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: i * 0.08 }}
+            key={heroIdx}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.35 }}
+            className="cluster-panel__hero-wrap"
           >
-            {item.source_era && (
-              <div className="cultural-item__era">{item.source_era}</div>
-            )}
-            <p className="cultural-item__claim">{item.claim}</p>
-            <div className="because">{item.because}</div>
-
-            {item.detailed_analysis && (
-              <div className="cultural-item__analysis">
-                {item.detailed_analysis}
-              </div>
-            )}
-
-            {item.execution_suggestions && item.execution_suggestions.length > 0 && (
-              <div className="cultural-item__suggestions">
-                <div className="cultural-item__suggestions-label">Execution suggestions</div>
-                <ul>
-                  {item.execution_suggestions.map((s, j) => (
-                    <li key={j}>{s}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {item.cultural_code && (
-              <div className="cultural-item__code">
-                <span>{item.cultural_code}</span>
-              </div>
-            )}
+            <PolaroidCard src={heroSrc} label={`LOOK ${String(index + 1).padStart(2, '0')}`} isHero />
           </motion.div>
+
+          {/* Scattered small polaroids */}
+          <div className="cluster-panel__scatter">
+            {images.map((path, i) => (
+              <button
+                key={i}
+                className={`scatter-thumb ${i === heroIdx ? 'scatter-thumb--active' : ''}`}
+                onClick={() => setHeroIdx(i)}
+                title={`Detail ${i + 1}`}
+              >
+                <PolaroidCard
+                  src={imageUrl(path)}
+                  label={`DETAIL ${i + 1}`}
+                  rotation={rotations[i % rotations.length]}
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Colour palette row */}
+        <div className="cluster-panel__palette-row">
+          {cluster.dominant_palette.slice(0, 8).map((hex, i) => (
+            <div key={i} className="cluster-panel__swatch" style={{ background: hex }} title={hex} />
+          ))}
+        </div>
+      </div>
+
+      {/* Right: analysis detail */}
+      <div className="cluster-panel__right">
+        {/* Cluster number eyebrow */}
+        <div className="cluster-panel__eyebrow">
+          Aesthetic World {String(index + 1).padStart(2, '0')}
+        </div>
+
+        <h2 className="cluster-panel__name">{cluster.aesthetic_name}</h2>
+
+        {cluster.description && (
+          <p className="cluster-panel__desc">{cluster.description}</p>
+        )}
+
+        <div className="cluster-panel__divider" />
+
+        {/* Palette tags */}
+        {cluster.palette_tags.length > 0 && (
+          <div className="cluster-panel__tags">
+            {cluster.palette_tags.map((tag, i) => (
+              <span key={i} className="cluster-tag">{tag}</span>
+            ))}
+          </div>
+        )}
+
+        {/* Gap analysis */}
+        {gap && (
+          <div className="cluster-panel__gap">
+            <div className="cluster-panel__gap-label">
+              <span className={`badge badge--${gap.severity}`}>
+                {gap.severity === 'critical' ? 'Key Guide' : gap.severity === 'moderate' ? 'Suggestion' : 'Refinement'}
+              </span>
+              <span className="cluster-panel__gap-name">{gap.gap_name.replace('Gap', 'Guide').replace('gap', 'guide')}</span>
+            </div>
+
+            <p className="cluster-panel__gap-body">{gap.what_it_requires}</p>
+
+            {gap.actionable_step && (
+              <div className="cluster-panel__gap-action">
+                → {gap.actionable_step}
+              </div>
+            )}
+
+            {gap.your_tell?.length > 0 && (
+              <div className="cluster-panel__tells">
+                {gap.your_tell.map((tell, i) => (
+                  <span key={i} className="cluster-tell">· {tell}</span>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="cluster-panel__meta">
+          <span>{cluster.size} images</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ─── Cluster thumbnail (left sidebar card) ─────────────────────────────────────
+function ClusterThumb({
+  cluster,
+  index,
+  isSelected,
+  onClick,
+}: {
+  cluster: ClusterSummary
+  index: number
+  isSelected: boolean
+  onClick: () => void
+}) {
+  return (
+    <button
+      className={`cluster-thumb ${isSelected ? 'cluster-thumb--active' : ''}`}
+      onClick={onClick}
+    >
+      <div className="cluster-thumb__imgs">
+        {cluster.representative_paths.slice(0, 3).map((p, i) => (
+          <img key={i} src={imageUrl(p)} alt="" />
         ))}
       </div>
-      <style>{`
-        .cultural-context { margin-top: var(--space-7); }
-        .cultural-items { display: flex; flex-direction: column; gap: var(--space-4); margin-top: var(--space-4); }
-        .cultural-item {
-          padding: var(--space-5);
-          background: var(--color-surface);
-          border: 1px solid var(--color-border);
-          border-radius: var(--radius-lg);
-          box-shadow: var(--shadow-sm);
-        }
-        .cultural-item__era {
-          font-size: 0.6875rem;
-          font-weight: 600;
-          letter-spacing: 0.10em;
-          text-transform: uppercase;
-          color: var(--color-accent);
-          margin-bottom: var(--space-2);
-        }
-        .cultural-item__claim {
-          font-size: 1rem;
-          font-weight: 500;
-          color: var(--color-text-primary);
-          line-height: 1.5;
-          margin-bottom: var(--space-2);
-        }
-        .cultural-item__analysis {
-          margin: var(--space-3) 0;
-          font-size: 0.9rem;
-          line-height: 1.7;
-          color: var(--color-text-secondary);
-          border-left: 2px solid var(--color-border);
-          padding-left: var(--space-3);
-        }
-        .cultural-item__suggestions { margin-top: var(--space-4); }
-        .cultural-item__suggestions-label {
-          font-size: 0.6875rem;
-          font-weight: 600;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: var(--color-text-muted);
-          margin-bottom: var(--space-2);
-        }
-        .cultural-item__suggestions ul {
-          padding-left: var(--space-5);
-          color: var(--color-text-secondary);
-          display: flex;
-          flex-direction: column;
-          gap: var(--space-1);
-        }
-        .cultural-item__suggestions li { font-size: 0.875rem; line-height: 1.55; }
-        .cultural-item__code {
-          margin-top: var(--space-3);
-          padding-top: var(--space-3);
-          border-top: 1px solid var(--color-border);
-        }
-        .cultural-item__code span {
-          font-size: 0.75rem;
-          color: var(--color-text-muted);
-          font-style: italic;
-        }
-      `}</style>
-    </div>
+      <div className="cluster-thumb__info">
+        <span className="cluster-thumb__n">{String(index + 1).padStart(2, '0')}</span>
+        <span className="cluster-thumb__name">{cluster.aesthetic_name}</span>
+        <span className="cluster-thumb__count">{cluster.size} images</span>
+      </div>
+      <div className={`cluster-thumb__dot ${isSelected ? 'cluster-thumb__dot--active' : ''}`} />
+    </button>
   )
 }
 
+// ─── Main Analysis Page ────────────────────────────────────────────────────────
 export default function Analysis({ state, onReset }: AnalysisPageProps) {
-  const [selectedCluster, setSelectedCluster] = useState<number | null>(null)
+  const [selectedIdx, setSelectedIdx] = useState<number>(0)
   const result = state.result
 
   if (state.status === 'running') {
     return (
       <div className="container" style={{ paddingTop: 60 }}>
         <ProgressView state={state} />
+        <style>{`
+          .progress-view {
+            display: flex; align-items: center; justify-content: center; min-height: 65vh;
+          }
+          .progress-view__inner {
+            display: flex; flex-direction: column; align-items: center; gap: var(--space-6);
+          }
+          .progress-view__spinner {
+            width: 52px; height: 52px; border-radius: 50%;
+            border: 1.5px solid var(--color-border); border-top-color: var(--color-accent);
+          }
+          .progress-view__text { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
+          .progress-view__stage { color: var(--color-text-secondary); font-size: 0.9rem; }
+          .progress-view__pct { color: var(--color-text-muted); font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
+        `}</style>
       </div>
     )
   }
 
   if (state.status === 'error') {
     return (
-      <div className="container" style={{ paddingTop: 60 }}>
+      <div className="analysis-error-wrap container" style={{ paddingTop: 60 }}>
         <div className="analysis-error">
           <div className="analysis-error__icon">!</div>
           <h3>Analysis failed</h3>
@@ -186,18 +243,9 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
           <button className="btn btn--ghost" onClick={onReset}>Try again</button>
         </div>
         <style>{`
-          .analysis-error {
-            display: flex; flex-direction: column; align-items: center;
-            gap: var(--space-4); text-align: center; padding-top: 120px;
-          }
-          .analysis-error__icon {
-            width: 48px; height: 48px; border-radius: 50%;
-            background: rgba(192,57,43,0.08);
-            border: 1px solid rgba(192,57,43,0.2);
-            color: var(--color-critical);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.25rem; font-weight: 700;
-          }
+          .analysis-error-wrap { min-height: 70vh; display: flex; align-items: center; justify-content: center; }
+          .analysis-error { display: flex; flex-direction: column; align-items: center; gap: var(--space-4); text-align: center; }
+          .analysis-error__icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(192,57,43,0.08); border: 1px solid rgba(192,57,43,0.2); color: var(--color-critical); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: 700; }
         `}</style>
       </div>
     )
@@ -206,146 +254,477 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
   if (!result) return null
 
   const dna = result.aesthetic_dna
+  const clusters = result.clusters
+  const activeCluster = clusters[selectedIdx]
 
   return (
-    <div className="analysis-page" style={{ paddingTop: 60 }}>
-      <div className="container">
+    <div className="ap" style={{ paddingTop: 56 }}>
 
-        {/* DNA Header */}
-        <motion.div
-          className="dna-header"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="section-label">Your aesthetic DNA</div>
-          <h1 className="dna-title">
+      {/* ── Top header bar ── */}
+      <div className="ap__header">
+        <div className="ap__header-left">
+          <div className="ap__eyebrow">Your Aesthetic DNA</div>
+          <h1 className="ap__title">
             {dna.primary_world}
             {dna.secondary_world && (
-              <> <span className="dna-separator">&</span> {dna.secondary_world}</>
+              <><span className="ap__sep"> & </span>{dna.secondary_world}</>
             )}
           </h1>
-          {dna.visual_tension && (
-            <div className="because dna-tension">{dna.visual_tension}</div>
+        </div>
+        <div className="ap__header-right">
+          {dna.executive_summary && (
+            <p className="ap__summary">{dna.executive_summary}</p>
           )}
-          {dna.overall_aspiration && (
-            <p className="dna-aspiration">{dna.overall_aspiration}</p>
-          )}
-          <div className="dna-meta">
+          <div className="ap__meta">
             <span className="badge badge--neutral">{result.meta.total_images} images</span>
-            <span className="badge badge--neutral">{result.clusters.length} aesthetic worlds</span>
-            <button
-              className="btn btn--ghost dna-reset-btn"
-              onClick={onReset}
-            >
-              <RotateCcw size={13} />
-              New analysis
+            <span className="badge badge--neutral">{clusters.length} worlds</span>
+            <button className="btn btn--ghost" onClick={onReset} style={{ marginLeft: 'auto' }}>
+              <RotateCcw size={13} /> New analysis
             </button>
           </div>
-        </motion.div>
-
-        {/* Cluster map */}
-        <motion.div
-          className="cluster-section"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-        >
-          <ClusterMap
-            clusters={result.clusters}
-            onSelectCluster={setSelectedCluster}
-            selectedClusterId={selectedCluster}
-          />
-          <p className="map-hint">Click a cluster to explore its aesthetic world</p>
-        </motion.div>
-
-        {/* Insight cards */}
-        <div className="insight-grid">
-          {result.clusters.map((cluster, i) => (
-            <motion.div
-              key={cluster.cluster_id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.25 + i * 0.08 }}
-            >
-              <InsightCard
-                cluster={cluster}
-                isSelected={selectedCluster === cluster.cluster_id}
-                onClick={() => setSelectedCluster(
-                  selectedCluster === cluster.cluster_id ? null : cluster.cluster_id
-                )}
-              />
-            </motion.div>
-          ))}
         </div>
+      </div>
 
-        {/* Primary gap callout */}
-        {result.primary_gap && (
-          <motion.div
-            className="primary-gap"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-          >
-            <div className="primary-gap__header">
-              <span className={`badge badge--${result.primary_gap.severity}`}>
-                {result.primary_gap.severity} gap
-              </span>
-              <span className="primary-gap__title">{result.primary_gap.gap_name}</span>
+      {/* ── Body: sidebar + main panel ── */}
+      <div className="ap__body">
+
+        {/* Left sidebar: cluster list */}
+        <aside className="ap__sidebar">
+          <div className="ap__sidebar-label">Visual Clusters</div>
+          <div className="ap__cluster-list">
+            {clusters.map((cluster, i) => (
+              <motion.div
+                key={cluster.cluster_id}
+                initial={{ opacity: 0, x: -12 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.07 }}
+              >
+                <ClusterThumb
+                  cluster={cluster}
+                  index={i}
+                  isSelected={selectedIdx === i}
+                  onClick={() => setSelectedIdx(i)}
+                />
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Filter conclusion */}
+          {result.filter_conclusion?.length > 0 && (
+            <div className="ap__plan">
+              <div className="ap__plan-label">Your Plan</div>
+              {result.filter_conclusion.map((item, i) => (
+                <p key={i} className="ap__plan-item">→ {item}</p>
+              ))}
             </div>
-            <p className="primary-gap__desc">{result.primary_gap.what_it_requires}</p>
-            {result.primary_gap.actionable_step && (
-              <p className="primary-gap__action">→ {result.primary_gap.actionable_step}</p>
+          )}
+        </aside>
+
+        {/* Main: expanded cluster panel */}
+        <main className="ap__main">
+          <AnimatePresence mode="wait">
+            {activeCluster && (
+              <motion.div
+                key={activeCluster.cluster_id}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <ClusterPanel cluster={activeCluster} index={selectedIdx} />
+              </motion.div>
             )}
-          </motion.div>
-        )}
-
-        {/* Cultural context */}
-        {result.cultural_context.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            <CulturalContext items={result.cultural_context} />
-          </motion.div>
-        )}
-
+          </AnimatePresence>
+        </main>
       </div>
 
       <style>{`
-        .analysis-page { min-height: 100vh; padding-bottom: var(--space-9); }
-
-        .dna-header { padding: var(--space-8) 0 var(--space-6); border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-7); }
-        .dna-title {
-          font-size: clamp(2rem, 5vw, 3.25rem);
-          line-height: 1.08;
-          letter-spacing: -0.02em;
-          margin: var(--space-3) 0;
+        /* ── Page shell ── */
+        .ap {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          background: var(--color-bg);
         }
-        .dna-separator { color: var(--color-accent); }
-        .dna-tension { max-width: 640px; margin: var(--space-3) 0; }
-        .dna-aspiration { max-width: 640px; font-size: 1rem; margin-top: var(--space-3); color: var(--color-text-secondary); }
-        .dna-meta { display: flex; align-items: center; gap: var(--space-3); margin-top: var(--space-5); flex-wrap: wrap; }
-        .dna-reset-btn { margin-left: auto; font-size: 0.8125rem; }
 
-        .cluster-section { margin-bottom: var(--space-4); }
-        .map-hint { text-align: center; font-size: 0.8125rem; color: var(--color-text-muted); margin-top: var(--space-3); margin-bottom: var(--space-6); }
+        /* ── Header ── */
+        .ap__header {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: var(--space-6);
+          padding: var(--space-7) var(--space-7) var(--space-5);
+          border-bottom: 1px solid var(--color-border);
+          background: var(--color-surface);
+        }
+        .ap__eyebrow {
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: var(--color-accent);
+          margin-bottom: var(--space-2);
+        }
+        .ap__title {
+          font-family: var(--font-display);
+          font-size: clamp(1.75rem, 4vw, 2.75rem);
+          letter-spacing: -0.025em;
+          line-height: 1.1;
+          color: var(--color-text-primary);
+        }
+        .ap__sep { color: var(--color-accent); }
+        .ap__header-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          gap: var(--space-3);
+        }
+        .ap__summary {
+          font-size: 0.875rem;
+          line-height: 1.7;
+          color: var(--color-text-secondary);
+          max-width: 480px;
+        }
+        .ap__meta {
+          display: flex;
+          align-items: center;
+          gap: var(--space-3);
+          flex-wrap: wrap;
+        }
 
-        .insight-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: var(--space-4); margin-bottom: var(--space-7); }
+        /* ── Body layout ── */
+        .ap__body {
+          display: grid;
+          grid-template-columns: 280px 1fr;
+          flex: 1;
+          min-height: 0;
+          overflow: hidden;
+        }
 
-        .primary-gap {
-          padding: var(--space-5) var(--space-6);
+        /* ── Sidebar ── */
+        .ap__sidebar {
+          border-right: 1px solid var(--color-border);
+          overflow-y: auto;
+          padding: var(--space-5) var(--space-4);
+          background: var(--color-surface);
+          display: flex;
+          flex-direction: column;
+          gap: var(--space-5);
+        }
+        .ap__sidebar-label {
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+          color: var(--color-text-muted);
+        }
+        .ap__cluster-list { display: flex; flex-direction: column; gap: var(--space-2); }
+
+        /* ── Cluster thumbnail ── */
+        .cluster-thumb {
+          display: flex;
+          align-items: center;
+          gap: var(--space-3);
+          padding: var(--space-3);
+          background: transparent;
+          border: 1px solid transparent;
+          border-radius: var(--radius-md);
+          cursor: pointer;
+          width: 100%;
+          text-align: left;
+          transition: all var(--duration-base) var(--ease-out);
+          position: relative;
+        }
+        .cluster-thumb:hover {
+          background: var(--color-surface-2);
+          border-color: var(--color-border);
+        }
+        .cluster-thumb--active {
+          background: var(--color-accent-dim);
+          border-color: rgba(200, 48, 90, 0.2);
+        }
+        .cluster-thumb__imgs {
+          display: flex;
+          width: 52px;
+          height: 36px;
+          flex-shrink: 0;
+          position: relative;
+        }
+        .cluster-thumb__imgs img {
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          object-fit: cover;
+          border-radius: 3px;
+          border: 1.5px solid var(--color-surface);
+        }
+        .cluster-thumb__imgs img:nth-child(1) { left: 0; top: 4px; z-index: 1; }
+        .cluster-thumb__imgs img:nth-child(2) { left: 12px; top: 0; z-index: 2; }
+        .cluster-thumb__imgs img:nth-child(3) { left: 24px; top: 4px; z-index: 3; }
+        .cluster-thumb__info {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          flex: 1;
+          min-width: 0;
+        }
+        .cluster-thumb__n {
+          font-size: 0.55rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          color: var(--color-accent);
+        }
+        .cluster-thumb__name {
+          font-size: 0.8125rem;
+          font-weight: 500;
+          color: var(--color-text-primary);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .cluster-thumb__count {
+          font-size: 0.6875rem;
+          color: var(--color-text-muted);
+        }
+        .cluster-thumb__dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--color-border-hover);
+          flex-shrink: 0;
+          transition: background var(--duration-fast);
+        }
+        .cluster-thumb__dot--active { background: var(--color-accent); }
+
+        /* ── Plan ── */
+        .ap__plan {
+          margin-top: auto;
+          padding-top: var(--space-5);
+          border-top: 1px solid var(--color-border);
+        }
+        .ap__plan-label {
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+          color: var(--color-text-muted);
+          margin-bottom: var(--space-3);
+        }
+        .ap__plan-item {
+          font-size: 0.8125rem;
+          color: var(--color-text-secondary);
+          line-height: 1.6;
+          margin-bottom: var(--space-2);
+        }
+
+        /* ── Main panel ── */
+        .ap__main {
+          overflow-y: auto;
+          padding: var(--space-6) var(--space-7);
+          background: var(--color-bg);
+        }
+
+        /* ── Cluster panel ── */
+        .cluster-panel {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: var(--space-8);
+          min-height: 100%;
+        }
+
+        /* ── Left: polaroid board ── */
+        .cluster-panel__left {
+          display: flex;
+          flex-direction: column;
+          gap: var(--space-5);
+        }
+
+        .cluster-panel__board {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: var(--space-4);
+        }
+
+        .cluster-panel__hero-wrap {
+          align-self: center;
+        }
+
+        /* ── Polaroid ── */
+        .polaroid {
+          background: #fff;
+          padding: 10px 10px 32px;
+          box-shadow: 0 3px 14px rgba(15,14,12,0.12), 0 1px 3px rgba(15,14,12,0.06);
+          transform: rotate(var(--rot, 0deg));
+          display: inline-block;
+          flex-shrink: 0;
+        }
+        .polaroid--hero {
+          padding: 12px 12px 44px;
+          box-shadow: 0 8px 32px rgba(15,14,12,0.15), 0 2px 8px rgba(15,14,12,0.08);
+          transform: none;
+        }
+        .polaroid__img-wrap { overflow: hidden; }
+        .polaroid__img-wrap img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .polaroid--hero .polaroid__img-wrap {
+          width: 300px;
+          height: 360px;
+        }
+        .polaroid:not(.polaroid--hero) .polaroid__img-wrap {
+          width: 80px;
+          height: 80px;
+        }
+        .polaroid__label {
+          text-align: center;
+          font-size: 0.5rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          color: var(--color-text-muted);
+          margin-top: 8px;
+          font-family: var(--font-body);
+        }
+
+        /* ── Scatter row ── */
+        .cluster-panel__scatter {
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--space-4);
+          justify-content: center;
+          padding: var(--space-3) 0;
+        }
+        .scatter-thumb {
+          background: none;
+          border: none;
+          cursor: pointer;
+          transition: transform var(--duration-base) var(--ease-out);
+          padding: 0;
+        }
+        .scatter-thumb:hover { transform: translateY(-4px) scale(1.05); }
+        .scatter-thumb--active .polaroid {
+          box-shadow: 0 3px 14px rgba(200,48,90,0.25), 0 0 0 2px var(--color-accent);
+        }
+
+        /* ── Palette row ── */
+        .cluster-panel__palette-row {
+          display: flex;
+          gap: 6px;
+          justify-content: center;
+        }
+        .cluster-panel__swatch {
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          box-shadow: 0 0 0 1.5px rgba(15,14,12,0.10);
+          flex-shrink: 0;
+        }
+
+        /* ── Right: detail ── */
+        .cluster-panel__right {
+          display: flex;
+          flex-direction: column;
+          gap: var(--space-4);
+          padding-top: var(--space-2);
+        }
+        .cluster-panel__eyebrow {
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: var(--color-accent);
+        }
+        .cluster-panel__name {
+          font-family: var(--font-display);
+          font-size: clamp(1.75rem, 3vw, 2.5rem);
+          letter-spacing: -0.025em;
+          line-height: 1.1;
+          color: var(--color-text-primary);
+        }
+        .cluster-panel__desc {
+          font-size: 0.9375rem;
+          line-height: 1.75;
+          color: var(--color-text-secondary);
+        }
+        .cluster-panel__divider {
+          height: 1px;
+          background: var(--color-border);
+        }
+        .cluster-panel__tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--space-2);
+        }
+        .cluster-tag {
+          background: var(--color-surface-2);
+          border: 1px solid var(--color-border);
+          color: var(--color-text-secondary);
+          padding: 3px var(--space-3);
+          border-radius: 2px;
+          font-size: 0.6875rem;
+          font-weight: 500;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+        .cluster-panel__gap {
           background: var(--color-surface);
           border: 1px solid var(--color-border);
           border-radius: var(--radius-lg);
-          box-shadow: var(--shadow-sm);
-          margin-top: var(--space-6);
+          padding: var(--space-5);
+          display: flex;
+          flex-direction: column;
+          gap: var(--space-3);
         }
-        .primary-gap__header { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); }
-        .primary-gap__title { font-size: 0.9375rem; font-weight: 600; color: var(--color-text-primary); }
-        .primary-gap__desc { font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: var(--space-3); }
-        .primary-gap__action { font-size: 0.875rem; color: var(--color-accent); font-weight: 500; }
+        .cluster-panel__gap-label {
+          display: flex;
+          align-items: center;
+          gap: var(--space-3);
+        }
+        .cluster-panel__gap-name {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: var(--color-text-primary);
+        }
+        .cluster-panel__gap-body {
+          font-size: 0.875rem;
+          line-height: 1.7;
+          color: var(--color-text-secondary);
+        }
+        .cluster-panel__gap-action {
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: var(--color-accent);
+          padding-top: var(--space-2);
+          border-top: 1px solid var(--color-border);
+        }
+        .cluster-panel__tells {
+          display: flex;
+          flex-direction: column;
+          gap: var(--space-1);
+        }
+        .cluster-tell {
+          font-size: 0.8125rem;
+          color: var(--color-text-muted);
+          font-style: italic;
+        }
+        .cluster-panel__meta {
+          margin-top: auto;
+          padding-top: var(--space-4);
+          font-size: 0.75rem;
+          color: var(--color-text-muted);
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 900px) {
+          .ap__header { grid-template-columns: 1fr; }
+          .ap__body { grid-template-columns: 1fr; }
+          .ap__sidebar { border-right: none; border-bottom: 1px solid var(--color-border); }
+          .cluster-panel { grid-template-columns: 1fr; }
+        }
       `}</style>
     </div>
   )

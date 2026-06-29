@@ -11,6 +11,7 @@ Output: GapResult with per-aesthetic, named, specific gaps.
 from __future__ import annotations
 import os
 import json
+import re
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional
 
@@ -55,7 +56,7 @@ def _build_gap_prompt(
 
     palette_desc = ", ".join(cluster.palette_tags[:4]) if cluster.palette_tags else "not determined"
 
-    return f"""You are a precise fashion analyst identifying the specific execution gaps in someone's aesthetic.
+    return f"""You are a precise fashion analyst identifying specific styling refinements to help someone fully realize their aesthetic.
 
 IDENTIFIED AESTHETIC: {world.name}
 DESCRIPTION: {world.description}
@@ -67,21 +68,23 @@ IMAGE COUNT: {cluster.size}
 RETRIEVED EXECUTION CRITERIA FOR THIS AESTHETIC:
 {exec_text}
 
-TASK: Identify the 2-3 most significant gaps between what this person's images signal and what authentic {world.name} execution actually requires.
+TASK: Identify the 2-3 most significant styling refinements or guides based on what this person's images show versus what authentic {world.name} execution requires.
 
 Rules:
-1. Be specific — not "you need better fit" but "your trousers break at the wrong point, revealing mid-shoe rather than the top of the shoe"
-2. Base every gap on the retrieved execution criteria, not on generic fashion advice
-3. Every gap needs a concrete, single actionable step — not "invest in quality" but "find one Jil Sander or COS trouser in wool crepe and let it show you what the right proportion feels like"
-4. The severity assessment must be honest: a critical gap prevents the aesthetic from landing; a minor gap is a refinement
-5. Use "because" in every diagnostic claim
+1. Frame every suggestion positively. Do NOT use negative words like "gap", "incorrect", "improper", or "miss". Fashion is never incorrect. Frame it as a "Refinement", "Guide", or "Styling Suggestion" (e.g. "Low-Rise Proportion Guide" instead of "Incorrect Low-Rise").
+2. Be specific — not "you need better fit" but "ensure trousers break at the shoe to maintain the tailored line".
+3. Base every suggestion on the retrieved execution criteria, not on generic fashion advice.
+4. Every refinement needs a concrete, single actionable step — not "invest in quality" but "find one wool crepe trouser to see how the proportion feels".
+5. The severity assessment is now an impact assessment: "critical" means high impact, "moderate" means noticeable impact, "minor" is a subtle tweak.
 
-Respond with a JSON array of 2-3 gap objects:
+CRITICAL: Output ONLY a valid JSON array. Do not include introductory text like "Here are the suggestions". Ensure all quotes are properly closed.
+
+Respond with a JSON array of 2-3 objects:
 [
   {{
-    "gap_name": "<specific name for this gap>",
+    "gap_name": "<positive name for this guide, e.g. 'Proportion Refinement'>",
     "what_it_requires": "<what authentic execution requires — 1-2 sentences>",
-    "common_miss": "<the typical failure this collection shows — 1-2 sentences>",
+    "common_miss": "<what to watch out for or avoid — 1-2 sentences>",
     "your_tell": ["<signal 1>", "<signal 2>"],
     "gap_type": "<one of: construction, material, styling, color, proportion, fit, knowledge>",
     "severity": "<one of: critical, moderate, minor>",
@@ -161,6 +164,10 @@ async def run_gap(
                 content = content.split("```json")[1].split("```")[0].strip()
             elif "```" in content:
                 content = content.split("```")[1].split("```")[0].strip()
+            else:
+                match = re.search(r'\[.*\]', content, re.DOTALL)
+                if match:
+                    content = match.group(0)
 
             parsed = json.loads(content)
             if not isinstance(parsed, list):

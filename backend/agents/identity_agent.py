@@ -11,6 +11,7 @@ Output: IdentityResult with named aesthetic worlds, visual tensions,
 from __future__ import annotations
 import os
 import json
+import re
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional
 
@@ -64,16 +65,18 @@ RETRIEVED FASHION HISTORY CONTEXT:
 TASK: Based on the visual data and retrieved context, provide a precise aesthetic analysis.
 
 Rules:
-1. Every claim MUST be followed by a "because" — no assertion without evidence
-2. Be specific, not generic. "minimalism" is not enough; "90s Helmut Lang minimalism with proportion-discipline as the organising principle" is
-3. Name the aesthetic world precisely — 2-5 words maximum
-4. Surface the aspiration reading: what is the person reaching toward, not just what are they currently doing
-5. Be honest about tensions within the cluster if they exist
+1. Do NOT use the word "because". Write exactly 1 punchy, highly specific sentence.
+2. Explicitly name the key visual textures, fabrics, and silhouettes seen in the images (e.g., "black lace", "leather outerwear", "oversized tailoring").
+3. Name the aesthetic world precisely — 2-5 words maximum.
+4. Surface the aspiration reading: what is the person reaching toward.
+5. Be honest about tensions within the cluster if they exist.
+
+CRITICAL: Output ONLY a valid JSON object. Do not forget closing quotes on strings.
 
 Respond in this exact JSON format:
 {{
   "name": "<precise aesthetic name, 2-5 words>",
-  "description": "<2-3 sentence interpretation that uses 'because' at least once>",
+  "description": "<Exactly 1 sentence highlighting the exact visual signals (like fabrics/textures) seen in the cluster>",
   "visual_signals": ["<signal 1>", "<signal 2>", "<signal 3>"],
   "cultural_origin": "<1-2 sentences on cultural/historical origin of this aesthetic>",
   "aspiration_reading": "<what this cluster reveals about aspiration, not just current state>",
@@ -98,6 +101,8 @@ Rules:
 1. The tension must be specific — not "you like both casual and formal" but "you're drawn to the restraint of minimalism but keep the proportions of casual dressing, which prevents either aesthetic from landing"
 2. The overall aspiration should reveal something about identity, not just style preference
 3. Use "because" in every evaluative claim
+
+CRITICAL: Output ONLY a valid JSON object. Do not forget closing quotes on strings.
 
 Respond in this exact JSON format:
 {{
@@ -154,6 +159,10 @@ async def run_identity(
                 content = content.split("```json")[1].split("```")[0].strip()
             elif "```" in content:
                 content = content.split("```")[1].split("```")[0].strip()
+            else:
+                match = re.search(r'\{.*\}', content, re.DOTALL)
+                if match:
+                    content = match.group(0)
 
             parsed = json.loads(content)
             worlds.append(AestheticWorld(
@@ -195,6 +204,10 @@ async def run_identity(
                 tension_content = tension_content.split("```json")[1].split("```")[0].strip()
             elif "```" in tension_content:
                 tension_content = tension_content.split("```")[1].split("```")[0].strip()
+            else:
+                match = re.search(r'\{.*\}', tension_content, re.DOTALL)
+                if match:
+                    tension_content = match.group(0)
 
             tension_parsed = json.loads(tension_content)
             visual_tension = tension_parsed.get("visual_tension", "")

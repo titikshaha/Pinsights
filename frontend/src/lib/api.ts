@@ -33,8 +33,7 @@ export type StreamEvent = ProgressEvent | ResultEvent | ErrorEvent | HeartbeatEv
 export interface AestheticDNA {
   primary_world: string
   secondary_world: string | null
-  visual_tension: string
-  overall_aspiration: string
+  executive_summary: string
 }
 
 export interface Gap {
@@ -56,20 +55,7 @@ export interface ClusterSummary {
   palette_tags: string[]
   aesthetic_name: string
   description: string
-  visual_signals: string[]
-  aspiration_reading: string
-  palette_story: string
-  cultural_origin: string
   gaps: Gap[]
-}
-
-export interface CulturalContextItem {
-  claim: string
-  because: string
-  detailed_analysis: string
-  execution_suggestions: string[]
-  source_era: string
-  cultural_code: string
 }
 
 export interface AnalysisResult {
@@ -77,7 +63,7 @@ export interface AnalysisResult {
   clusters: ClusterSummary[]
   gaps: Gap[]
   primary_gap: Gap | null
-  cultural_context: CulturalContextItem[]
+  filter_conclusion: string[]
   drift_signal: string | null
   meta: {
     session_id: string
