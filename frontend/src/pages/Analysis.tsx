@@ -4,6 +4,66 @@ import { type AnalysisState } from '../hooks/useAnalysis'
 import { type ClusterSummary, imageUrl } from '../lib/api'
 import { RotateCcw } from 'lucide-react'
 
+// ─── Plan image mapping ───────────────────────────────────────────────────────
+const PLAN_IMAGES = [
+  'public/images/plan/image2.png',  // dress forms → wardrobe
+  'public/images/plan/image.png',   // measuring tape → fit & proportion
+  'public/images/plan/image1.png',  // meditative figure → identity
+  'public/images/plan/image3.png',  // hand + lipstick → detail & finish
+  'public/images/plan/image4.png',  // megaphone → statement
+]
+
+// ─── Plan section ─────────────────────────────────────────────────────────────
+function PlanSection({ items }: { items: string[] }) {
+  if (!items.length) return null
+  return (
+    <section className="plan-section">
+      <div className="plan-section__header">
+        <div className="section-label">Your Custom Plan</div>
+        <h2 className="plan-section__title">What to do next</h2>
+      </div>
+
+      <div className="plan-folder-stack">
+        {items.map((item, i) => (
+          <motion.div
+            key={i}
+            className="plan-folder"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {/* Folder tab */}
+            <div className="plan-folder__tab">
+              <span className="plan-folder__tab-n">{String(i + 1).padStart(2, '0')}</span>
+            </div>
+
+            {/* Folder body */}
+            <div className="plan-folder__body">
+              {/* Image clipped on left */}
+              <div className="plan-folder__img-wrap">
+                <img
+                  src={PLAN_IMAGES[i % PLAN_IMAGES.length]}
+                  alt=""
+                  className="plan-folder__img"
+                />
+              </div>
+
+              {/* Text */}
+              <div className="plan-folder__text">
+                <p className="plan-folder__item">{item}</p>
+              </div>
+
+              {/* Accent stamp */}
+              <div className="plan-folder__stamp">PINSIGHTS</div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 interface AnalysisPageProps {
   state: AnalysisState
   onReset: () => void
@@ -251,7 +311,27 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
     )
   }
 
-  if (!result) return null
+  if (!result) {
+    return (
+      <div className="empty-state container">
+        <div className="empty-state__inner">
+          <div className="empty-state__icon">🔍</div>
+          <h2 className="empty-state__title">No analysis yet</h2>
+          <p className="empty-state__desc">Upload your inspiration board or select a preset to uncover your aesthetic DNA.</p>
+          <button className="btn btn--primary" onClick={onReset}>
+            Start Analysis
+          </button>
+        </div>
+        <style>{`
+          .empty-state { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding-top: 60px; }
+          .empty-state__inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-4); max-width: 400px; }
+          .empty-state__icon { font-size: 2.5rem; margin-bottom: var(--space-2); }
+          .empty-state__title { font-family: var(--font-display); font-size: 2rem; color: var(--color-text-primary); }
+          .empty-state__desc { color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-2); }
+        `}</style>
+      </div>
+    )
+  }
 
   const dna = result.aesthetic_dna
   const clusters = result.clusters
@@ -308,16 +388,6 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
               </motion.div>
             ))}
           </div>
-
-          {/* Filter conclusion */}
-          {result.filter_conclusion?.length > 0 && (
-            <div className="ap__plan">
-              <div className="ap__plan-label">Your Plan</div>
-              {result.filter_conclusion.map((item, i) => (
-                <p key={i} className="ap__plan-item">→ {item}</p>
-              ))}
-            </div>
-          )}
         </aside>
 
         {/* Main: expanded cluster panel */}
@@ -337,6 +407,11 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
           </AnimatePresence>
         </main>
       </div>
+
+      {/* ── Plan section below everything ── */}
+      {result.filter_conclusion?.length > 0 && (
+        <PlanSection items={result.filter_conclusion} />
+      )}
 
       <style>{`
         /* ── Page shell ── */
@@ -724,6 +799,119 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
           .ap__body { grid-template-columns: 1fr; }
           .ap__sidebar { border-right: none; border-bottom: 1px solid var(--color-border); }
           .cluster-panel { grid-template-columns: 1fr; }
+          .plan-folder-stack { grid-template-columns: 1fr; }
+        }
+
+        /* ── Plan Section ── */
+        .plan-section {
+          border-top: 1px solid var(--color-border);
+          background: var(--color-surface-2);
+          padding: var(--space-9) var(--space-7);
+        }
+        .plan-section__header {
+          margin-bottom: var(--space-8);
+        }
+        .plan-section__title {
+          font-family: var(--font-display);
+          font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+          letter-spacing: -0.025em;
+          line-height: 1.1;
+          margin-top: var(--space-2);
+          color: var(--color-text-primary);
+        }
+
+        .plan-folder-stack {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+          gap: var(--space-4);
+        }
+
+        .plan-folder {
+          background: #F3EFE6;
+          border-radius: 3px 12px 3px 3px;
+          overflow: hidden;
+          position: relative;
+          box-shadow: 0 4px 18px rgba(15,14,12,0.09), 0 1px 4px rgba(15,14,12,0.05);
+          border: 1px solid rgba(15,14,12,0.07);
+          transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base);
+        }
+        .plan-folder:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 32px rgba(15,14,12,0.13), 0 2px 6px rgba(15,14,12,0.06);
+        }
+
+        .plan-folder__tab {
+          height: 28px;
+          background: #D4C9B4;
+          border-bottom: 1px solid rgba(15,14,12,0.08);
+          display: flex;
+          align-items: center;
+          padding: 0 var(--space-4);
+          border-radius: 0 10px 0 0;
+          position: relative;
+          width: 120px;
+          margin-left: var(--space-5);
+          margin-bottom: -1px;
+        }
+        .plan-folder__tab-n {
+          font-size: 0.6rem;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          color: rgba(15,14,12,0.45);
+          text-transform: uppercase;
+        }
+
+        .plan-folder__body {
+          display: flex;
+          align-items: center;
+          gap: 0;
+          min-height: 130px;
+          border-top: 1px solid rgba(15,14,12,0.08);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .plan-folder__img-wrap {
+          width: 110px;
+          min-width: 110px;
+          height: 130px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(255,255,255,0.4);
+          border-right: 1px solid rgba(15,14,12,0.07);
+          flex-shrink: 0;
+        }
+        .plan-folder__img {
+          width: 90px;
+          height: 110px;
+          object-fit: contain;
+          mix-blend-mode: multiply;
+          display: block;
+        }
+
+        .plan-folder__text {
+          flex: 1;
+          padding: var(--space-5) var(--space-5);
+        }
+        .plan-folder__item {
+          font-size: 0.9375rem;
+          line-height: 1.65;
+          color: rgba(15,14,12,0.78);
+          font-weight: 400;
+        }
+
+        .plan-folder__stamp {
+          position: absolute;
+          bottom: var(--space-3);
+          right: var(--space-4);
+          font-size: 0.5rem;
+          font-weight: 700;
+          letter-spacing: 0.18em;
+          color: var(--color-accent);
+          opacity: 0.5;
+          text-transform: uppercase;
         }
       `}</style>
     </div>
