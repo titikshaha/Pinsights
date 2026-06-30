@@ -6,11 +6,11 @@ import { RotateCcw } from 'lucide-react'
 
 // ─── Plan image mapping ───────────────────────────────────────────────────────
 const PLAN_IMAGES = [
-  '/public/images/plan/image2.png',  // dress forms → wardrobe
-  '/public/images/plan/image.png',   // measuring tape → fit & proportion
-  '/public/images/plan/image1.png',  // meditative figure → identity
-  '/public/images/plan/image3.png',  // hand + lipstick → detail & finish
-  '/public/images/plan/image4.png',  // megaphone → statement
+  '/images/plan/image2.png',  // dress forms → wardrobe
+  '/images/plan/image.png',   // measuring tape → fit & proportion
+  '/images/plan/image1.png',  // meditative figure → identity
+  '/images/plan/image3.png',  // hand + lipstick → detail & finish
+  '/images/plan/image4.png',  // megaphone → statement
 ]
 
 // ─── Plan section ─────────────────────────────────────────────────────────────
