@@ -30,16 +30,8 @@ const HERO_IMAGES = [
 
 export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: LandingProps) {
   const [presets, setPresets] = useState<PresetBoard[]>([])
-  const [scrolled, setScrolled] = useState(false)
-
   useEffect(() => {
     fetchPresets().then(setPresets)
-  }, [])
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60)
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const handleAnalyse = (
