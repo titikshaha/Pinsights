@@ -22,9 +22,9 @@ const TICKER_ITEMS = [
 ]
 
 const HERO_IMAGES = [
-  { src: '/images/f1.png', label: 'Look 01' },
-  { src: '/images/f4.png', label: 'Look 03' },
-  { src: '/images/f3.png', label: 'Look 04' },
+  { src: '/public/f1.png', label: 'Look 01' },
+  { src: '/public/f4.png', label: 'Look 03' },
+  { src: '/public/f3.png', label: 'Look 04' },
 ]
 
 export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: LandingProps) {
