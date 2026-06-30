@@ -22,9 +22,9 @@ const TICKER_ITEMS = [
 ]
 
 const HERO_IMAGES = [
-  { src: '/images/f1.png', label: 'Look 01' },
-  { src: '/images/f4.png', label: 'Look 03' },
-  { src: '/images/f3.png', label: 'Look 04' },
+  { src: 'public/images/f1.png', label: 'Look 01' },
+  { src: 'public/images/f4.png', label: 'Look 03' },
+  { src: 'public/images/f3.png', label: 'Look 04' },
 ]
 
 export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: LandingProps) {
@@ -182,7 +182,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
               </div>
 
               <motion.img 
-                src="/images/f2.png" 
+                src="public/images/f2.png" 
                 alt="Model" 
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
