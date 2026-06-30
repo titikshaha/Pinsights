@@ -54,7 +54,12 @@ def ensure_collections() -> None:
             )
             print(f"[Qdrant] Created collection: {name}")
         else:
-            print(f"[Qdrant] Collection exists: {name}")
+            client.create_payload_index(
+                collection_name=name,
+                field_name="aesthetic",
+                field_schema="keyword",
+            )
+            print(f"[Qdrant] Collection exists: {name} (Index enforced)")
 
 
 def upsert_chunks(
