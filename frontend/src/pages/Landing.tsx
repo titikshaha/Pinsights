@@ -149,7 +149,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
             <h2 className="gif-section__heading">From mood board<br /><em>to meaning.</em></h2>
             <p className="gif-section__desc">
               Pinsights groups your images into aesthetic clusters, maps their cultural history, 
-              and tells you exactly what you're reaching for — and what's stopping you from getting there.
+              and tells you exactly what you're reaching for, and what's stopping you from getting there.
             </p>
           </div>
           <div className="gif-section__visual">
