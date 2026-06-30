@@ -1,3 +1,11 @@
+---
+title: Pinsights API
+emoji: 🔮
+colorFrom: purple
+colorTo: indigo
+sdk: docker
+app_port: 7860
+---
 # Pinsights v2 — Personal Aesthetic Intelligence System
 
 > Not what you like. **Who you are.**

@@ -5,6 +5,6 @@ node_modules/
 dist/
 qdrant_data/
 outputs/
-data/uploads/
+data/
 .DS_Store
 *.pkl
