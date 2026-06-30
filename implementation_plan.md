@@ -314,9 +314,18 @@ START → intake_node → identity_node → gap_node → narrator_node → END
 
 ---
 
-### Phase 6 — Infrastructure
+### Phase 6 — Deployment Readiness & Infrastructure
 
-#### [NEW] `docker-compose.yml`
+#### [MODIFY] Frontend API Client (`frontend/src/lib/api.ts` & `vite.config.ts`)
+- Change hardcoded `BASE = ''` to `const BASE = import.meta.env.VITE_API_URL || ''`.
+- Keep Vite proxy for local dev, but ensure production builds use the external backend URL.
+
+#### [MODIFY] Backend Deployment Config
+- Move/copy `backend/requirements.txt` to the project root `requirements.txt` so PaaS providers (Railway/Render) can detect the Python environment.
+- Create a `Procfile` at the root: `web: uvicorn backend.api.main:app --host 0.0.0.0 --port $PORT`
+- Ensure CORS in `backend/api/main.py` is configured to read the `CORS_ORIGINS` environment variable (already implemented, but needs prod value).
+
+#### [NEW] `docker-compose.yml` (Local Dev Only)
 ```yaml
 services:
   qdrant:
@@ -327,13 +336,14 @@ services:
       - ./qdrant_data:/qdrant/storage
 ```
 
-#### [MODIFY] `.env`
+#### [MODIFY] `.env` & Production Env Vars
 ```
 UNSPLASH_ACCESS_KEY=...
 GROQ_API_KEY=...
-QDRANT_URL=http://localhost:6333
-QDRANT_API_KEY=          # empty for local dev
+QDRANT_URL=https://<your-cluster>.qdrant.tech  # For Prod
+QDRANT_API_KEY=...                             # For Prod
 CLIP_MODEL=ViT-B-32
+CORS_ORIGINS=https://your-frontend-domain.vercel.app # For Prod
 ```
 
 ---
@@ -341,28 +351,31 @@ CLIP_MODEL=ViT-B-32
 ## User Review Required
 
 > [!IMPORTANT]
-> **Groq API Key**: You'll need a Groq API key (free tier at console.groq.com). Do you have one, or should I build with a placeholder and a mock LLM mode for local dev?
+> **Deployment Readiness**: The system is functional locally, but lacks production storage and deployment config. Please review the "Deployment Readiness & Infrastructure" section.
+> - We need to set up `VITE_API_URL` for the frontend.
+> - We need to configure a `Procfile` and root `requirements.txt` for the backend.
+> - We need to decide on a file persistence strategy for production (S3 vs Persistent Volumes vs Ephemeral).
 
 > [!IMPORTANT]
-> **Docker**: The Qdrant vector store requires Docker for local dev. Do you have Docker Desktop installed on this machine?
+> **Groq API Key**: You'll need a Groq API key (free tier at console.groq.com) for production.
+
+> [!IMPORTANT]
+> **Qdrant Cloud**: For production, you will need a hosted Qdrant instance. Qdrant Cloud's free tier is sufficient for this project's scale.
 
 > [!WARNING]
-> **Corpus writing**: The `fashion_history.json` and `aesthetic_execution.json` chunks are the highest-leverage part of the system — they determine whether the output sounds generic or genuinely insightful. I'll write a solid first draft (~60 chunks) but you should review and extend these, especially the `aesthetic_execution` chunks which are your "secret weapon." I'll flag these clearly.
-
-> [!NOTE]
-> **Re-embedding**: The existing `embeddings.npy` was created with HuggingFace `CLIPProcessor`. The new stack uses `open-clip-torch`. These are compatible (same ViT-B/32 weights), but to be safe I'll add a migration check — if existing embeddings are the right dimension (512), we reuse them; otherwise re-embed.
+> **Corpus writing**: The `fashion_history.json` and `aesthetic_execution.json` chunks determine output quality. Ensure these are fully populated before the final public launch.
 
 ---
 
 ## Open Questions
 
-1. **Demo board**: The `data/pinterest_img/` subfolders (`minimal`, `rock`, `streetwear`, `summer`, `winter`) — should I wire these as selectable "preset boards" in the UI? This gives a great demo moment without needing to upload.
-
-2. **Session persistence**: For drift tracking, sessions need to be persisted. Simple JSON files in `data/sessions/` is enough for v1, or do you want SQLite?
-
-3. **Deployment timing**: Should I build with Railway + Vercel deployment config from the start, or focus on making local dev excellent first and add deployment config at the end?
-
-4. **Corpus depth**: Do you want me to write the full ~60+40 corpus chunks from scratch (I'll make them genuinely good — sourced from fashion history knowledge), or do you have existing notes/references you'd like incorporated?
+1. **Deployment Architecture**: Vercel is standard for the frontend. For the backend, do you prefer Railway, Render, or a VPS? Railway is recommended as it's the easiest for Python + FastAPI.
+2. **Data Persistence**: Where should user-uploaded images and sessions be stored in production?
+   - *Option A*: Ephemeral storage (uploads disappear on restart — easiest for a demo).
+   - *Option B*: Persistent volume (e.g., Railway persistent volume mounted at `/app/data`).
+   - *Option C*: Cloud object storage (AWS S3, Cloudflare R2).
+3. **Qdrant**: Will you create a Qdrant Cloud (free tier) cluster for production, or should we deploy Qdrant on Railway as well?
+4. **Demo board**: The `data/pinterest_img/` subfolders — should I wire these as selectable "preset boards" in the UI for a great demo without needing to upload?
 
 ---
 

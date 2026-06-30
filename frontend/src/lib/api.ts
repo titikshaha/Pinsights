@@ -1,6 +1,7 @@
 // API client — typed requests to the FastAPI backend
 
-const BASE = ''  // proxied via Vite
+// Use VITE_API_URL for production, fallback to empty string for local dev (proxied via Vite)
+const BASE = import.meta.env.VITE_API_URL || ''
 
 export interface AnalyzeStartResponse {
   session_id: string
