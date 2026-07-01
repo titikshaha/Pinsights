@@ -46,53 +46,97 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
 
       {/* ── Hero ── */}
       <section className="hero">
-        {/* Background Large Text */}
-        <motion.div 
-          className="hero__bg-text"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 1 },
-            visible: {
-              opacity: 1,
-              transition: { staggerChildren: 0.15, delayChildren: 0.3 }
-            }
-          }}
-        >
-          {"Pinsights".split('').map((char, i) => (
-            <motion.span
-              key={i}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1 }
-              }}
-            >
-              {char}
-            </motion.span>
-          ))}
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 1, 1, 0] }}
-            transition={{ repeat: Infinity, duration: 0.9, times: [0, 0.1, 0.5, 0.6] }}
-            style={{ fontWeight: 400, marginLeft: '0.05em', color: 'var(--color-accent)' }}
+        
+        {/* ── DESKTOP HERO ── */}
+        <div className="hero__desktop">
+          {/* Background Large Text */}
+          <motion.div 
+            className="hero__bg-text"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 1 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.15, delayChildren: 0.3 }
+              }
+            }}
           >
-            |
-          </motion.span>
-        </motion.div>
+            {"Pinsights".split('').map((char, i) => (
+              <motion.span
+                key={i}
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: { opacity: 1 }
+                }}
+              >
+                {char}
+              </motion.span>
+            ))}
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 1, 0] }}
+              transition={{ repeat: Infinity, duration: 0.9, times: [0, 0.1, 0.5, 0.6] }}
+              style={{ fontWeight: 400, marginLeft: '0.05em', color: 'var(--color-accent)' }}
+            >
+              |
+            </motion.span>
+          </motion.div>
 
-        {/* Foreground Model Images */}
-        <div className="hero__models">
-          {HERO_IMAGES.map((img, i) => (
-            <motion.img
-              key={img.src}
-              src={img.src}
-              alt={img.label}
-              className={`hero__model hero__model--${i + 1}`}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 + i * 0.1 }}
-            />
-          ))}
+          {/* Foreground Model Images */}
+          <div className="hero__models">
+            {HERO_IMAGES.map((img, i) => (
+              <motion.img
+                key={img.src}
+                src={img.src}
+                alt={img.label}
+                className={`hero__model hero__model--${i + 1}`}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 + i * 0.1 }}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* ── MOBILE HERO (Magazine Cover) ── */}
+        <div className="hero__mobile">
+          <div className="mhero__text">
+            <motion.div
+              className="mhero__issue"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              Issue 01 · 2026
+            </motion.div>
+            
+            <motion.p
+              className="mhero__sub"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+            >
+              Personal Aesthetic Intelligence
+            </motion.p>
+          </div>
+
+          {/* Large bleed image — anchored bottom-right, overflows edge */}
+          <motion.img
+            src="/f4.png"
+            alt=""
+            className="mhero__bleed"
+            initial={{ opacity: 0, scale: 1.04 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+          />
+
+          {/* Small accent image — pinned top-left like a Polaroid */}
+          
+
+          {/* Editorial text layered over */}
+          
+
         </div>
 
         {/* Overlay CTA */}
@@ -227,6 +271,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
           position: relative;
           width: 100%;
           min-height: calc(100vh - 56px);
+          min-height: calc(100dvh - 56px);
           max-height: 850px;
           background: #E8E4DA; /* A slightly darker beige background to contrast text */
           display: flex;
@@ -234,6 +279,15 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
           justify-content: center;
           overflow: hidden;
           border-bottom: 1x solid var(--color-border);
+        }
+
+        /* ── Hero Desktop ── */
+        .hero__desktop {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .hero__bg-text {
@@ -253,8 +307,7 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
         .hero__models {
           position: absolute;
           inset: 0;
-          width: 100%;
-          height: 100%;
+          z-index: 15;
           pointer-events: none;
         }
 
@@ -264,9 +317,112 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
           max-height: 90%;
           object-fit: contain;
         }
-        .hero__model--1 { left: -3%; height: 110%; z-index: 1; }
-        .hero__model--2 { left: 29%; transform: translateX(-50%); height: 65%; z-index: 15; }
-        .hero__model--3 { left: 82.4%; height: 75%; z-index: 15; }
+        .hero__model--1 { left: -3%; height: 110%; z-index: 1;  max-width: 50%; }
+        .hero__model--2 { left: 29%; transform: translateX(-50%); height: 65%; z-index: 15; max-width: 50%; }
+        .hero__model--3 { left: 82.4%; height: 75%; z-index: 15;  max-width: 50%;}
+
+        /* ── Hero Mobile (Magazine Cover) ── */
+        .hero__mobile {
+          display: none;
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+
+        /* Large image — right side, bleed off edge */
+        .mhero__bleed {
+          position: absolute;
+          bottom: 0;
+          right: -8%;
+          height: 85%;
+          width: auto;
+          object-fit: contain;
+          object-position: bottom right;
+          z-index: 1;
+          filter: drop-shadow(-20px 0 40px rgba(15,14,12,0.12));
+        }
+
+        /* Polaroid accent images */
+        .mhero__polaroid {
+          position: absolute;
+          top: 14%;
+          left: var(--space-5);
+          z-index: 5;
+          background: #fff;
+          padding: 6px 6px 24px;
+          box-shadow: 0 8px 28px rgba(15,14,12,0.18);
+          width: 100px;
+        }
+        .mhero__polaroid img {
+          width: 100%;
+          height: 110px;
+          object-fit: cover;
+          object-position: top;
+          display: block;
+        }
+        .mhero__polaroid span {
+          display: block;
+          text-align: center;
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.07em;
+          color: var(--color-text-muted);
+          margin-top: 6px;
+          text-transform: uppercase;
+        }
+        .mhero__polaroid--2 {
+          top: auto;
+          bottom: 28%;
+          left: var(--space-4);
+          width: 80px;
+        }
+        .mhero__polaroid--2 img {
+          height: 88px;
+        }
+
+        /* Editorial text — bottom-left, over the images */
+        .mhero__text {
+          position: absolute;
+          top: 88px;
+          left: var(--space-5);
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+        .mhero__issue {
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: rgba(15,14,12,0.45);
+        }
+        .mhero__wordmark {
+          font-family: var(--font-display);
+          font-size: 2.75rem;
+          font-style: italic;
+          font-weight: 700;
+          letter-spacing: -0.03em;
+          line-height: 1;
+          color: var(--color-text-primary);
+          text-shadow: 0 2px 20px rgba(249,248,245,0.9);
+        }
+        .mhero__wordmark em {
+          color: var(--color-accent);
+          font-style: italic;
+        }
+        .mhero__sub {
+          font-size: 0.7rem;
+          font-weight: 500;
+          letter-spacing: 0.05em;
+          color: rgba(15,14,12,0.55);
+          line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+          .hero__desktop { display: none; }
+          .hero__mobile { display: block; }
+        }
 
         .hero__overlay {
           position: absolute;
@@ -548,18 +704,37 @@ export default function Landing({ onAnalysisStarted, onAnalyse, isRunning }: Lan
         }
 
         /* ── Responsive ── */
-        @media (max-width: 860px) {
-          .hero__model--1 { left: -10%; height: 65%; }
-          .hero__model--2 { height: 85%; }
-          .hero__model--3 { right: -10%; height: 70%; }
-          .gif-section__inner { grid-template-columns: 1fr; }
+        @media (max-width: 900px) {
+          .hero__bg-text { font-size: clamp(4rem, 15vw, 15rem); }
+          .hero__model--1 { left: -15%; height: 60%; }
+          .hero__model--2 { height: 80%; }
+          .hero__model--3 { right: -15%; height: 65%; }
+          
+          .gif-section__inner { grid-template-columns: 1fr; padding: var(--space-5); }
           .how-it-works__grid { grid-template-columns: 1fr; }
-          .how-step { border-right: none; border-bottom: 1px solid var(--color-border); }
+          .how-step { padding: var(--space-5) var(--space-4); border-right: none; border-bottom: 1px solid var(--color-border); }
           .how-step:last-child { border-bottom: none; }
           
-          .analyse-section__body { flex-direction: column; align-items: center; }
-          .analyse-section__blueprint { display: none; } /* Hide blueprint on mobile to save space */
+          .analyse-section__body { flex-direction: column; align-items: center; padding-top: var(--space-2); }
+          .analyse-section__blueprint { display: flex; width: 100%; justify-content: center; margin-bottom: var(--space-4); }
+          .blueprint-frame { padding: var(--space-5); }
+          .blueprint-frame img { max-width: 220px; }
           .upload-card { padding: var(--space-5); max-width: 100%; }
+          .landing-footer { flex-direction: column; gap: var(--space-4); text-align: center; }
+        }
+
+        @media (max-width: 600px) {
+          .hero__desktop { display: none; }
+          .hero__mobile { display: flex; }
+          .hero__overlay { bottom: var(--space-6); }
+          
+          .gif-section__inner { padding: var(--space-5) var(--space-3); }
+          .how-step { padding: var(--space-4) var(--space-3); }
+          
+          .analyse-section__heading { font-size: clamp(2rem, 8vw, 2.5rem); }
+          .blueprint-frame { padding: var(--space-4); }
+          .blueprint-frame img { max-width: 140px; }
+          .upload-card { padding: var(--space-4); }
         }
       `}</style>
     </div>

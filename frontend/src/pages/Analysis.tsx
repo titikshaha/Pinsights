@@ -795,11 +795,28 @@ export default function Analysis({ state, onReset }: AnalysisPageProps) {
 
         /* ── Responsive ── */
         @media (max-width: 900px) {
-          .ap__header { grid-template-columns: 1fr; }
+          .ap__header { grid-template-columns: 1fr; gap: var(--space-4); padding: var(--space-5) var(--space-4) var(--space-4); }
           .ap__body { grid-template-columns: 1fr; }
-          .ap__sidebar { border-right: none; border-bottom: 1px solid var(--color-border); }
-          .cluster-panel { grid-template-columns: 1fr; }
+          .ap__sidebar { border-right: none; border-bottom: 1px solid var(--color-border); padding: var(--space-4); }
+          .ap__main { padding: var(--space-5) var(--space-4); }
+          .cluster-panel { grid-template-columns: 1fr; gap: var(--space-6); }
           .plan-folder-stack { grid-template-columns: 1fr; }
+          .plan-section { padding: var(--space-6) var(--space-4); }
+        }
+
+        @media (max-width: 600px) {
+          .ap__title { font-size: clamp(1.75rem, 6vw, 2rem); }
+          .ap__meta { flex-direction: column; align-items: flex-start; }
+          .ap__meta button { margin-left: 0 !important; width: 100%; justify-content: center; }
+          
+          /* Scale down polaroid for small screens */
+          .polaroid--hero .polaroid__img-wrap { width: 220px; height: 260px; }
+          .cluster-panel__name { font-size: clamp(1.5rem, 6vw, 2rem); }
+
+          /* Stack plan folder on small screens */
+          .plan-folder__body { flex-direction: column; align-items: stretch; }
+          .plan-folder__img-wrap { width: 100%; height: 160px; border-right: none; border-bottom: 1px solid rgba(15,14,12,0.07); }
+          .plan-folder__img { width: auto; height: 100%; }
         }
 
         /* ── Plan Section ── */

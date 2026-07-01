@@ -314,6 +314,12 @@ a:hover { opacity: 0.75; }
 /* ─── Responsive ─────────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   :root { --space-9: 64px; }
+  .container { padding: 0 var(--space-5); }
+  .nav { padding: 0 var(--space-5); height: 60px; }
+}
+
+@media (max-width: 600px) {
   .container { padding: 0 var(--space-4); }
-  .nav { padding: 0 var(--space-4); }
+  .nav { padding: 0 var(--space-4); height: 56px; }
+  .nav__logo { font-size: 1.75rem; }
 }
